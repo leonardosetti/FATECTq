@@ -17,17 +17,20 @@ sE_Original = [];
 for (let i = 0; i < tamanho_Vetor; i++) {
   sE_Original.push(serie_Elementos[i]);
 }
-
+cont = 0;
+contTroca = 0;
 for (let i = 0; i < tamanho_Vetor; i++) {
   for (let j = 0; j < tamanho_Vetor - i - 1; j++) {
     if (serie_Elementos[j] > serie_Elementos[j + 1]) {
       let troca_Elemento = serie_Elementos[j];
       serie_Elementos[j] = serie_Elementos[j + 1];
       serie_Elementos[j + 1] = troca_Elemento;
+      contTroca++;
     }
+    cont++;
   }
-  contador_Itera_For = i + 1;
 }
-console.log("Número de iterações com o For:", contador_Itera_For);
+console.log("Número de iterações com o For:", cont);
+console.log("Número de trocas de elemento:", contTroca);
 console.log("Vetor na ordem original:", ...sE_Original);
 console.log("Vetor ordenado:", ...serie_Elementos);
