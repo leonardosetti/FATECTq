@@ -7,7 +7,7 @@ function bubbleSort2D(arr) {
   const n = arr.length;
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n - i - 1; j++) {
-      if (arr[j][0] > arr[j + 1][0]) {
+      if (arr[j][0] > arr[j++][0]) {
         // troca os elementos de posição
         const temp = arr[j];
         arr[j] = arr[j + 1];
@@ -19,7 +19,11 @@ function bubbleSort2D(arr) {
 }
 
 // exemplo de uso
-const array2D = [[3, 5], [1, 2], [4, 6]];
+const array2D = [
+  [3, 5],
+  [1, 2],
+  [4, 6],
+];
 console.log(bubbleSort2D(array2D)); // [[1, 2], [3, 5], [4, 6]]
 //```
 //
@@ -38,7 +42,7 @@ function bubbleSort3D(arr) {
   const n = arr.length;
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n - i - 1; j++) {
-      if (arr[j][0][0] > arr[j + 1][0][0]) {
+      if (arr[j][0][0] > arr[j++][0][0]) {
         // troca os elementos de posição
         const temp = arr[j];
         arr[j] = arr[j + 1];
@@ -50,7 +54,16 @@ function bubbleSort3D(arr) {
 }
 
 // exemplo de uso
-const array3D = [[[3, 5, 2], [1, 2, 3]], [[4, 6, 1], [5, 7, 8]]];
+const array3D = [
+  [
+    [3, 5, 2],
+    [1, 2, 3],
+  ],
+  [
+    [4, 6, 1],
+    [5, 7, 8],
+  ],
+];
 console.log(bubbleSort3D(array3D)); // [[[3, 5, 2], [4, 6, 1]], [[1, 2, 3], [5, 7, 8]]]
 //```
 //
@@ -99,8 +112,19 @@ function bubbleSortND(arr) {
 }
 
 // exemplo de uso
-const arrayND = [[[3, 5], [1, 2, 4], [4, 6, 8, 1]], [5, 4, 3], [[1, 2], [8, 7, 6, 5]]];
-console.log(bubbleSortND(arrayND)); // [[[1, 2, 4], [3, 5], [4, 6, 8, 1]], [3, 4, 5], [[1, 2], [5, 6, 7, 8]]]
+const arrayND = [
+  [
+    [3, 5],
+    [1, 2, 4],
+    [4, 6, 8, 1],
+  ],
+  [5, 4, 3],
+  [
+    [1, 2],
+    [8, 7, 6, 5],
+  ],
+];
+console.log(bubbleSortND(...arrayND)); // [[[1, 2, 4], [3, 5], [4, 6, 8, 1]], [3, 4, 5], [[1, 2], [5, 6, 7, 8]]]
 //```
 //
 //Neste exemplo, `arr` é o vetor de qualquer dimensão que desejamos ordenar. O método `length` é usado para determinar o tamanho do vetor. Em seguida, aplicamos um loop externo para iterar através dos elementos do vetor. Dentro desse loop, utilizamos a recursão para percorrer os elementos do subvetor atual.
