@@ -71,3 +71,5 @@ function varSoma(num1, num2) {
 }
 
 console.log(varSoma(num1, num2));
+
+//
