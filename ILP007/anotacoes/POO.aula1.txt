@@ -1,0 +1,25 @@
+POO - Programação Orientada a Objeto
+
+Prof. Marcus
+
+Conteúdo Programático 
+	- Conceitos básicos
+		- classe
+		- obeto
+		- atributo e métodos
+	- Herança e Polimorfismo
+	- Associação por composição e por agregação
+	- Associação simples e classe associativa
+	- Classe abstrata
+	- Interface
+	
+	
+	Critério 
+	P. - prova bimestral
+	+ - trabalhos do bimestre
+	MediaBim = 0.6*P 0.4*T.
+
+	Media Final = MediaBim1*0.5 + MediaBim2*0.5
+	
+	
+	
