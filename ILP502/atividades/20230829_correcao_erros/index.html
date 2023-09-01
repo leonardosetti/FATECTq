@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-BR">
+    <title>Atividade - Correção de Erros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Atividade - Programação de Scripts</h1>
+    </header>
+    <nav class="menu-h">
+        <ul>
+            <li><a href="atividade_correcao_erro.html" target="_blank" id="link-original">Arquivo
+                    original</a></li>
+            <li><a href="index-sem-estilo.html" target="_blank" id="link-original">Correção sem CSS</a></li>
+            <li><a href="http://www.fatectq.edu.br" target="_blank" id="link-fatec">Fatec TQ</a></li>
+            <li><a href="http://www.google.com.br" target="_blank" id="link-google">Google</a></li>
+            <li><a href="./referencias.html" id="link-referencias">Referências usadas para as correções</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h1 id="titulo-atividade">Atividade de Correção de Erros</h1>
+            <p>O propósito desta atividade é analisar e corrigir o maior número de erros.</p>
+            <ul style="list-style: none;">
+                <li>Considerar erros no HTML</li>
+                <li>Considerar erros de sintaxe</li>
+                <li>Considerar erros de semântica</li>
+            </ul>
+            <section>
+                <h3 id="subtitulo-elementos">&#10004;Relação dos elementos HTML a serem corrigidos:</h3>
+                <ul style="list-style: none;">
+                    <li>A declaração do tipo de documento
+                        <b><i>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                                "http://www.w3.org/TR/html4/strict.dtd"&gt;</i></b> está sendo usada, mas é mais
+                        apropriado usar o formato <b>&lt;!DOCTYPE html&gt;</b> para representar o HTML5.
+                    </li>
+                    <li>A tag de fechamento <b>&lt;/head&gt;</b> está ausente antes da abertura da tag
+                        <b>&lt;body&gt;</b>.
+                    </li>
+                    <li>A tag <b>&lt;/main&gt;</b> deve ser fechada antes das tags <b>&lt;/footer&gt;</b> e
+                        <b>&lt;/html&gt;</b>.
+                    </li>
+                    <li>A tag de fechamento <b>&lt;/body&gt;</b> está faltando.</li>
+                    <li>A tag de abertura <b>&lt;main&gt;</b> está faltando sua tag de fechamento:
+                        <b>&lt;/main&gt;</b>.
+                    </li>
+                    <li>O elemento <b>&lt;p&gt;</b> está aninhado dentro do elemento <b>&lt;ul&gt;</b>, o que não é
+                        uma
+                        estrutura HTML válida.</li>
+                    <li>A tag <b>&lt;script&gt;</b> no final do código está usando o atributo type =
+                        <i>"txt/javascript"</i>,
+                        que deve ser corrigido para type = <i>"text/javascript"</i>.
+                    </li>
+                    <li>A tag <b>&lt;span&gt;</b> não está sendo usada corretamente, pois não está dentro de um
+                        contexto
+                        adequado.</li>
+                </ul>
+            </section>
+            <section>
+                <h3 id="subtitulo-sintaxe">&#10004;Relação dos erros de sintaxe:</h3>
+
+                <ul style="list-style: none;">
+                    <li>Dentro da tag
+                        <b>&lt;script&gt;</b>, os métodos Alert e confirme devem ser escritos em letras minúsculas
+                        como
+                        <b><i>alert</i></b> e <b><i>confirm</i></b>.
+                    </li>
+                    <li>
+                        A tag <b>&lt;script&gt;</b> no final do código tem uma chamada de função incompleta,
+                        faltando um
+                        parêntese de fechamento.</li>
+                    <li>Tags de Fechamento Ausentes: Várias tags <b>&lt;td&gt;</b> estão sem suas respectivas tags
+                        de
+                        fechamento <b>&lt;/td&gt;</b>. As tags <b>&lt;td&gt;</b> para "height" não estão
+                        corretamente
+                        fechadas e devem ser separadas.</li>
+                    <li>
+                        O símbolo &amp;rec; não existe e deve ser corrigido para &amp;reg que corresponde a &reg.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3 id="subtitulo-semantica">&#10004;Relação dos erros semânticos:</h3>
+                <ul style="list-style: none;">
+                    <li>
+                        Apesar de não ser um erro, é bom incluir target="_blank" nas tags <b>&lt;a
+                            href=""&gt;</b><b>&lt;/a&gt;</b>.</li>
+                    <li>
+                        A tag <b><i>&lt;meta charset="ISO-8859-1" /&gt;</i></b> deve ser corrigida para
+                        <b><i>&lt;meta charset="UTF-8"&gt;</i></b> para definir o conjunto de caracteres
+                        corretamente.
+                    </li>
+                    <li>
+                        Os elementos <b>&lt;footer&gt;</b> e <b>&lt;header&gt;</b> devem ser usados para conteúdo de
+                        rodapé e cabeçalho, respectivamente.</li>
+                    <li>
+                        A tag <b>&lt;footer&gt;</b> não está dentro da estrutura correta, devendo estar dentro da
+                        tag
+                        <b>&lt;body&gt;</b>.
+                    </li>
+                    <li>
+                        A tag <b>&lt;main&gt;</b> está sendo usada duas vezes consecutivas, mas seu uso não está
+                        adequado, já que ela deve ser usada para representar o conteúdo principal de uma página.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 id="subtitulo-atributos">Alguns Atributos utilizados em elementos da Linguagem HTML</h2><br>
+                <div>
+                    <table border="1">
+                        <tr>
+                            <th>Atributo</th>
+                            <th>Descrição</th>
+                        </tr>
+                        <tr>
+                            <td>class</td>
+                            <td>Atribui uma classe ao elemento</td>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>Atribui um identificador ao elemento - um id deve ser único</td>
+                        </tr>
+                        <tr>
+                            <td>style</td>
+                            <td>Permite incluir estilos</td>
+                        </tr>
+                        <tr>
+                            <td>lang</td>
+                            <td>Define o idioma principal do elemento</td>
+                        </tr>
+                        <tr>
+                            <td>alt</td>
+                            <td>Define um texto alternativo</td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>Define uma largura para o elemento</td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>Define uma altura para o elemento</td>
+                        </tr>
+                    </table>
+            </section>
+            <section>
+                <h2 id="subtitulo-select">Elemento Select</h2><br>
+                <select>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                </select>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Aluno: Leonardo Setti | RA: 0220482313029 &copy;2023 - Programação de Scripts &reg;</p>
+    </footer>
+</body>
+
+</html>

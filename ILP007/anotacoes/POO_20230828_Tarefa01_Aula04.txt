@@ -1,0 +1,150 @@
+1) Dê 3 definições para Paradigma de Programação Orientada a Objetos. 
+
+a-)A POO é um paradigma de programação que consider o uso de objetos, ou seja unidades independentes que combinam atributos métodos relacionados. Esse paradigma destaca a organização, reuso e extensibilidade do código por meio de conceitos como encapsulamento, herança e polimorfismo.
+
+b-)Com a abordagem baseada em Objetos,POO visa criar sistemas modelados como conjuntos interligados de objetos. Cada objeto é uma instância de uma Classe, que define suas características (atributos) e comportamentos (métodos). Desta maneira a organização do código se torna modular fazendo com que a  reutilização e a manutenção se torne fácil e sua representação seja mais próxima dos conceitos do mundo real.
+
+c-)A POO é baseada principalmente em em quatro conceitos: encapsulamento, herança, polimorfismo e abstração. 
+
+O encapsulamento isola detalhes internos de um objeto e a exposição de uma interface controlada. combina os dados e métodos que operam sobre esses dados dentro da Classe. O encapsulamento protege seus detalhes internos , permitindo que uma Classe seja usada sem que seus detalhes internos sejam expostos.
+
+A herança permite criar uma nova subClasses a partir de uma Classe existente chamada superClasse, herdando seus atributos e métodos. Isso reduz a quantidade de código gerado, permite uma maneira mais clara e organizada de se manter os códigos, permite a reutilização de código e mantém uma relação hierárquica entre as Classes.
+
+O polimorfismo permite que objetos de diferentes Classes compartilharem o mesmo nome de método, porém com comportamentos diferentes. Isso permite que diferentes objetos sejam tratados de maneira uniforme através do uso de interfaces comuns.
+Um exemplo seria uma superClasse Transporte com subClasses Onibus, Aviao, Barco, Trem e Taxi e um método embarque().
+ 
+É uma maneira de unificar e destacar as características e comportamentos em um conjunto de objetos de um sistema, onde os diferentes objetos possuem atributos e métodos comuns entre si, considerando apenas as características relevantes.
+ Por exemplo em um zoológico existem animais que podem ter como características comuns para todos, espécie, paisOrigem, idade e dieta, estas características são independentes de aspectos específicos de cada animal.
+
+2) Classe é um modelo que orienta o comportamento de um objeto, ou seja, através da Classe é possível definir os atributos (dados ou campos) e as ações e comportamentos (métodos) de um objeto. Classe é representada em um nível abstrato para entidades ou conceitos do mundo real.
+Por exemplo Classe Venda que pode possuir atributos como codigoVenda valorVenda dataVenda tipoVenda e métodos como realizarVenda(), cancelarVenda(), listarVenda()
+O objeto por sua vez é a instância de uma Classe que é gerada a partir do modelo da Classe. É uma entidade concreta que possui atributos e estados definidos na Classe, é capaz de operar os métodos definidos na Classe como no exemplo listar, cancelar e realizar vendas. Cada objeto é independente podendo ter estados e comportamentos únicos mesmo compartilhando a estrutura e definições da mesma Classe com outros objetos.
+Por exemplo a Classe Venda pode ser instanciada múltiplas vezes criando múltiplos objetos independentes com estados diferentes entre si:
+Um objeto Venda pode estar realizando uma venda enquanto outro pode estar listando vendas.
+
+3) Atributos são as representações de características de uma Classe, são definidos como variáveis de instância ou campos e armazenam dados específicos de cada objeto dentro da Classe, definindo o que esse objeto tem como característica e qual seu estado.
+Cada atributo deve ter seu tipo definido e devem ser únicos em uma Classe permitindo estados diferentes em diferentes instâncias desta Classe (objeto).
+Podem ser lidos e modificados de acordo com os métodos e a visibilidade definidos na Classe, podendo ser público, protegido ou privado.
+
+4)UML é baseada em um padrão que oferece diversos diagramas e representam diferentes aspectos de um sistema permitindo sua a abstração, ou seja, a representação de conceitos complexos de maneira simplificada visualmente. Também promove uma comunicação eficaz entre as equipes de desenvolvimento, analistas, designers e outras partes interessadas,evitando mal-entendidos e facilitando o alinhamento de ideias.
+UML é utilizada para além do proposito de planejamento e design dos projetos de sistemas, atuando também como uma ótima ferramenta de documentação com base nas  decisões de design, nos comportamentos esperados e estruturas do sistema, dando transparência e rastreabilidade aos projetos. É uma linguagem flexível que pode sr adaptada por diferentes abordagens e metodologias de desenvolvimento, oferecendo a capacidade de se ajustar a processos específicos para para análise e planejamento de sistemas. Facilita o entendimento de requisitos, visualização de soluções e definição da arquitetura do sistema antes da implementação.
+A Linguagem de Modelagem Unificada oferece uma abordagem visual que permite elaborar modelos de processos e sistemas orientados a objetos, tornando possível comunicar e documentar a todos os interessados no ciclo de desenvolvimento de um sistema um ou mais conjuntos de design complexos de forma compreensível e organizada.
+
+5)Diagrama de Classes na UML representa a estrutura estática de um  sistema orientado a objetos, onde visualmente se dispõe as Classes e seus respectivos atributos e métodos e as relações entre elas como relações entre as classes, como associação, herança, agregação e composição, o que facilita e agiliza a compreensão, organização e o próprio design do sistema. O diagrama de classes também pode indicar as dependências entre classes, mostrando que uma classe usa outra classe. Por se tratar de uma forma abstrata de representação os detalhes de implementação são omitidos, permanecendo apenas a relação estruturada entre as classes.
+
+6)Na UML, uma classe é representada graficamente por um retângulo dividido em três compartimentos. Cada compartimento contém informações específicas sobre a classe, como seu nome, atributos e métodos. Aqui estão três exemplos de como uma classe pode ser representada em um diagrama de classes da UML:
+
+Uma classe dentro do Diagrama de Classes é representado por um retângulo que possui três sessões:
+Nome da classe: ex: Reserva
+Atributos: ex: numeroReserva (que pode ser publico privado ou protegido)
+Métodos: ex: efetuarReserva() (que pode ser publico privado ou protegido)
+
+A representação visual pode ser conforme a seguir:
+-------------------------------------------
+|      Reserva                            |
+-------------------------------------------
+| - numeroReserva: long                   |
+| - data: String                          |
+| - local: String                         |
+-------------------------------------------
+| + construtor(numeroReserva, data, local)|
+| + getNumeroReserva(): long              |
+| + getData(): String                     |
+| + getLocal(): String                    |
+| + setNumeroReserva(numeroReserva: long) |
+| + setData(data: String)                 |
+| + setLocal(local: String)               |
+| + efetuarReserva()                      |
+-------------------------------------------
+onde os atributos são privados indicados pelo sinal (-) e os métodos são públicos indicados pelo sinal (+)
+Os atributos devem possuir as suas informações intrínsecas como a visibilidade e o tipo (String, int, float, etc)
+Os métodos também devem possuir suas características de visibilidade e qual parâmetro e tipo lhe são associados
+
+7)Os modificadores de acesso são propriedades que controlam a visibilidade e o acesso a atributos e métodos de uma classe e determinam quem pode ou não acessar e ou modificar estes elementos também conhecidos como membros.
+
+Membros declarados como public são acessíveis tanto dentro da classe onde foram declarados quanto em outras classes que tenham uma instância do objeto da classe.
+Os membros public podem ser lidos, modificados e chamados de qualquer lugar, não há restrição de acesso deixando os detalhes internos da classe expostos.
+
+public class Carro {
+    public String marca;
+
+    public void acelerar() {
+        System.out.println("O carro está acelerando.");
+    }
+}
+
+// Em outra classe
+Carro meuCarro = new Carro();
+meuCarro.marca = "Toyota";
+meuCarro.acelerar();
+
+
+Membros declarados como private são acessíveis apenas dentro da própria classe onde foram declarados. impedindo o acesso externo à classe, promovendo o encapsulamento, ocultando os detalhes internos da classe e protegendo os membros de serem modificados ou acessados indevidamente.
+
+public class ContaBancaria {
+    private double saldo;
+
+    private void atualizarSaldo() {
+        // Atualiza o saldo de acordo com operações internas
+    }
+}
+
+
+Membros declarados como protected têm acesso dentro da própria classe, assim como nas subclasses, mas não em outras classes que não sejam derivadas. Isso permite que as subclasses acessem ou herdem membros específicos da superclasse.
+
+public class Animal {
+    protected String nome;
+
+    protected void emitirSom() {
+        System.out.println("O animal emitiu um som.");
+    }
+}
+
+public class Cachorro extends Animal {
+    public void latir() {
+        System.out.println(nome + " está latindo.");
+    }
+}
+
+8)
+Método é a parte do código que encapsula e define os comportamentos específicos de um objeto para executar uma determinada tarefa ou operação.
+
+Os métodos representam ações que um objeto pode realizar, permitem reutilizar o mesmo bloco de código em várias partes do programa ou em diferentes objetos o que reduz a duplicação de código e facilita a manutenção.
+
+Os métodos podem encapsular a lógica de implementação, ocultando detalhes internos do objeto fornecendo uma interface clara para interações externas, podem receber argumentos ou não.
+A sintaxe básica de um método inclui seu modificador de acesso, tipo de retorno, nome, lista de parâmetros e corpo (bloco de código) entre chaves.
+
+Existem os Métodos de Instância e Estáticos, onde Métodos de instância são associados a objetos específicos e podem acessar atributos e métodos não estáticos da mesma instância. Métodos estáticos pertencem à classe em si e não dependem de uma instância específica.
+
+9)
+São métodos especiais usados para acessar no caso de Getters (get) ou modificar no caso dos Setters (set) os atributos de uma determinada Classe.
+Permitem o acesso controlado preservando a integridade dos dados conforme propõe o conceito de encapsulamento em POO. Como benefício do uso de getters e setters podem ser citados:
+Controle e acesso a atributo privados preservando a coerência de dados
+Validações e lógicas de manipulação de atributos antes de qualquer modificação
+
+10)
+
+A assinatura de métodos em java compõe-se pelo nome do método e a lista de parâmetros deste método. Isso dá exclusividade na identificação de um método dentro da classe mesmo que métodos distintos tenham nomes iguais. A assinatura deve incluir o tipo de retorno do método, fazendo com que dependendo da situação, onde um método com o mesmo nome de outro possa ser invocado com base no tipo de saída deste método.
+Esta característica pode ser utilizada para a sobrecarga de métodos que permite o uso de vários métodos com o mesmo nome mas com parâmetros diferentes. A decisão de qual versão do método vai ser usada é feita pela máquina virtual do Java (JVM) de acordo com a correspondência da assinatura e os parâmetros passados.
+Por exemplo uma classe pode ter dois métodos para cálculo de preço de um produto e dependendo da situação um calcula o preço integral do produto e outro calcula o preço com desconto, que pode ser um dos parâmetros que compõe a assinatura de um dos métodos.
+
+11)
+Classes: Deve sempre começar com uma letra maiúscula, usando camel case para nomes compostos, onde cada palavra subsequente começa com uma letra maiúscula. Não se usa caracteres especiai ou espaços.
+Exemplo: MinhaClasse, ContaBancaria, PessoaFisica
+
+Atributos e Variáveis: Deve sempre começar com uma letra minúscula e também usar camel case para nomes compostos.
+Exemplo: idade, saldoConta, nomeCompleto
+
+Métodos: Deve começar com uma letra minúscula (mas há exceções como no caso de construtores que é um método especial), usar camel case para nomes compostos.
+Exemplo: calcularSalario, realizarTransacao, obterNome
+
+12)
+É a capacidade de transmitir ou herdar características de outra classe, desta forma reduzindo e organizando de maneira mais eficiente os elementos dentro de uma classe. A partir deste conceito estabelece-se uma hierarquia entre as classes onde subclasses podem estender o comportamento de superclasses.
+A herança modela a relação "é-um", o que significa que uma subclasse é uma versão especializada da superclasse.
+Por exemplo: "Animal" pode ser uma superclasse enquanto que  "Cachorro", ou "Cavalo" são subclasses de "Animal".
+As subclasses podem adicionar atributos e ou métodos específicos conforme a necessidade desta classe e 
+estender o comportamento da superclasse, isso permite a especialização de classes.
+
+
+13)
+A herança é representada na UML por linhas do tipo seta que conecta a subclasse à superclasse. A seta indica a direção da herança, apontando da subclasse para a superclasse.
