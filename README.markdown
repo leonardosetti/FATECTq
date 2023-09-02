@@ -1,4 +1,4 @@
-# Meu Repositório de Aprendizado :t-rex
+# Meu Repositório de Aprendizado :t-rex:
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/leonardosetti/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/issaeFera)
@@ -18,7 +18,7 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - :nerd_face: Preferido: Arch Linux
 - :ok_hand: Usaria sem problemas: Debian (e derivados), Red Hat (RHEL), Fedora, CentOS, Whonix, Slackware
 
-### Linguagens :goberserk:
+### Linguagens :goberserk
 
 - Java :coffee:
 - Ruby :computer:
