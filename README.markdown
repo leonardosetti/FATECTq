@@ -1,4 +1,4 @@
-# :goberserk:Meu Repositório de Aprendizado :t-rex
+# :goberserk:Meu Repositório de Aprendizado :t-rex:
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/leonardosetti/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/issaeFera)
@@ -21,22 +21,22 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 ### Linguagens
 
 - Java :coffee:
-- Ruby
-- Python
-- TypeScript
-- JavaScript
-- BashScript
+- Ruby :computer:
+- Python :snake:
+- TypeScript :computer:
+- JavaScript :computer:
+- BashScript :computer:
 
-### Tecnologias
+### Tecnologias :open_book:
 
-- Docker
-- Node.js
-- Tor
+- Docker :whale2:
+- Node.js :computer:
+- Tor :onion:
 
-### Processos
+### Processos :books:
 
-- Ciclo de Desenvolvimento de Software
-- Metodologias Ágeis
+- Ciclo de Desenvolvimento de Software :receipt:
+- Metodologias Ágeis :receipt:
 - Testes de Software Automatizados
 
 ### Ferramentas de Automação :monkey:
@@ -45,7 +45,9 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - Selenium
 - Cucumber
 
-## Minha Jornada Acadêmica
+### QA - Quality Assurance :bug::beetle::lady_beetle::cockroach::cricket:
+
+## Minha Jornada Acadêmica :closed_book::open_book:
 
 No entanto, após anos no mercado de trabalho, estou voltando ao ambiente acadêmico com o objetivo de aprimorar de maneira mais técnica e teórica o conhecimento que adquiri como profissional de TI.
 
