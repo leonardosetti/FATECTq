@@ -33,7 +33,7 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - Node.js :computer:
 - Tor :onion:
 
-### Processos :books
+### Processos:books:
 
 - Ciclo de Desenvolvimento de Software :receipt:
 - Metodologias Ágeis :receipt:
@@ -45,9 +45,9 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - Selenium
 - Cucumber
 
-### QA - Quality Assurance :bug::beetle::lady_beetle::cockroach::cricket
+### QA - Quality Assurance:bug::beetle::lady_beetle::cockroach::cricket
 
-## Minha Jornada Acadêmica :closed_book::open_book
+## Minha Jornada Acadêmica:closed_book::open_book
 
 No entanto, após anos no mercado de trabalho, estou voltando ao ambiente acadêmico com o objetivo de aprimorar de maneira mais técnica e teórica o conhecimento que adquiri como profissional de TI.
 
