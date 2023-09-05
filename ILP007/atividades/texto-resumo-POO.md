@@ -1,4 +1,4 @@
-1. Histórico:
+## 1. Histórico:
 
 A "Engenharia de Software" teve sua origem no final da década de 1960, como uma resposta aos desafios apresentados pela chamada "Crise do Software". Contudo, durante as décadas de 1970 e 1980, diversas técnicas desenvolvidas não conseguiram solucionar os problemas relacionados à produtividade e qualidade dos softwares.
 Na década de 1990, um grande número de empresas, independentemente de seu porte, já havia informatizado substancialmente parte de seus sistemas. Além disso, a disseminação da internet como meio de comunicação e busca de informações levou ao uso generalizado do computador como ferramenta de trabalho.
@@ -8,7 +8,7 @@ Após extensas pesquisas e testes, ficou claro que a reutilização era fundamen
 No entanto, as técnicas oferecidas pela programação estruturada não eram suficientes para atender satisfatoriamente às demandas dessas aplicações complexas. Era necessário adotar uma nova abordagem, e essa abordagem foi a Programação Orientada a Objetos.
 A Programação Orientada a Objetos emergiu como a técnica preferida por parte dos programadores, oferecendo uma estrutura mais adequada para o desenvolvimento de softwares interativos, reutilizáveis e altamente eficientes. Essa abordagem revolucionou a forma como os sistemas de software eram concebidos e desenvolvidos, marcando uma importante transição na história da Engenharia de Software.
 
-2. Fundamentos da Programação Orientada a Objetos:
+## 2. Fundamentos da Programação Orientada a Objetos:
 
 A Programação Orientada a Objetos (POO) é uma abordagem tecnológica que concebe os sistemas como coleções de objetos interconectados. Essa metodologia proporciona melhorias significativas na reutilização e extensibilidade de software, tornando-a uma pedra angular na evolução da Engenharia de Software.
 A base da tecnologia orientada a objetos reside no que comumente chamamos de modelo de objetos. Esse modelo incorpora uma série de princípios fundamentais que são essenciais para compreender sua aplicação e eficácia. Vamos analisar brevemente cada um desses princípios:
@@ -31,16 +31,16 @@ A base da tecnologia orientada a objetos reside no que comumente chamamos de mod
 
 Esses fundamentos da Programação Orientada a Objetos formam a base teórica que guia a criação de sistemas eficientes, flexíveis e reutilizáveis. Ao adotar esses princípios, os desenvolvedores podem projetar e implementar software de alta qualidade que atende às crescentes demandas da indústria de tecnologia.
 
-2.1. Paradigma Orientado por Objetos:
+### 2.1. Paradigma Orientado por Objetos:
 
 A proposta fundamental da Programação Orientada a Objetos (POO) é representar com fidelidade as situações do mundo real nos sistemas computacionais. No cerne desse paradigma, enxergamos o mundo como uma entidade composta por inúmeros objetos que interagem uns com os outros. De maneira análoga, a POO considera os sistemas computacionais não como uma coleção de processos estruturados, mas como uma agregação de objetos que se relacionam entre si de maneira organizada.
 Os programas orientados a objetos se caracterizam por sua estrutura modular, onde os objetos agrupam estados e operações relacionadas a esses estados. Essa abordagem possui uma ênfase significativa na reutilização de código, o que contribui para a eficiência do desenvolvimento de software e a manutenção a longo prazo.
 Um dos diferenciais marcantes da Programação Orientada a Objetos, quando comparada a outros paradigmas de programação que também permitem a definição de estruturas e operações, reside no conceito de herança. Através da herança, é possível estender as definições existentes de forma eficaz, permitindo que novos objetos herdem características e comportamentos de objetos existentes. É importante enfatizar também a relevância do polimorfismo, que habilita a seleção dinâmica de funcionalidades que um programa irá utilizar durante sua execução.
 Portanto, podemos resumir que a Programação Orientada a Objetos é uma abordagem que considera os sistemas computacionais como uma coleção de objetos interagindo de maneira organizada, com ênfase na modularidade, reutilização de código, herança e polimorfismo como princípios-chave para a construção de sistemas robustos e flexíveis. Esses conceitos permitem que os desenvolvedores criem programas que modelam fielmente o mundo real e se adaptem de forma dinâmica às necessidades em constante evolução.
 
-2.2. Principais Conceitos de POO:
+### 2.2. Principais Conceitos de POO:
 
-2.2.1. Objetos:
+#### 2.2.1. Objetos:
 
 No contexto da Programação Orientada a Objetos (POO), o termo "objeto" é utilizado para representar elementos específicos do mundo real que possuem relevância na solução de um problema particular. Portanto, um objeto é uma entidade do mundo real que merece ser modelada e representada no ambiente de estudo.
 Os objetos são instâncias de classes, que descrevem quais informações um objeto contém e quais operações ele pode executar. Um objeto é capaz de manter um estado (ou seja, informações) e disponibiliza um conjunto de operações (comportamentos) para examinar ou alterar esse estado. Em sistemas desenvolvidos com linguagens de programação orientadas a objetos, é por meio dos objetos que ocorre a maior parte do processamento.
@@ -59,6 +59,7 @@ Para ilustrar, considere o exemplo de um cachorro como um objeto de estudo. Anal
 - Uma cor dos pelos.
 - Uma cor dos olhos.
 - Um peso.
+  
 E assim por diante. Cada uma dessas características representa informações que o objeto "cachorro" contém em seu estado. Além disso, o objeto "cachorro" oferece operações que permitem examinar ou modificar essas informações, como calcular a idade em anos humanos, trocar a cor da coleira ou realizar outras ações relacionadas ao cachorro em questão.
 Em resumo, na POO, objetos são representações de entidades do mundo real que possuem um estado e operações associadas, sendo fundamentais para modelar e resolver problemas de forma mais eficaz e organizada.
 Atributos e métodos são conceitos cruciais na Programação Orientada a Objetos (POO) que nos permitem modelar objetos de maneira eficaz e interagir com eles de forma organizada.
@@ -92,7 +93,7 @@ Esses métodos descrevem as ações que o objeto "Cachorro" pode realizar e perm
 A interface de um objeto é o conjunto de métodos que ele disponibiliza para interação. Chama-se de interface o conjunto de serviços que um objeto oferece para que outros objetos possam utilizá-los para realizar operações. No caso do nosso cachorro, a interface incluiria os métodos listados acima.
 Portanto, em resumo, na Programação Orientada a Objetos, os objetos são compostos por atributos que representam suas características e por métodos que definem suas ações. Através da interface, outros objetos podem interagir com um objeto, solicitando a execução de métodos específicos para alcançar um determinado resultado. Isso proporciona uma estrutura organizada e flexível para modelar e resolver problemas de forma mais eficiente.
 
-2.2.2. Classes:
+#### 2.2.2. Classes:
 
 Em Programação Orientada a Objetos (POO), uma **classe** representa um modelo ou template para a criação de objetos. Uma classe define um conjunto de atributos (características) e métodos (ações) que são compartilhados por todos os objetos que são instâncias dessa classe. Portanto, podemos dizer que um objeto é uma instância de uma classe, e esses objetos herdam as características e comportamentos definidos pela classe.
 A ênfase na POO é colocada na criação das classes, que servem como blueprints para a construção de objetos. Os objetos são criados com base nas características definidas nas classes, e é por meio dessas classes que estruturamos a modelagem dos objetos em nossos programas.
