@@ -45,7 +45,7 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - Selenium
 - Cucumber
 
-### QA - Quality Assurance:bug::beetle::lady_beetle::cockroach::cricket
+### QA - Quality Assurance:bug::beetle: :lady_beetle: :cockroach: :cricket:
 
 ## Minha Jornada Acadêmica:closed_book::open_book
 
