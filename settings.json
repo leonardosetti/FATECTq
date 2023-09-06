@@ -34,20 +34,18 @@
     "security.workspace.trust.untrustedFiles": "open",
     "python.defaultInterpreterPath": "python",
     "[python]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "ms-python.black-formatter",
-         
-
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "python.formatting.provider": "none",
     "[javascript]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[css]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -55,18 +53,17 @@
     "rufo.exe": "~/.rvm/gems/ruby-3.2.1/bin/rufo",
     "rufo.useBundler": false,
     "[ruby]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "jnbt.vscode-rufo"
     },
-
     "[html]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[cpp]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-vscode.cpptools",
         "editor.wordBasedSuggestions": false,
@@ -74,14 +71,14 @@
         "editor.semanticHighlighting.enabled": true
     },
     "[java]": {
-        "editor.formatOnType": true, 
+        "editor.formatOnType": true,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "redhat.java",
+        "editor.defaultFormatter": "redhat.java"
     },
     "git.autofetch": true,
     "explorer.compactFolders": false,
     "code-runner.ignoreSelection": true,
-    "code-runner.runInTerminal":true,
+    "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
         "python": "clear && python -u",
@@ -91,8 +88,7 @@
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "shellscript": "bash",
         "sass": "sass --style expanded",
-        "scss": "scss --style expanded",
+        "scss": "scss --style expanded"
     },
-    "window.zoomLevel": 2,
-
+    "window.zoomLevel": 2
 }
