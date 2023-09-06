@@ -18,7 +18,7 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - :nerd_face: Preferido: Arch Linux
 - :ok_hand: Usaria sem problemas: Debian (e derivados), Red Hat (RHEL), Fedora, CentOS, Whonix, Slackware
 
-### Linguagens :goberserk
+### Linguagens :goberserk:
 
 - Java :coffee:
 - Ruby :computer:
@@ -27,7 +27,7 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - JavaScript :computer:
 - BashScript :computer:
 
-### Tecnologias :open_book
+### Tecnologias :open_book:
 
 - Docker :whale2:
 - Node.js :computer:
@@ -39,7 +39,7 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - Metodologias Ágeis :receipt:
 - Testes de Software Automatizados
 
-### Ferramentas de Automação :monkey
+### Ferramentas de Automação :monkey:
 
 - Cypress
 - Selenium
