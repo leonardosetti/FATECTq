@@ -2,7 +2,7 @@
 
 int main (){
 
-int _tamanhoVetor, int _vetor_01[_tamanhoVetor];
+int _tamanhoVetor=0, _vetor_01[_tamanhoVetor];
 
 printf("Insira o tamanho do vetor \n");
 scanf("%d", &_tamanhoVetor);
