@@ -15,7 +15,10 @@ window.onload = function () {
             _taxa = parseFloat(_taxa);
             _valor = parseFloat(_valor);
 
-            alert(calcJuros(_valor, _taxa).toFixed(2).replace('.',','));
+            //alert(calcJuros(_valor, _taxa).toFixed(2).replace('.',','));
+            //document.write(calcJuros(_valor, _taxa).toFixed(2).replace('.',','));
+
+            document.getElementById('resultado').innerHTML = (calcJuros(_valor, _taxa).toFixed(2).replace('.', ','));
 
         } else {
             alert('Valor não suportado');
@@ -23,4 +26,3 @@ window.onload = function () {
         }
     }
 }
-
