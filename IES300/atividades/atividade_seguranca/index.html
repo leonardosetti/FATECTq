@@ -35,13 +35,13 @@
             <label for="codigo">Código</label>
             <input type="number" id="codigo" name="codigo" min="1" max="50000" required />
             <label for="descricao">Descrição</label>
-            <input type="text" id="descricao" name="descricao" required />
+            <input type="text" id="descricao" name="descricao" maxlength="25" required />
             <label for="quantidade">Quantidade</label>
             <input type="number" id="quantidade" name="quantidade" min="1" max="100" required />
             <label for="valor">Valor</label>
             <input type="number" id="valor" name="valor" min="1" max="1000" required />
             <label for="fabrica">Cód. Fábrica</label>
-            <input type="text" id="fabrica" name="fabrica" required />
+            <input type="text" id="fabrica" name="fabrica" pattern="[A-Za-z]{3}" title="Apenas 3 letras" required />
             <button id="btnCadastrar">Cadastrar</button>
         </form>
         </p>
