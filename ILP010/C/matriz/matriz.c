@@ -60,8 +60,18 @@ aux=0;
      }
      
  }
- printf("A soma da matriz é %d", aux);
+ printf("A soma da matriz é %d\n", aux);
 
+aux=0;
+ for (linha=0;linha<3;linha++)   {
+     for (coluna = 0; coluna < 3; coluna++)
+     {
+         aux += matriz[linha][linha];
+     }
+     
+ }
+ 
+ printf("\nA Diagonal da matriz é %d", aux);
 
 
     return 0;
