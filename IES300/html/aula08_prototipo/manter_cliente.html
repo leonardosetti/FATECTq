@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="./default.css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Formulário de Cadastro</h1>
+    </header>
+    <main>
+        <form class="formulario" id="form" action="#" method="POST">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="cpf_cnpj">CPF/CNPJ</label>
+                <input type="text" name="cpf_cnpj" id="cpf_cnpj" required>
+            </div>
+            <div class="campo">
+                <label for="data_nascimento">Data de Nascimento (dd/mm/aaaa)</label>
+                <input type="text" name="data_nascimento" id="data_nascimento" pattern="\d{2}/\d{2}/\d{4}" required>
+            </div>
+            <div class="campo">
+                <label>Sexo</label>
+                <input type="radio" name="sexo" id="masculino" value="Masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino" value="Feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="nao_declarado" value="Não Declarado" required>
+                <label for="nao_declarado">Não Declarado</label>
+            </div>
+            <div class="campo">
+                <label for="observacoes">Observações</label>
+                <textarea name="observacoes" id="observacoes" rows="4"></textarea>
+            </div>
+            <div class="botoes">
+                <button id="cadastrar" type="submit">Cadastrar</button>
+                <button id="alterar" type="button">Alterar</button>
+                <button id="inativar" type="button">Inativar</button>
+                <button id="cancelar" type="reset">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    <footer id="mainfooter">Protótipo</footer>
+</body>
+
+</html>

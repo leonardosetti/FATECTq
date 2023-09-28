@@ -1,0 +1,83 @@
+/* Reset de estilos para evitar padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Cor de fundo escura para o tema escuro */
+    color: #fff; /* Cor do texto para o tema escuro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Removido o espaçamento padrão do corpo */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #444; /* Cor de fundo do container no tema escuro */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra com cor invertida para contraste */
+    text-align: center; /* Centraliza o conteúdo dentro do container */
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    margin-bottom: 15px; /* Espaçamento vertical entre campos */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666; /* Cor da borda nos campos no tema escuro */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #555; /* Cor de fundo dos campos no tema escuro */
+    color: #fff; /* Cor do texto nos campos no tema escuro */
+}
+
+.botao {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor do botão no tema escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa; /* Cor do texto no rodapé no tema escuro */
+}
