@@ -2,13 +2,12 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="charset" content="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="charset" content="UTF-8"> <!-- Adicionado o conjunto de caracteres UTF-8 -->
     <title>.:Protótipo|Login:.</title>
     <link rel="stylesheet" type="text/css" href="./default.css" media="screen" />
-    <script src="./theme.js"></script> <!-- Removido o atributo "type" -->
+    <script src="./theme.js"></script>
 </head>
 
 <body>
@@ -31,8 +30,9 @@
                 <button id="btnLogin">Logar</button>
             </div>
             <div class="campo">
-                <label for="theme">Tema</label> <!-- Adicionada etiqueta <label> -->
+                <label for="theme">Tema</label>
                 <select name="theme" id="selTheme">
+                    <option value="default">Default</option>
                     <option value="light">Claro</option>
                     <option value="dark">Escuro</option>
                 </select>
