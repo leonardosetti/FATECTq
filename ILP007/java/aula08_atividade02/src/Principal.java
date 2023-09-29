@@ -18,8 +18,7 @@ public class Principal {
 		m1.setCnh("123.456.456.789-7");
 		m1.setSalario(7500.00);
 		m1.setAdicional(3600.00);
-	}
-	
+	}	
 	public void saidaDados() {
 		System.out.println("---------------------------------Vendedor---------------------------------");
 		System.out.println("Nome: " + v1.getNome());
