@@ -3,6 +3,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/leonardo-setti/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/issaeFera)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardosetti)](https://github.com/leonardosetti/github-readme-stats)
 ## Sobre Mim
 
 Eu sou um profissional com uma rica história de 15 anos dedicados à Garantia de Qualidade de Software (QA). Minha abordagem é meticulosa e orientada para detalhes, e tenho experiência tanto em aplicações web quanto em aplicativos móveis.
