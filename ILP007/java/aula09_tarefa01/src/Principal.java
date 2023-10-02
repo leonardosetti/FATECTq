@@ -50,25 +50,27 @@ public class Principal {
 		System.out.println("");
 		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		System.out.println("");
-		System.out.println("--------------------------- Empregados Terceirizados ---------------------------");
+		System.out.println("--------------------------- Empregados Administrativos ---------------------------");
 		System.out.println("");
 		System.out.println("Nome Funcionário: " + a1.getEmpregado().getNome());
 		System.out.println("Carteira Profissional: " + a1.getEmpregado().getCtps());
 		System.out.println("Salário: R$" + a1.getEmpregado().getSalario());
 		System.out.println("Adicional: R$" + a1.getAdicional());
 		System.out.println("Horário: " + a1.getHorario() + "h");
-		System.out.println("Departamento: " + a1.getEmpregado().getDepartamento().getNome());
+		System.out.println("Departamento: " + a1.getEmpregado().getDepartamento().getNome() + " - Cod Depto: "
+				+ a1.getEmpregado().getDepartamento().getNumero());
 		System.out.println("");
 		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		System.out.println("");
-		System.out.println("-------------------------- Empregados Administrativos --------------------------");
+		System.out.println("-------------------------- Empregados Terceirizados --------------------------");
 		System.out.println("");
 		System.out.println("Nome Funcionário: " + t1.getEmpregado().getNome());
 		System.out.println("Carteira Profissional: " + t1.getEmpregado().getCtps());
 		System.out.println("Salário: R$" + t1.getEmpregado().getSalario());
 		System.out.println("Valor Hora : R$" + t1.getValorHora());
 		System.out.println("Setor: " + t1.getSetor());
-		System.out.println("Departamento: " + t1.getEmpregado().getDepartamento().getNome());
+		System.out.println("Departamento: " + t1.getEmpregado().getDepartamento().getNome() + " - Cod Depto: "
+				+ t1.getEmpregado().getDepartamento().getNumero());
 		System.out.println("");
 		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		System.out.println("");
