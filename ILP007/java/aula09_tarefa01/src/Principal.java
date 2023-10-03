@@ -10,31 +10,32 @@ public class Principal {
 
 	public void entradaDados() {
 		d1 = new Departamento();
+		d2 = new Departamento();
+		e1 = new Empregado();
+		e2 = new Empregado();
+		a1 = new Administrativo();
+		t1 = new Terceirizado();
+
 		d1.setNome("Departamento Pessoal");
 		d1.setNumero("1001");
 
-		d2 = new Departamento();
 		d2.setNome("Departamento Operações");
 		d2.setNumero("1002");
 
-		e1 = new Empregado();
 		e1.setCtps(1000969600);
 		e1.setNome("Leonardo Setti");
 		e1.setSalario(1000.00);
 		e1.setDepartamento(d1);
 
-		e2 = new Empregado();
 		e2.setCtps(1000757500);
 		e2.setNome("Maria Braga");
 		e2.setSalario(1500.00);
 		e2.setDepartamento(d2);
 
-		a1 = new Administrativo();
 		a1.setHorario(8);
 		a1.setAdicional(1800);
 		a1.setEmpregado(e1);
 
-		t1 = new Terceirizado();
 		t1.setValorHora(15);
 		t1.setSetor("Pós Venda");
 		t1.setEmpregado(e2);
