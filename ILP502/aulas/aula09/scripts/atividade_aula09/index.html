@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Aula09</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript">
+		class Produto {
+			constructor(codigo, nome, quantidade, preco, validade, origem, modelo) {
+				this.codigo = codigo;
+				this.nome = nome;
+				this.quantidade = quantidade;
+				this.preco = preco;
+				this.validade = validade;
+				this.origem = origem;
+				this.modelo = modelo;
+			}
+		}
+
+		window.onload = () => {
+			document.getElementById("frmCadastro").onsubmit = (evento) => {
+				evento.preventDefault();
+				let codigo = document.getElementById("codigo").value;
+				let nome = document.getElementById("nome").value;
+				let quantidade = document.getElementById("quantidade").value;
+				let preco = document.getElementById("preco").value;
+				let validade = document.getElementById("validade").value;
+				let origem = document.getElementById("origem").value;
+				let modelo = document.getElementById("modelo").value;
+
+				let novoProduto = new Produto(codigo, nome, quantidade, preco, validade, origem, modelo);
+				let auxHtml = "codigo: " + novoCliente.codigo + "<br />";
+				auxHtml += "Nome: " + novoCliente.nome + "<br />";
+				auxHtml += "Quantidade: #" + novoCliente.quantidade + "<br />";
+				auxHtml += "Preço: R$" + novoCliente.preco + "<br />";
+				auxHtml += "Validade: " + novoCliente.validade + "<br />";
+				auxHtml += "Origem: " + novoCliente.origem + "<br />";
+				auxHtml += "Modelo: " + novoCliente.modelo + "<br />";
+
+				document.getElementById("dados").innerHTML = auxHtml;
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1>Cadastro de Produtos</h1>
+	</header>
+	<main>
+		<form id="frmCadastro" action="#">
+			<input type="text" id="codigo" name="codigo" placeholder="Código" /><br /><br />
+			<input type="text" id="nome" name="nome" placeholder="Nome" /><br /><br />
+			<input type="text" id="quantidade" name="quantidade" placeholder="Quantidade" /><br /><br />
+			<input type="text" id="preco" name="preco" placeholder="Preço" /><br /><br />
+			<input type="text" id="validade" name="validade" placeholder="Validade" /><br /><br />
+			<input type="text" id="origem" name="origem" placeholder="Origem" /><br /><br />
+			<input type="text" id="modelo" name="modelo" placeholder="Modelo" /><br /><br />
+			<button>Cadastrar</button>
+		</form><br /><br />
+		<p id="dados"></p>
+	</main>
+</body>
+
+</html>
