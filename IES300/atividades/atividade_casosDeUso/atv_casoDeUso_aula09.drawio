@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-05T00:54:49.660Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="ZU9VydHytCgylAqnPMO4" version="22.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-05T00:57:59.487Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="ZIJEKbc5usjHdM2U-7ci" version="22.0.2" type="github">
   <diagram name="Page-1" id="pfaS7ZpM_EYnSTStmScy">
-    <mxGraphModel dx="2685" dy="1189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3985" dy="1880" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -70,22 +70,22 @@
           <mxGeometry x="110" y="80" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-19" value="Confirmar Agendamento" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-525" y="755" width="140" height="70" as="geometry" />
+          <mxGeometry x="-525" y="716" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-20" value="Disponibilizar Horário" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-525" y="880" width="140" height="70" as="geometry" />
+          <mxGeometry x="-525" y="801" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6sc8-dq7xgFRiXsgVK_B-21" target="6sc8-dq7xgFRiXsgVK_B-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-21" value="Disponibilizar Horário de Exame" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-675" y="1050" width="140" height="70" as="geometry" />
+          <mxGeometry x="-675" y="925" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6sc8-dq7xgFRiXsgVK_B-22" target="6sc8-dq7xgFRiXsgVK_B-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-22" value="Disponibilizar Horário de Consulta" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-345" y="1050" width="140" height="70" as="geometry" />
+          <mxGeometry x="-345" y="925" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-25" value="Efetuar Pagamento" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-290" y="190" width="140" height="70" as="geometry" />
@@ -154,6 +154,9 @@
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-59" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;" edge="1" parent="1" source="6sc8-dq7xgFRiXsgVK_B-57" target="6sc8-dq7xgFRiXsgVK_B-38">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6sc8-dq7xgFRiXsgVK_B-60" value="Clinica Virtual" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="-755" y="-80" width="1035" height="1110" as="geometry" />
         </mxCell>
         <mxCell id="6sc8-dq7xgFRiXsgVK_B-57" value="Realizar P Crédito" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-140" y="490" width="140" height="70" as="geometry" />
