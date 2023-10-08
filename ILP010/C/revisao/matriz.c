@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "stdio.h"
 #include "stdlib.h"
  
@@ -53,19 +52,5 @@ int main(){
     mostraResumo(soma, contator, min, max );
  
     return(0);
+
 }
-=======
-
-#include <stdio.h>
-#define DIM 100
-
-
-int main()
-{
-    int matriz[DIM][DIM];
-    int trow, tcol;
-    int opc = 0;
-
-       return 0;
-}
->>>>>>> ab3ad5fcdbe33e3e6167f261f2e39e18765b65c7
