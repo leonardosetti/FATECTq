@@ -8,7 +8,7 @@ printf("Informe o numero de elementos desejados entre [1 e 100]\n--> " );
 scanf("%d",&nElementos);
 
 for (i;i<nElementos;i++){
-    printf("Informe o numero para posi��o %d de %d elementos\n--> ", i+1, nElementos);
+    printf("Informe o numero para posição %d de %d elementos\n--> ", i+1, nElementos);
     scanf("%d", &vetor[i]);
 }
 
