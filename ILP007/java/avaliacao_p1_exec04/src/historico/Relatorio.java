@@ -2,19 +2,19 @@ package historico;
 
 public class Relatorio {
 
-	private String oredm;
+	private String ordem;
 	private String texto;
 
-	public String getOredm() {
-		return oredm;
-	}
-
-	public void setOredm(String oredm) {
-		this.oredm = oredm;
+	public String getOrdem() {
+		return ordem;
 	}
 
 	public String getTexto() {
 		return texto;
+	}
+
+	public void setOrdem(String ordem) {
+		this.ordem = ordem;
 	}
 
 	public void setTexto(String texto) {
