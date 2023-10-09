@@ -29,13 +29,13 @@
 				let modelo = document.getElementById("modelo").value;
 
 				let novoProduto = new Produto(codigo, nome, quantidade, preco, validade, origem, modelo);
-				let auxHtml = "codigo: " + novoCliente.codigo + "<br />";
-				auxHtml += "Nome: " + novoCliente.nome + "<br />";
-				auxHtml += "Quantidade: #" + novoCliente.quantidade + "<br />";
-				auxHtml += "Preço: R$" + novoCliente.preco + "<br />";
-				auxHtml += "Validade: " + novoCliente.validade + "<br />";
-				auxHtml += "Origem: " + novoCliente.origem + "<br />";
-				auxHtml += "Modelo: " + novoCliente.modelo + "<br />";
+				let auxHtml = "codigo: " + novoProduto.codigo + "<br />";
+				auxHtml += "Nome: " + novoProduto.nome + "<br />";
+				auxHtml += "Quantidade: #" + novoProduto.quantidade + "<br />";
+				auxHtml += "Preço: R$" + novoProduto.preco + "<br />";
+				auxHtml += "Validade: " + novoProduto.validade + "<br />";
+				auxHtml += "Origem: " + novoProduto.origem + "<br />";
+				auxHtml += "Modelo: " + novoProduto.modelo + "<br />";
 
 				document.getElementById("dados").innerHTML = auxHtml;
 			}

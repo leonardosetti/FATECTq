@@ -5,22 +5,22 @@ class Cliente {
     this.endereco = endereco;
     this.telefone = telefone;
   }
-  mostraNomeCpf() {
-    return this.nome + " " + this.cpf;
-  }
+  // mostraNomeCpf() {
+  //   return this.nome + " " + this.cpf;
+  // }
 }
-let cliente1 = new Cliente(
-  "32954292864",
-  "Michal Jackson",
-  "Rua Esquerda - 1917",
-  "+551699787-2885"
-);
-let cliente2 = new Cliente(
-  "54811265455",
-  "Maria Antonian",
-  "Rua Esquerda - 1911",
-  "+551698878-9544"
-);
+// let cliente1 = new Cliente(
+//   "32954292864",
+//   "Michal Jackson",
+//   "Rua Esquerda - 1917",
+//   "+551699787-2885"
+// );
+// let cliente2 = new Cliente(
+//   "54811265455",
+//   "Maria Antonian",
+//   "Rua Esquerda - 1911",
+//   "+551698878-9544"
+// );
 
 // alert(cliente1.mostraNomeCpf());
 // alert(cliente2.nome);
