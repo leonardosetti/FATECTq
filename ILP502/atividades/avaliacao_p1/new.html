@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Avaliação P1</title>
+    <script>
+        window.onload = () => {
+            let _tableHist = [];
+            let linha = 1;
+
+            let rsp1 = `HTML (Hypertext Markup Language) é uma linguagem de marcação de hipertexto a qual permite construir com base em seus padrões, 
+                        páginas web navegáveis. Permite estruturas básicas de chamadas tags que permitem adequar o conteúdo num documento web. 
+                        Cada tag (elemento) possui um propósito específico, formatação, posição, links, etc.
+                        Com o surgimento da versão HTML5, introduziu uma ênfase significativa na semântica.
+                        Elementos como <header>, <nav>, <article>, e <footer> fornecem significado estrutural ao conteúdo que antes eram mais complicados 
+                        de se estruturar, permitindo um código mais claro e menos verboso.
+                        HTML é projetado para ser compatível com diversos navegadores e dispositivos.
+                        A preocupação com a acessibilidade é incorporada, permitindo uma experiência inclusiva para todos os usuários.`;
+
+            let rsp2 = `JavaScript é uma linguagem de programação fundamental para o desenvolvimento web, e suas principais características incluem:
+                        é principalmente usado como uma linguagem de script do lado do cliente, executada no navegador do usuário para interações dinâmicas em páginas web.
+                        permite a interação dinâmica com elementos HTML e manipulação do DOM (Document Object Model), possibilitando a atualização de conteúdo sem a necessidade de recarregar a página.
+                        JavaScript suporta programação orientada a objetos, permitindo a definição de classes e objetos, bem como herança de propriedades e métodos.
+                        Além do navegador, JavaScript também é utilizado no ambiente do servidor (Node.js) para desenvolvimento full-stack.`;
+
+            let rsp3 = `As variáveis em JavaScript possuem características fundamentais que contribuem para a flexibilidade e dinamismo da linguagem. Aqui estão as principais características:
+                        Variáveis em JavaScript são elementos fundamentais para armazenar e manipular dados. Suas principais características incluem:
+                        1. Tipagem Dinâmica: JavaScript possui tipagem dinâmica, permitindo que uma variável mude de tipo durante a execução do programa.
+                        2. Fracamente Tipada: A linguagem é fracamente tipada, o que significa que as conversões entre tipos são feitas automaticamente em certos contextos.
+                        3. Declaração de Variáveis: Variáveis podem ser declaradas usando var, let ou const, cada uma com diferenças no escopo e mutabilidade.
+                        4. Escopo: Variáveis podem ter escopo global ou local, dependendo de onde são declaradas, contribuindo para a modularidade e segurança do código.`;
+
+            let rsp4 = `Funções em JavaScript são blocos de código reutilizáveis declarados com a palavra-chave "function". Elas podem receber parâmetros, retornar valores e possuem escopo local. Expressões de função, como funções anônimas e de seta, oferecem flexibilidade na criação. Recursividade permite chamadas repetidas da função. Closures possibilitam o acesso a variáveis externas. Callback functions permitem operações assíncronas. O método 'arguments' acessa os argumentos da função. Hoisting move declarações de função para o topo do contexto de execução. Essas características tornam as funções cruciais para modularização e reutilização de código em JavaScript.`;
+
+            let rsp5 = `Eventos em JavaScript são interações do usuário ou alterações no ambiente de execução que desencadeiam a execução de código específico. As principais características incluem a associação de eventos a elementos HTML, como cliques ou teclas pressionadas. Event listeners são utilizados para aguardar e responder a eventos específicos. Callback functions são frequentemente empregadas para executar a lógica desejada em resposta a um evento. A propagação e a delegação de eventos permitem um controle preciso do fluxo de eventos na hierarquia do DOM. Essas características tornam os eventos essenciais para interatividade e dinamismo em aplicações web JavaScript.`;
+
+            document.getElementById("frmProva").onsubmit = (evento) => {
+                evento.preventDefault();
+
+                let respostas = [rsp1, rsp2, rsp3, rsp4, rsp5];
+                let selectedQuestion = document.getElementById("questoes").value;
+                let selectedQuestionIndex = parseInt(selectedQuestion.charAt(selectedQuestion.length - 1)) - 1;
+
+                let _auxTabela =
+                    '<table style="border-collapse: collapse; border: 2px solid black; padding: 5px;">';
+
+                _auxTabela += "<tr>";
+                _auxTabela += "<td>" + `Resposta da ${selectedQuestion}` + "</td>";
+                _auxTabela += "<td>" + respostas[selectedQuestionIndex] + "</td>";
+                _auxTabela += "</tr>";
+
+                _auxTabela += "</table>";
+
+                // Adiciona a resposta aohistórico
+                _tableHist.push(_auxTabela);
+
+                document.getElementById("respostas").innerHTML = _tableHist.join('');
+
+                // Limpa a seleção da pergunta
+                document.getElementById("questoes").selectedIndex = 0;
+            };
+
+            document.getElementById("btnReset").addEventListener("click", () => {
+                _tableHist = [];
+                document.getElementById("respostas").innerHTML = '';
+            });
+        };
+
+        function limpar() {
+            _tableHist = [];
+            document.getElementById("respostas").innerHTML = '';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1> Avaliação ILP502 - P1: Programação de Scripts - FATEC - ADS Noite 2sem. 2023</h1>
+    </header>
+    <main>
+        <p>Questões de avaliação:</p>
+
+        <form id="frmProva" action="#">
+            <input type="text" id="user" name="user" minlength="3" maxlength="25"
+                placeholder="Insira seu nome aqui!"><br /><br />
+
+            <select name="questoes" id="questoes">
+                <option value="" disabled selected>Selecione uma pergunta</option>
+                <option value="q1">1. Quais são as principais características da linguagem HTML?</option>
+                <option value="q2">2. Quais são as principais características da linguagem JavaScript?</option>
+                <option value="q3">3. Quais são as principais características de variáveis na Linguagem JavaScript?
+                </option>
+                <option value="q4">4. Quais são as principais características de funções na Linguagem JavaScript?
+                </option>
+                <option value="q5">5. Quais são as principais características de eventos na Linguagem JavaScript?
+                </option>
+            </select>
+            <button id="btnResponde">Responder</button>
+            <button id="btnReset">Limpar Respostas</button>
+            <button type="button" onclick="limpar()">Limpar Histórico</button>
+
+            <p id="respostas"><b></b></p>
+        </form>
+    </main>
+    <footer>
+        <p>Avaliação ILP502 - P1 | Aluno Leonardo David Silva Setti - RA: 0220483213029 | FATEC - ADS Noite 2sem. 2023
+        </p>
+    </footer>
+</body>
+
+</html>
