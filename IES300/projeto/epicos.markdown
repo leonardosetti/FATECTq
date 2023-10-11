@@ -2,60 +2,40 @@
 
 ## 1. Autenticação e Segurança
 
-### Épico 1: Conta e Acesso
+### Épico 1: Gestão de Contas e Segurança
 
-- Histórias: 1 (Cadastro de Conta), 2 (Tela de Login), 3 (Recuperação de Senha)
+   > Histórias: 1 (Cadastro de Conta), 2 (Tela de Login), 3 (Recuperação de Senha), 25 (Acesso ao Canal de Suporte), 26 (Respostas Prontas do Suporte), 27 (Acompanhamento de Consultas), 82 (Responsabilidade Social)
 
-## Épico 2: Segurança e Privacidade
+## 2. Experiência do Usuário e Navegação
 
-- Histórias: 22 (Garantia de Segurança dos Dados), 23 (Política de Privacidade Clara), 24 (Consentimento do Usuário), 142 (Auditoria de Dados para Conformidade com a LGPD), 143 (Treinamento da Equipe sobre Práticas de Proteção de Dados), 144 (Atualizações Regulares para Manter Conformidade com a LGPD)
+### Épico 2: Navegação e Pesquisa
 
-## 2. Navegação e Pesquisa
+   > Histórias: 4 (Navegação e Pesquisa), 16 (Atualização Contínua de Informações), 17 (Sincronização Automática com Fontes Confiáveis), 38 (Relatórios de Desempenho do Sistema), 41 (Eventos e Comunidade Online), 44 (Responsabilidade Social), 123 (Integração com Redes Sociais), 73 (Eventos e Festivais de Café)
 
-### Épico 3: Experiência do Usuário
+### Épico 3: Usabilidade e Feedback
 
-- Histórias: 4 (Navegação e Pesquisa), 134 (Responsividade para Dispositivos Móveis), 135 (Acessibilidade do Usuário na Plataforma Mobile), 136 (Testes para Android: Principais Versões), 137 (Testes para iOS: Principais Versões)
+   > Histórias: 33 (Usabilidade Intuitiva), 34 (Backup Regular e Recuperação), 35 (Acessibilidade para Usuários com Deficiência), 36 (Atualizações de Software Transparentes), 80 (Exibição de Erros em Caso de Inconsistência nos Dados), 82 (Responsividade para Diferentes Tamanhos de Tela), 83 (Acessibilidade do Usuário na Plataforma Web), 84 (Testes Cross-Browser para Principais Navegadores), 85 (Responsividade para Dispositivos Móveis), 86 (Acessibilidade do Usuário na Plataforma Mobile), 87 (Testes para Android: Principais Versões), 88 (Testes para iOS: Principais Versões)
 
-## Épico 4: Usabilidade e Feedback
+## 3. Café e Avaliações
 
-- Histórias: 133 (Testes Cross-Browser para Principais Navegadores), 131 (Responsividade para Diferentes Tamanhos de Tela), 130 (Feedback Transparente dos Usuários)
+### Épico 4: Informações sobre Café e Avaliações
 
-## 3. Informações de Café e Interatividade
+   > Histórias: 5 (Detalhes do Grão de Café), 7 (Feedback sobre Grãos de Café), 8 (Dicas de Preparo e Apreciação), 10 (Ranking dos Melhores Cafés), 11 (Detalhes dos Cafés no Ranking), 12 (Classificações e Avaliações dos Usuários), 48 (Avaliações Detalhadas), 49 (Fórum de Discussão), 50 (Exploração de Grãos), 51 (Avaliação de Grãos), 52 (Compartilhamento de Descobertas), 53 (Participação em Eventos da Comunidade), 65 (Recursos Educacionais sobre Café), 74 (Integração com Redes Sociais), 75 (Avaliações Verificadas por Comunidade), 76 (Feedback Transparente dos Usuários)
 
-### Épico 5: Informações Detalhadas sobre Café
+## 4. Administração e Configurações
 
-- Histórias: 5 (Detalhes do Grão de Café), 11 (Detalhes dos Cafés no Ranking), 91 (Exploração de Grãos), 121 (Exploração de Origens de Café)
+### Épico 5: Administração e Configurações
 
-## Épico 6: Interatividade e Comunidade
+   > Histórias: 13 (Gestão de Contas de Usuários), 14 (Gerenciamento de Conteúdo), 15 (Notificações e Anúncios), 18 (Histórico de Atualizações), 19 (Configuração de Notificações para Usuários), 20 (Envio de Notificações pelos Administradores), 21 (Notificações Personalizadas), 28 (Métodos de Pagamento e Cálculo de Frete), 29 (Gerenciador de Descontos), 30 (Políticas de Troca e Devolução), 39 (Testes Rigorosos antes de Atualizações), 40 (Relatórios de Incidentes e Respostas Rápidas), 58 (Treinamento e Conscientização dos Usuários), 59 (Personalização do Perfil do Usuário), 60 (Exportação de Dados do Usuário), 61 (Compartilhamento de Descobertas nas Redes Sociais), 62 (Gamificação e Recompensas), 97 (Participação em Programa de Afiliados)
 
-- Histórias: 7 (Feedback sobre Grãos de Café), 9 (Interatividade entre Usuários), 82 (Eventos e Comunidade Online), 90 (Fórum de Discussão), 113 (Comunidade Ativa e Engajada), 116 (Colaboração com Cafeterias Locais), 115 (Reconhecimento de Conquistas na Comunidade)
+## 5. Comercial e Transações
 
-## 4. Classificações e Avaliações
+### Épico 6: Comercial e Transações
 
-### Épico 7: Avaliações e Rankings
+   > Histórias: 28 (Métodos de Pagamento e Cálculo de Frete), 29 (Gerenciador de Descontos), 30 (Políticas de Troca e Devolução), 96 (Participação em Programa de Fidelidade), 97 (Acesso a Conteúdo Exclusivo)
 
-- Histórias: 10 (Ranking dos Melhores Cafés), 12 (Classificações e Avaliações dos Usuários), 88 (Compartilhamento de Receitas e Dicas), 89 (Avaliações Detalhadas), 124 (Avaliações Verificadas por Comunidade), 125 (Feedback Transparente dos Usuários)
+## 6. Segurança e Conformidade
 
-## 5. Gestão de Conteúdo e Administração
+### Épico 7: Segurança e Conformidade
 
-### Épico 8: Administração e Conteúdo
-
-- Histórias: 13 (Gestão de Contas de Usuários), 14 (Gerenciamento de Conteúdo), 15 (Notificações e Anúncios), 18 (Histórico de Atualizações), 39 (Testes Rigorosos antes de Atualizações), 40 (Relatórios de Incidentes e Respostas Rápidas)
-
-## 6. Configurações e Personalização
-
-### Épico 9: Configurações e Personalização
-
-- Histórias: 19 (Configuração de Notificações para Usuários), 108 (Personalização do Perfil do Usuário), 109 (Exportação de Dados do Usuário)
-
-## 7. Comercial e Transações
-
-### Épico 10: Comércio e Transações
-
-- Histórias: 28 (Métodos de Pagamento e Cálculo de Frete), 29 (Gerenciador de Descontos), 30 (Políticas de Troca e Devolução), 96 (Participação em Programa de Fidelidade), 97 (Acesso a Conteúdo Exclusivo)
-
-## 8. Eventos e Sustentabilidade
-
-### Épico 11: Eventos e Sustentabilidade
-
-- Histórias: 82 (Eventos e Comunidade Online), 123 (Integração com Redes Sociais), 122 (Eventos e Festivais de Café), 118 (Sustentabilidade e Comércio Justo)
+   > Histórias: 22 (Garantia de Segurança dos Dados), 23 (Política de Privacidade Clara), 24 (Consentimento do Usuário), 38 (Relatórios de Desempenho do Sistema), 39 (Testes Rigorosos antes de Atualizações), 40 (Relatórios de Incidentes e Respostas Rápidas), 93 (Auditoria de Dados para Conformidade com a LGPD), 94 (Treinamento da Equipe sobre Práticas de Proteção de Dados), 95 (Atualizações Regulares para Manter Conformidade com a LGPD)
