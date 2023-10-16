@@ -37,18 +37,17 @@ public class Principal {
 		System.out.println("Total pagamento:	R$" + orc1.getDocumento().calculaTotal());
 		System.out.println();
 		System.out.println("----- Nota Fiscal ----");
-		System.out.println("Número:			"+nf.getDocumento().getNumero());
-		System.out.println("Data:			"+nf.getDocumento().getData());
-		System.out.println("Valor:			R$"+nf.getDocumento().getValor());
-		System.out.println("Desconto:		R$"+nf.getDesconto());
-		System.out.println("Acréscimo:		R$"+nf.getAcrescimo());
-		System.out.println("Juros:			R$"+nf.getDocumento().getJuros());
-		System.out.println("Valor Total:		R$"+nf.calculaTotal());
+		System.out.println("Número:			" + nf.getDocumento().getNumero());
+		System.out.println("Data:			" + nf.getDocumento().getData());
+		System.out.println("Valor:			R$" + nf.getDocumento().getValor());
+		System.out.println("Desconto:		R$" + nf.getDesconto());
+		System.out.println("Acréscimo:		R$" + nf.getAcrescimo());
+		System.out.println("Juros:			R$" + nf.getDocumento().getJuros());
+		System.out.println("Valor Total:		R$" + nf.calculaTotal());
 		System.out.println();
 
-
 	}
-	
+
 	public static void main(String args[]) {
 		Principal p = new Principal();
 		p.inputData();
