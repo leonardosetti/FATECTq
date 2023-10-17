@@ -37,9 +37,9 @@ public class Principal {
 
 	public void outputData() {
 
-		System.out
-				.println("----------------------Estacionamento " + e1.getNome() + "---------------------------------");
-		System.out.println("Endereço:		" + e1.getEndereco());
+		System.out.println("------------------- Estacionamento " + e1.getNome() + " -------------------");
+		System.out.println();
+		System.out.println("Endereço:	" + e1.getEndereco());
 		System.out.println();
 		System.out.println("Veículos estacionados:");
 		System.out.println();
@@ -47,7 +47,7 @@ public class Principal {
 			System.out.println("Modelo:		" + e1.getVeiculo()[i].getModelo());
 			System.out.println("Placa:		" + e1.getVeiculo()[i].getPlaca());
 			System.out.println("Cor:		" + e1.getVeiculo()[i].getCor());
-			System.out.println("---------------------------------------------------------------------------------");
+			System.out.println("---------------------------------------------------------------------");
 
 		}
 
