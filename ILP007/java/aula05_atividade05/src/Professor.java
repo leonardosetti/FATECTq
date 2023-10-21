@@ -1,5 +1,5 @@
 
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
 
 	private String titulacao;
 
@@ -10,5 +10,5 @@ public class Professor extends Pessoa{
 	public void setTitulacao(String titulacao) {
 		this.titulacao = titulacao;
 	}
- 
+
 }
