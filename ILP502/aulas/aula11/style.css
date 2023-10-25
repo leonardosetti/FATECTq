@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a6c3ce;
+  color: #b94303;
+}
+p {
+  font-size: medium !important;
+  width: 50%;
+  padding-bottom: 5px;
+}
+#paragrafo1 {
+  color: blue;
+  font-size: larger;
+}
+
+.fundoazul {
+  background: #67c4e9;
+  border: 5px solid #a0eb14;
+}
+.fontebranca {
+  color: #ffffff;
+}
