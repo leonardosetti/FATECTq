@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-01T04:44:52.599Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="UqF17YgJwAKrNY8Gh3bT" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-01T04:45:57.770Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="uaI396Ww7vdgAIj79S9D" version="22.0.0" type="github">
   <diagram name="Diagrama de Casos de Uso Projeto ES3" id="3Si2enIk5qPEU3_IU9Qc">
     <mxGraphModel dx="722" dy="400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -76,11 +76,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NEPEeL_0vxHLTKConVSX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-11">
+        <mxCell id="NEPEeL_0vxHLTKConVSX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-11" target="NEPEeL_0vxHLTKConVSX-8">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="670" y="700" as="targetPoint" />
+            <mxPoint x="460" y="790" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="720" y="700" />
+              <mxPoint x="720" y="790" />
+              <mxPoint x="470" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
