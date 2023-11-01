@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-01T04:45:57.770Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="uaI396Ww7vdgAIj79S9D" version="22.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-01T04:49:31.224Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="8eFEUZz6yceLFm7qVgpJ" version="22.0.0" type="github">
   <diagram name="Diagrama de Casos de Uso Projeto ES3" id="3Si2enIk5qPEU3_IU9Qc">
-    <mxGraphModel dx="722" dy="400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1153" dy="417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,7 +38,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="p-8zzWb7aTDhKdzjHRjA-3" value="Administrador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="200" y="550" width="30" height="60" as="geometry" />
+          <mxGeometry x="270" y="554" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-2" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Modificar Conta&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="370" y="320" width="140" height="70" as="geometry" />
@@ -49,28 +49,30 @@
         <mxCell id="NEPEeL_0vxHLTKConVSX-6" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Receber Notificações&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="100" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="NEPEeL_0vxHLTKConVSX-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-7">
+        <mxCell id="NEPEeL_0vxHLTKConVSX-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-7" target="NEPEeL_0vxHLTKConVSX-8">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="690" as="targetPoint" />
             <Array as="points">
+              <mxPoint x="230" y="830" />
               <mxPoint x="230" y="790" />
               <mxPoint x="470" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-7" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Modificar Contas de usuários&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="870" width="140" height="70" as="geometry" />
+          <mxGeometry x="155" y="830" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-8" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Gerenciar Contas de Usuário&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="620" width="140" height="70" as="geometry" />
+          <mxGeometry x="400" y="660" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-9" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Navegar para seção&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="650" y="210" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="NEPEeL_0vxHLTKConVSX-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-10">
+        <mxCell id="NEPEeL_0vxHLTKConVSX-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-10" target="NEPEeL_0vxHLTKConVSX-8">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="690" as="targetPoint" />
             <Array as="points">
+              <mxPoint x="550" y="830" />
               <mxPoint x="550" y="790" />
               <mxPoint x="470" y="790" />
             </Array>
@@ -86,20 +88,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-11" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Permitir Acesso&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="870" width="140" height="70" as="geometry" />
+          <mxGeometry x="645" y="830" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="NEPEeL_0vxHLTKConVSX-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-12">
+        <mxCell id="NEPEeL_0vxHLTKConVSX-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-12" target="NEPEeL_0vxHLTKConVSX-8">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="690" as="targetPoint" />
             <mxPoint x="339.9988235294117" y="898.5925753598619" as="sourcePoint" />
             <Array as="points">
+              <mxPoint x="390" y="830" />
               <mxPoint x="390" y="790" />
               <mxPoint x="470" y="790" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-12" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Excluir Contas de usuários&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="870" width="140" height="70" as="geometry" />
+          <mxGeometry x="315" y="830" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-13" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Criar Conta&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="170" y="140" width="140" height="70" as="geometry" />
@@ -111,24 +114,24 @@
           <mxGeometry x="20" y="660" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-28" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Moderar&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="5" y="930" width="140" height="70" as="geometry" />
+          <mxGeometry x="-10" y="830" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="NEPEeL_0vxHLTKConVSX-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-29">
+        <mxCell id="NEPEeL_0vxHLTKConVSX-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-29" target="NEPEeL_0vxHLTKConVSX-28">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="1020" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-29" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Moderar Avaliações&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="310" y="1050" width="140" height="70" as="geometry" />
+          <mxGeometry x="76" y="956" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="NEPEeL_0vxHLTKConVSX-30" target="NEPEeL_0vxHLTKConVSX-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-30" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Moderar Comentários&lt;br&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="1060" width="140" height="70" as="geometry" />
+          <mxGeometry x="-94" y="956" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="NEPEeL_0vxHLTKConVSX-10" value="&lt;span style=&quot;color: rgb(31, 31, 31); font-family: &amp;quot;Google Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Atribuir Permissão&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="870" width="140" height="70" as="geometry" />
+          <mxGeometry x="475" y="830" width="140" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
