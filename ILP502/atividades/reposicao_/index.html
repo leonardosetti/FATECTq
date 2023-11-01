@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Resumo 1ª FITA</title>
+  </head>
+  <body>
+    <header>
+      <h1>1ª FITA - Feira Industrial, Tecnológica e do Agronegócio da Fatec</h1>
+      <h2>Taquaritinga Arduino do Thinkercad - Resumo</h2>
+    </header>
+    <main>
+     <p> Foi ministrado um minicurso para
+      <a href="https://www.arduino.cc/">Arduino </a> pelo Professor
+      <a href="https://br.linkedin.com/in/juninhooliani">Santo Oliani Jr</a>
+      nas dependências da
+      <a href="https://www.fatectq.edu.br/">Fatec Taquaritinga</a> com a
+      utilização da plataforma
+      <a href="https://www.tinkercad.com/">Thinkercad</a>. </p> 
+      <p>Tinkercad é um
+      programa de modelagem tridimensional (3D) online gratuito que roda em um
+      navegador da web, conhecido por sua simplicidade e facilidade de uso.
+      Desde que se tornou disponível em 2011, tornou-se uma plataforma popular
+      para a criação de modelos para impressão 3D, bem como uma introdução </p> 
+      <p>
+
+      Arduino é uma plataforma programável de prototipagem eletrônica (para testes e projetos eletrônicos) 
+      de placa única e hardware livre (código aberto), que permite aos usuários criar objetos eletrônicos interativos e independentes, usando o microcontrolador Atmel AVR ou ARM com suporte de entrada/saída embutido, uma linguagem de programação padrão, essencialmente C/C++ (com origem na linguaguem Wiring). Plataforma criada em 2005 na Itália,[10] com o objetivo da plataforma é criar ferramentas acessíveis, com baixo custo, flexíveis, independentes e, de fácil uso por principiantes, amadores e, profissionais, principalmente para pessoas que não tem acesso à controladores sofisticados e ferramentas complexas.
+      Esta plataforma é atualmente fabricado pela companhia italiana Smart Projects e também estadunidense 
+      SparkFun Electronics. </p> 
+      <p>
+
+Uma típica placa Arduino é composta por um microcontrolador, algumas linhas de E/S digital e analógica, 
+além de uma interface serial ou USB, para interligar-se ao computador/smartphone hospedeiro, usado para programá-la e
+ interagi-la em tempo real. A interface do hospedeiro é simples, podendo ser escrita em várias linguagens. A mais popular é a
+  Processing, mas outras que podem comunicar-se com a conexão serial são: Max/MSP, Pure Data, SuperCollider, ActionScript e Java. </p> 
+      <p>
+
+O microcontrolador do Arduino é programado para produzir sinais elétricos que controlam os sensores e atuadores 
+conectados, que podem realizar várias tarefas, como por exemplo automação residencial (controle de aparelhos). 
+Algumas versões da placa não possui recurso de rede integrado, sendo comum combinar um ou mais Arduinos deste modo,
+ usando extensões chamadas shields.</p> 
+      <p>
+
+O nome Arduino vem de um bar na comuna italiana de Ivrea, onde alguns dos fundadores do projeto costumavam se reunir.
+ O bar foi nomeado após Arduíno de Ivrea, que foi o marquês de Ivrea e rei da Itália de 1002 à 1014.</p> 
+      <p>
+
+      Foi demonstrada uma abordagem introdutória do uso da ferramenta voltada para a confecção de projetos 
+      para Arduino, suas principais aplicações e uma modelagem de demonstração para veerificação do funcionamento de 
+      um modelo lógico com implementação de código de controe e execução visual n Thinkercad.</p> 
+      <p>
+      Abaixo dois exemplos da execução realizada durante o minicurso:</p> 
+      </br>
+    </br>
+      <div class="container">
+       <div>
+      <a href="https://www.tinkercad.com/things/inusYhG3JDg"><img src="t725.png" alt=""></a>
+      <td>
+        <tr>
+            <p>
+</br> // C++ code 
+</br> //
+</br> void setup()
+</br> {
+</br>   pinMode(LED_BUILTIN, OUTPUT);
+</br> }
+</br> 
+</br> void loop()
+</br> {
+</br>   digitalWrite(LED_BUILTIN, HIGH);
+</br>   delay(1000); // Wait for 1000 millisecond(s)
+</br>   digitalWrite(LED_BUILTIN, LOW);
+</br>   delay(1000); // Wait for 1000 millisecond(s)
+</br> }
+            </p>
+        </tr>
+      </td>
+      </div>
+      <div>
+      <a href="https://www.tinkercad.com/things/gEju9TXYeZN"><img src="t725 (1).png" alt=""></a>
+      <td>
+        <tr>
+            <p>
+</br> // C++ code 
+</br> //
+</br> int leitura;
+</br>   
+</br> void setup()
+</br> {
+</br> pinMode (13, INPUT);
+</br>   Serial.begin (9600);
+</br> }
+</br> 
+</br> void loop()
+</br> {
+</br>  leitura = digitalRead(13); 
+</br>   Serial.println (leitura);
+</br>   delay(200);
+</br> }
+            </p>
+        </tr>
+      </td>
+      </div>  
+</div> 
+   <p>O minicurso foi bem dinâmico e estimulante com uma didática excelente. </p>
+
+      <p>Para saber mais sobre a agenda realizada acesse: <a href="https://www.fatectq.edu.br/noticia/1-fita-2023-veja-com-foi">1ª FITA</a></p>
+<br>
+<br>
+    </main>
+    <footer>
+      <a class="linkfooter"  href="https://www.fatectq.edu.br/">Fatec Taquaritinga - SP | ADS Noite | Aluno: Leonardo D S Setti - RA:
+      0220482313029
+    </footer>
+  </body>
+</html>
