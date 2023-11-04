@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-04T23:19:01.076Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.0.8" etag="s_GPo_7hUk-P79Mds9LS" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-04T23:32:55.881Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.0.8" etag="buwD-njM8VmF8vh_inI2" type="github">
   <diagram id="ejoPyxp90-CfTiqqr6YZ" name="Page-1">
     <mxGraphModel dx="1526" dy="965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -61,10 +61,10 @@
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-28">
           <mxGeometry y="109" width="199" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-31" value="+&amp;nbsp;gerarNotaFiscalDeEntrada():void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-28">
+        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-31" value="+&amp;nbsp;gerarNotaFiscal():void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-28">
           <mxGeometry y="117" width="199" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-32" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;NotaFiscalDeEntrada&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-32" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;NotaFiscal&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="501" width="160" height="158" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-33" value="&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- idNotaFiscal&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- data: date&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- numero: String&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- serie: String&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- valorTotal: double&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- compra Compra&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-32">
@@ -85,7 +85,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-36" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Parcela&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="708" y="380" width="199" height="131" as="geometry" />
+          <mxGeometry x="708" y="380" width="199" height="143" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-37" value="&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- idParcela: Long&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- dataVencimento: Date&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- valor: double&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- contaAPagar: ContaAPagar&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-36">
           <mxGeometry y="26" width="199" height="71" as="geometry" />
@@ -93,14 +93,14 @@
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-36">
           <mxGeometry y="97" width="199" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-39" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-36">
-          <mxGeometry y="105" width="199" height="26" as="geometry" />
+        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-39" value="+ gerarDataVecto(): Date&lt;br&gt;+gerarTotalParcel(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-36">
+          <mxGeometry y="105" width="199" height="38" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-70" value="paga" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=diamondThin;endFill=1;endSize=12;" edge="1" parent="1" source="A9cpmc5HUKlGuk4Z43Z2-40" target="A9cpmc5HUKlGuk4Z43Z2-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-40" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;ContaAPagar&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="501" y="209" width="199" height="159" as="geometry" />
+          <mxGeometry x="501" y="209" width="199" height="172" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-41" value="&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- idContaAPagar: Long&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- data: Date&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- valorTotal: double&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- parcelas: List&amp;lt;Parcela&amp;gt;&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- centroDeCusto: CentroDeCusto&lt;/p&gt;&lt;p style=&quot;border-color: var(--border-color); margin: 0px 0px 0px 4px;&quot;&gt;- compra: Compra&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-40">
           <mxGeometry y="26" width="199" height="99" as="geometry" />
@@ -108,8 +108,8 @@
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-40">
           <mxGeometry y="125" width="199" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-43" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-40">
-          <mxGeometry y="133" width="199" height="26" as="geometry" />
+        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-43" value="+ gerarTotal():double&lt;br&gt;+ gerarParcelas():int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-40">
+          <mxGeometry y="133" width="199" height="39" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-44" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;CentroDeCusto&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="521" y="491" width="160" height="113" as="geometry" />
@@ -120,7 +120,7 @@
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-44">
           <mxGeometry y="79" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-47" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-44">
+        <mxCell id="A9cpmc5HUKlGuk4Z43Z2-47" value="+gerarPagamento(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="A9cpmc5HUKlGuk4Z43Z2-44">
           <mxGeometry y="87" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="A9cpmc5HUKlGuk4Z43Z2-48" value="realiza" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="A9cpmc5HUKlGuk4Z43Z2-11" target="A9cpmc5HUKlGuk4Z43Z2-19">
