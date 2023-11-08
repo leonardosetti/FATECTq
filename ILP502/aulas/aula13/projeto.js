@@ -26,10 +26,16 @@ function listarProduto(lista) {
   return auxHtml;
 }
 
-
-
 $(document).ready(() => {
   $("#btCadastrar").click(() => {
-    alert("OK!");
+    // let codigo = document.getElementById('codigo').value // jeitinho sem JQuery
+    let codigo = $("#codigo").val();
+    let descricao = $("#descricao").val();
+    let quantidade = $("#quantidade").val();
+    let valor = $("#valor").val();
+
+    let produto = new Produto(codigo, descricao, quantidade, valor);
+    cadastrar(produto, listaProdutos);
+    $("#tbProduto").html(listarProduto(listaProdutos));
   });
 });
