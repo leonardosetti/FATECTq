@@ -1,0 +1,17 @@
+class DistroLinux {
+  constructor(soType, distroBased, origem, arquitetura,desktopEnv, categoria, status, paginaWeb, paginaDownload, releaseDate, imgSize, arqProcessador, pontosAvaliacao) {
+    this.soType
+    this.distroBased = distroBased;
+    this.origem = origem;
+    this.arquitetura = arquitetura;
+    this.desktopEnv = desktopEnv;
+    this.categoria = categoria;
+    this.status = status;
+    this.paginaWeb = paginaWeb;
+    this.paginaDownload = paginaDownload;
+    this.releaseDate = releaseDate;
+    this.imgSize = imgSize;
+    this.arqProcessador = arqProcessador;
+    this.pontosAvaliacao = pontosAvaliacao;
+  }
+}

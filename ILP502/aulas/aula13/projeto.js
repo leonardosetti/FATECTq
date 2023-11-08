@@ -26,9 +26,10 @@ function listarProduto(lista) {
   return auxHtml;
 }
 
+
 $(document).ready(() => {
   $("#btCadastrar").click(() => {
-    // let codigo = document.getElementById('codigo').value // jeitinho sem JQuery
+   /* // let codigo = document.getElementById('codigo').value // jeitinho sem JQuery
     let codigo = $("#codigo").val();
     let descricao = $("#descricao").val();
     let quantidade = $("#quantidade").val();
@@ -36,6 +37,12 @@ $(document).ready(() => {
 
     let produto = new Produto(codigo, descricao, quantidade, valor);
     cadastrar(produto, listaProdutos);
+    $("#tbProduto").html(listarProduto(listaProdutos));*/
+
+    //short-code:
+    cadastrar (new Produto($('#codigo').val(),$('#descricao').val(),$('#quantidade').val(),$('#valor').val()), listaProdutos);
     $("#tbProduto").html(listarProduto(listaProdutos));
+
+    $('input').val('');
   });
 });
