@@ -1,4 +1,4 @@
-# Meu Repositório de Aprendizado :t-rex
+# Meu Repositório de Aprendizado :t-rex:
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/leonardo-setti/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/issaeFera)
@@ -46,9 +46,9 @@ Tenho orgulho da minha capacidade de me alinhar rapidamente e eficazmente com di
 - Selenium
 - Cucumber
 
-### QA - Quality Assurance:bug::beetle: :lady_beetle: :cockroach: :cricket:
+### QA - Quality Assurance :bug: :beetle: :lady_beetle: :cockroach: :cricket:
 
-## Minha Jornada Acadêmica:closed_book::open_book:
+## Minha Jornada Acadêmica :closed_book: :open_book:
 
 No entanto, após anos no mercado de trabalho, estou voltando ao ambiente acadêmico com o objetivo de aprimorar de maneira mais técnica e teórica o conhecimento que adquiri como profissional de TI.
 
