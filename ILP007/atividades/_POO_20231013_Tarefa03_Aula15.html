@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15 - Tarefa 03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <header class="card-header card text-center">
+        <h1>POO - Aula 15: Tarefa 03</h1>
+        <h2>Classes Associativas, Classes Abstratas e Interfaces</h2>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid ">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#subject_1">Classes Associativas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subject_2">Classes Abstratas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subject_3">Interfaces</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="container-fluid " id="subject_1">
+                <h2>Classes Associativas</h2>
+                <p class="card-text"> Classes Associativas em Programação Orientada a Objetos (POO) são classes que
+                    representam uma
+                    associação entre outras
+                    classes. Elas atuam como intermediárias para conectar instâncias de outras classes, contendo
+                    atributos que descrevem a
+                    natureza dessa associação.</p>
+                <p class="card-text">Quando há uma relação entre duas ou mais classes com multiplicidade e são
+                    necessários atributos para
+                    descrever a
+                    associação, pode-se usar uma classe associativa para representar essa relação de forma mais precisa.
+                    A classe
+                    associativa age como um intermediário, permitindo a inclusão de informações adicionais sobre a
+                    associação, como
+                    atributos específicos da relação. Essa abordagem ajuda a modelar de maneira mais detalhada e
+                    flexível as interações
+                    complexas entre as classes, proporcionando uma estrutura mais robusta para sistemas orientados a
+                    objetos.</p>
+            </div>
+            <div class="container-fluid " id="subject_2">
+                <h2>Classes Abstratas</h2>
+                <p class="card-text"> Classes Abstratas em Programação Orientada a Objetos (POO) são classes que não
+                    podem ser
+                    instanciadas diretamente,
+                    servindo como modelos para outras classes derivadas. Elas fornecem uma estrutura comum e podem
+                    conter métodos abstratos,
+                    que são métodos sem implementação na classe abstrata, deixando a responsabilidade de
+                    implementação
+                    para as classes que
+                    delas derivam. As classes abstratas são utilizadas para estabelecer uma hierarquia de classes,
+                    compartilhando
+                    características comuns entre as subclasses, ao mesmo tempo em que exigem que certos métodos
+                    sejam
+                    implementados por
+                    essas subclasses. Essa abstração permite criar um design mais flexível e modular, promovendo a
+                    reutilização de código e
+                    a manutenção eficiente do sistema.</p>
+                <p class="card-text">Aqui está um exemplo de classe abstrata e suas subclasses em Java:</p>
+                <div class="container-fluid ">
+                    <h4>Classe concreta Cachorro que herda da classe Animal:</h4>
+                    <pre>
+                        <code class="java" contentEditable="false">
+    // Classe abstrata Animal
+    abstract class Animal {
+        private String nome;
+    
+        public Animal(String nome) {
+            this.nome = nome;
+        }
+    
+        // Método abstrato para emitir um som característico
+        public abstract void emitirSom();
+    
+        // Método concreto compartilhado por todos os animais
+        public void dormir() {
+            System.out.println(nome + " está dormindo.");
+        }
+    }
+    
+    // Subclasse de Animal para representar um Cachorro
+    class Cachorro extends Animal {
+        public Cachorro(String nome) {
+            super(nome);
+        }
+    
+        // Implementação específica para o som de um Cachorro
+        @Override
+        public void emitirSom() {
+            System.out.println("Au Au!");
+        }
+    }
+    
+    // Subclasse de Animal para representar um Gato
+    class Gato extends Animal {
+        public Gato(String nome) {
+            super(nome);
+        }
+    
+        // Implementação específica para o som de um Gato
+        @Override
+        public void emitirSom() {
+            System.out.println("Miau!");
+        }
+    }
+    
+    // Exemplo de uso das classes abstratas
+    public class ExemploClassesAbstratas {
+        public static void main(String[] args) {
+            Cachorro cachorro = new Cachorro("Bolt");
+            Gato gato = new Gato("Garfield");
+    
+            cachorro.emitirSom();
+            cachorro.dormir();
+    
+            gato.emitirSom();
+            gato.dormir();
+        }
+    }</code></pre>
+                </div>
+            </div>
+            <div class="container-fluid " id="subject_3">
+                <h2>Interfaces</h2>
+                <h3>Definição de interface</h3>
+                <p class="card-text">
+                    Uma interface é uma definição de um conjunto de métodos e propriedades que devem ser
+                    obrigatoriamente implementados por
+                    uma classe. Embora se assemelhem a classes, as interfaces não possuem implementação própria. A
+                    responsabilidade de
+                    implementar os métodos e propriedades de uma interface recai sobre as classes que a adotam.
+                </p>
+                <p class="card-text">
+                    Esta definição é precisa e abrangente. Ela destaca os principais aspectos de uma interface, como a
+                    definição de um
+                    conjunto de métodos e propriedades, a ausência de implementação própria e a responsabilidade de
+                    implementação recaindo
+                    sobre as classes que a adotam.</p>
+                <p class="card-text">
+
+                <div class="container-fluid ">
+                    <h4>Exemplo</h4>
+                    <pre><code class="java" contentEditable="false">
+    public interface FiguraGeometrica {
+        double getPerimetro();
+        double getArea();
+    }
+                    </code>
+                    </pre>
+                </div>
+
+                <div class="container-fluid ">
+                    <pre>
+                        <code class="java" contentEditable="false">
+    public class Quadrado implements FiguraGeometrica {
+
+        private double lado;
+    
+        public Quadrado(double lado) {
+            this.lado = lado;
+        }
+    
+        @Override
+        public double getPerimetro() {
+            return 4 * lado;
+        }
+        
+        @Override
+        public double getArea() {
+            return lado * lado;
+        }
+    }
+    </code>
+                                    </pre>
+                </div>
+
+                <h3>Propósito das interfaces</h3>
+                O propósito das interfaces reside na definição de contratos entre classes. Elas asseguram que as classes
+                que implementam
+                uma interface possuam um conjunto unificado de métodos e propriedades. Esse mecanismo proporciona uma
+                base comum de
+                comunicação entre classes que interagem entre si.
+
+                </p>
+                <p class="card-text">Esta definição é correta e esclarecedora. Ela destaca o propósito principal das
+                    interfaces, que é a
+                    definição de
+                    contratos entre classes. A definição de um conjunto unificado de métodos e propriedades assegura que
+                    as classes que
+                    implementam uma interface sejam compatíveis entre si, o que facilita a comunicação entre elas.
+
+                <h3>Reutilização de código</h3>
+                </p>
+                <p class="card-text">Além disso, as interfaces desempenham um papel fundamental na promoção da
+                    reutilização de código. Uma
+                    classe tem a
+                    capacidade de implementar diversas interfaces, possibilitando assim a utilização das funcionalidades
+                    oferecidas por cada
+                    uma delas. Essa flexibilidade contribui para um design modular e eficiente, incentivando a
+                    consistência e a economia de
+                    esforços na programação orientada a objetos.
+                </p>
+                <p class="card-text">Esta definição é correta e completa. Ela destaca o papel das interfaces na promoção
+                    da reutilização
+                    de código. A
+                    capacidade de uma classe implementar diversas interfaces permite que ela aproveite as
+                    funcionalidades oferecidas por
+                    cada uma delas. Isso contribui para um design modular e eficiente, pois permite que as classes sejam
+                    desenvolvidas de
+                    forma independente e reutilizadas em diferentes contextos.
+                </p>
+
+            </div>
+    </main>
+    <footer class="card-footer text-body-secondary"><a href="https://www.fatectq.edu.br/" target="_blank">FATEC
+            Taquaritinga</a> | Aluno: <a href="https://www.linkedin.com/in/leonardo-setti/" target="_blank">Leonardo D S
+            Setti</a> -
+        RA: 0220482313029 | ILP007 ADS Noite
+    </footer>
+
+</body>
+
+</html>
