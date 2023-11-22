@@ -13,16 +13,11 @@
   background-image: url("../html/edit.svg");
   background-size: 100%;
 }
+
 .btExcluir {
   display: block;
   width: 30px;
   height: 30px;
   background-image: url("../html/delete.svg");
   background-size: 100%;
-}
-
-.btAlterar:hover {
-  opacity: 1;
-  animation-delay: 1.5s;
-  fill: blue;
 }
