@@ -1,0 +1,234 @@
+Livraria digital - Dig Lib
+
+Benefícios: 
+Acesso a informações (obras literárias, livros, artigos, conhecimento acadêmico etc)
+Flexibilidade de Acesso aos usuários cadastrdos
+Redução de custos (mídia física em papael)
+
+Preservação de materiais raros/historicos
+Buscas precisas
+Disponibilidade
+
+Requisitos  Funcionais
+Inclusao de dados
+Cadastro de usuarios
+Pagamentos/Compras
+Manutenção de acervo
+Relatórios
+Certificaçoes
+
+Requisitos não Funcionais
+Ling Java
+Multiplataforma
+Facilidade de usuarios
+Info Cadastrais offline
+
+
+Alcance
+Disponibilidade Global
+Enriquecimento CUltural
+Aprendizado em movimento
+
+
+Resumo do projeto de livraria digital
+
+O projeto de livraria digital, denominado Dig Lib, tem como objetivo disponibilizar obras literárias, livros, artigos, conhecimento acadêmico e outros materiais digitais para acesso público. A plataforma permitirá que usuários cadastrados tenham acesso a esses materiais de forma flexível, a qualquer hora e em qualquer lugar.
+
+Os principais benefícios da livraria digital incluem:
+
+Acesso a informações de forma rápida e fácil;
+Redução de custos com mídia física;
+Preservação de materiais raros e históricos;
+Buscas precisas;
+Disponibilidade global.
+Os requisitos funcionais do projeto incluem:
+
+Inclusão de dados;
+Cadastro de usuários;
+Pagamentos/compras;
+Manutenção de acervo;
+Relatórios;
+Certificações.
+Os requisitos não funcionais incluem:
+
+Linguagem Java;
+Multiplataforma;
+Facilidade de uso;
+Disponibilidade de Informações cadastrais offline.
+Sugestão de implantação
+
+A implantação do projeto Dig Lib pode ser realizada em etapas, a saber:
+
+Etapa 1: Definição de requisitos
+
+Nesta etapa, é importante definir com clareza os requisitos funcionais e não funcionais do projeto. Isso pode ser feito por meio de reuniões com stakeholders, entrevistas e pesquisas.
+
+Etapa 2: Desenvolvimento da plataforma
+
+Após a definição dos requisitos, a plataforma da livraria digital pode ser desenvolvida. O desenvolvimento pode ser realizado por uma equipe interna ou por uma empresa terceirizada.
+
+Etapa 3: Testes e homologação
+
+Após o desenvolvimento, a plataforma deve ser testada para garantir que atende aos requisitos estabelecidos. Após os testes, a plataforma deve ser homologada por stakeholders para garantir que está pronta para uso.
+
+Etapa 4: Implantação
+
+Após a homologação, a plataforma pode ser implantada no ambiente de produção. A implantação deve ser feita de forma gradual para evitar problemas.
+
+Etapa 5: Marketing e divulgação
+
+Após a implantação, a livraria digital deve ser divulgada para o público-alvo. O marketing pode ser realizado por meio de campanhas online e offline.
+
+A seguir, são apresentados alguns detalhes adicionais sobre cada etapa da implantação:
+
+Etapa 1: Definição de requisitos
+
+A definição dos requisitos é uma etapa fundamental para o sucesso do projeto. É importante envolver todos os stakeholders no processo de definição de requisitos para garantir que as necessidades de todos sejam atendidas.
+
+Os requisitos funcionais devem especificar o que a plataforma deve fazer. Os requisitos não funcionais devem especificar como a plataforma deve funcionar.
+
+Etapa 2: Desenvolvimento da plataforma
+
+O desenvolvimento da plataforma deve ser feito por profissionais qualificados com experiência em desenvolvimento de software.
+
+A plataforma deve ser desenvolvida utilizando linguagens e tecnologias modernas para garantir que seja escalável e segura.
+
+Etapa 3: Testes e homologação
+
+Os testes devem ser realizados para garantir que a plataforma atende aos requisitos estabelecidos.
+
+Os testes devem ser realizados por uma equipe de QA independente para garantir a imparcialidade.
+
+Etapa 4: Implantação
+
+A implantação deve ser feita de forma gradual para evitar problemas.
+
+A implantação deve começar em um ambiente de testes para validar a plataforma antes de colocá-la em produção.
+
+Etapa 5: Marketing e divulgação
+
+A divulgação da livraria digital deve ser feita para informar o público-alvo sobre a sua existência e benefícios.
+
+O marketing pode ser realizado por meio de campanhas online e offline, como anúncios em redes sociais, banners em sites e distribuição de flyers.
+
+A implantação do projeto Dig Lib é um processo complexo que requer planejamento e execução cuidadosa. A seguir, são apresentados alguns fatores que podem afetar o sucesso da implantação:
+
+Definição clara dos requisitos;
+Desenvolvimento de uma plataforma robusta e segura;
+Testes rigorosos;
+Implantação gradual;
+Marketing e divulgação eficazes.
+
+___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---___---
+
+iBico
+
+Objetivo:
+Compartilhamento de trabalho teporário / informal sem vículo empreatício
+
+Criterios de sucesso
+    Pesquisa de interesse
+    Mediação de acessos a vagas 
+    LGPD
+
+Restrições
+    Alcance limitado (regional)
+    Pessoal (sem pessoas alocadas para o projeto 24x7)
+
+Req Funcionais
+    Cadastro por cpf/cnpj
+    Cadastro de ooportunidades
+    Avaliações 
+    Notificaçõs para iformar termino de trabalho e pagamento
+ 
+ Metodologia Scrum
+
+
+
+ Resumo do projeto iBico
+
+O projeto iBico tem como objetivo facilitar o compartilhamento de trabalho temporário e informal sem vínculo empregatício. A plataforma permitirá que pessoas encontrem oportunidades de trabalho e que empresas encontrem mão de obra qualificada para projetos específicos.
+
+Critérios de sucesso
+
+Os critérios de sucesso do projeto são:
+
+Pesquisa de interesse: a plataforma deve permitir que usuários pesquisem vagas de acordo com seus interesses e habilidades.
+Mediação de acessos a vagas: a plataforma deve facilitar o contato entre usuários e empresas.
+LGPD: a plataforma deve atender às leis de proteção de dados pessoais.
+Restrições
+
+O projeto tem as seguintes restrições:
+
+Alcance limitado (regional): o projeto será inicialmente lançado em uma região específica.
+Pessoal (sem pessoas alocadas para o projeto 24x7): o projeto terá um número limitado de recursos humanos.
+Requisitos funcionais
+
+Os requisitos funcionais do projeto são:
+
+Cadastro por cpf/cnpj: usuários e empresas devem se cadastrar na plataforma com seus dados pessoais ou empresariais.
+Cadastro de oportunidades: empresas devem cadastrar oportunidades de trabalho na plataforma.
+Avaliações: usuários e empresas podem avaliar uns aos outros após o término de um trabalho.
+Notificações: a plataforma deve enviar notificações para usuários e empresas sobre o andamento de trabalhos.
+Sugestão de implantação
+
+A implantação do projeto iBico pode ser realizada em etapas, a saber:
+
+Etapa 1: Definição de requisitos
+
+Nesta etapa, é importante definir com clareza os requisitos funcionais e não funcionais do projeto. Isso pode ser feito por meio de reuniões com stakeholders, entrevistas e pesquisas.
+
+Etapa 2: Desenvolvimento da plataforma
+
+Após a definição dos requisitos, a plataforma do iBico pode ser desenvolvida. O desenvolvimento pode ser realizado por uma equipe interna ou por uma empresa terceirizada.
+
+Etapa 3: Testes e homologação
+
+Após o desenvolvimento, a plataforma deve ser testada para garantir que atende aos requisitos estabelecidos. Após os testes, a plataforma deve ser homologada por stakeholders para garantir que está pronta para uso.
+
+Etapa 4: Implantação regional
+
+Após a homologação, a plataforma pode ser implantada em uma região específica. A implantação deve ser feita de forma gradual para evitar problemas.
+
+Etapa 5: Expansão regional
+
+Após a implantação regional, a plataforma pode ser expandida para outras regiões. A expansão deve ser feita de forma gradual para garantir que a plataforma esteja preparada para atender à demanda.
+
+A seguir, são apresentados alguns detalhes adicionais sobre cada etapa da implantação:
+
+Etapa 1: Definição de requisitos
+
+A definição dos requisitos é uma etapa fundamental para o sucesso do projeto. É importante envolver todos os stakeholders no processo de definição de requisitos para garantir que as necessidades de todos sejam atendidas.
+
+Os requisitos funcionais devem especificar o que a plataforma deve fazer. Os requisitos não funcionais devem especificar como a plataforma deve funcionar.
+
+Etapa 2: Desenvolvimento da plataforma
+
+O desenvolvimento da plataforma deve ser feito por profissionais qualificados com experiência em desenvolvimento de software.
+
+A plataforma deve ser desenvolvida utilizando linguagens e tecnologias modernas para garantir que seja escalável e segura.
+
+Etapa 3: Testes e homologação
+
+Os testes devem ser realizados para garantir que a plataforma atende aos requisitos estabelecidos.
+
+Os testes devem ser realizados por uma equipe de QA independente para garantir a imparcialidade.
+
+Etapa 4: Implantação regional
+
+A implantação da plataforma deve ser feita de forma gradual para evitar problemas.
+
+A implantação deve começar em um ambiente de testes para validar a plataforma antes de colocá-la em produção.
+
+Etapa 5: Expansão regional
+
+A expansão da plataforma deve ser feita de forma gradual para garantir que a plataforma esteja preparada para atender à demanda.
+
+A implantação do projeto iBico é um processo complexo que requer planejamento e execução cuidadosa. A seguir, são apresentados alguns fatores que podem afetar o sucesso da implantação:
+
+Definição clara dos requisitos;
+Desenvolvimento de uma plataforma robusta e segura;
+Testes rigorosos;
+Implantação gradual;
+Expansão gradual.
+A metodologia Scrum é uma abordagem ágil de desenvolvimento de software que pode ser utilizada para a implantação do projeto iBico. A metodologia Scrum permite que o projeto seja desenvolvido de forma incremental e iterativa, o que pode ajudar a reduzir riscos e garantir que o projeto atenda às expectativas dos stakeholders.
