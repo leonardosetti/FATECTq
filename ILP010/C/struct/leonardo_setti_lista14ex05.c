@@ -9,14 +9,14 @@
 const char *sym_check = "\u2714", *g_block = "\u2591", *w_block1 = "\u2588", *sym_arrow = "\u27F9", *sym_save = "\uFB1A", *sym_0 = "\u24FF", *sym_1 = "\u278A", *sym_2 = "\u278B", *sym_3 = "\u278C", *sym_4 = "\u278D", *sym_5 = "\u278E", *sym_6 = "\u278F", *sym_7 = "\u2790", *sym_8 = "\u2791", *sym_9 = "\u2792", *sym_erro = "\u2716", *sym_bye = "\uFC0C", *sym_bck = "\u2B6F", *sym_question = "\uFC89", *sym_edit = "\uFAB6", *sym_off = "\u23FB", *menu_idc = "\u21F2", *sym_del = "\uFAE7", *sym_Ldel = "\uFB12", *sym_cad = "\uFAD1", *sym_id = "\uFBC9", *sym_sort = "\uFBC6", *sym_list = "\uFB18", *sym_Wfile = "\uFC50";
 
 struct motorista
-{                      
+{
     int id;
     char nome[50];
-    char sexo[1];      
-    char cnh[11];      
-    char validade[10]; 
-    int idade;         
-    int state;         
+    char sexo[2];
+    char cnh[11];
+    char validade[10];
+    int idade;
+    int state;
 };
 
 struct motorista lista[TAM];
@@ -63,8 +63,10 @@ void moduleTopBar()
     printf("%s\n", g_block);
 }
 
+
 int menuPrincipal();
 int subMenuConsulta();
+void clearBuffer(void);
 int modCadMotorista();
 void modConsultaMotorista();
 
@@ -164,9 +166,15 @@ int subMenuConsulta()
     } while (selectSubMenuConsulta != 0);
 }
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+// ... (seções anteriores do código)
+
 int modCadMotorista()
 {
-    void clearBuffer(void);
     int finalizar = -1;
     struct motorista registro;
 
@@ -174,11 +182,12 @@ int modCadMotorista()
     {
         if ((datafile = fopen(FILENAME, "wb")) == NULL)
         {
-            printf("\n              %s ERRO", sym_erro);
-            printf("\n              %s Não foi possível criar o arquivo ", sym_del);
+            printf("\n              %s ERRO\n", sym_erro);
+            printf("\n              %s Não foi possível abrir o arquivo \n", sym_del);
             return (1);
         }
     }
+
     do
     {
         clearScreen();
@@ -199,7 +208,12 @@ int modCadMotorista()
         printf("              %s Idade Motorista: ", sym_Wfile);
         scanf("%d", &registro.idade);
         clearBuffer();
-        
+
+        printf("              %s Sexo Motorista (M/F): ", sym_Wfile);
+        fgets(registro.sexo, sizeof(registro.sexo), stdin);
+        registro.sexo[strcspn(registro.sexo, "\n")] = '\0';
+        clearBuffer();
+
         printf("              %s CNH Motorista: ", sym_Wfile);
         fgets(registro.cnh, sizeof(registro.cnh), stdin);
         registro.cnh[strcspn(registro.cnh, "\n")] = '\0';
@@ -210,17 +224,12 @@ int modCadMotorista()
         registro.validade[strcspn(registro.validade, "\n")] = '\0';
         clearBuffer();
 
-        printf("              %s Sexo Motorista: ", sym_Wfile);
-        fgets(registro.sexo, sizeof(registro.sexo), stdin);
-        registro.sexo[strcspn(registro.sexo, "\n")] = '\0';
-        clearBuffer();
-
         registro.state = 0;
 
         clearScreen();
-       
+
         moduleTopBar();
-        printf("\n              %d %s %s   %s CADASTRADO!\n", registro.id, registro.nome, sym_arrow, sym_save);
+        printf("\n              %d              %s              %s   %s CADASTRADO!\n", registro.id, registro.nome, sym_arrow, sym_save);
 
         fseek(datafile, 0, 2);
         fwrite(&registro, sizeof(registro), 1, datafile);
@@ -238,22 +247,27 @@ int modCadMotorista()
     return (1);
 }
 
-void modConsultaMotorista(){
-
+void modConsultaMotorista()
+{
     struct motorista registro;
     clearScreen();
 
-    if ((datafile=fopen(FILENAME, "rb"))==NULL){
-        printf("\n              %s ERRO", sym_erro);
+    if ((datafile = fopen(FILENAME, "rb")) == NULL)
+    {
+        printf("\n              %s ERRO\n", sym_erro);
+        printf("\n              %s Não foi possível abrir o arquivo ou o arquivo não existe\n\n\n", sym_Ldel);
         exit(EXIT_FAILURE);
     }
+
     clearScreen();
     moduleTopBar();
     printf("\n              %s  %s   Módulo %s  CONSULTAR TODOS %s\n\n", menu_idc, sym_arrow, sym_2, sym_list);
 
-    while (fread(&registro, sizeof(registro),1,datafile)){
-        if (registro.state == 0){
-            printf("\n              %s %4d | %15s | %1s | %2s | %11s | %10s | %s ", sym_id, registro.id, registro.nome, registro.sexo, registro.idade, registro.cnh, registro.validade, sym_check);
+    while (fread(&registro, sizeof(registro), 1, datafile))
+    {
+        if (registro.state == 0)
+        {
+            printf("\n              %s %4d | %15s | %1s | %2d | %11s | %10s | %s ", sym_id, registro.id, registro.nome, registro.sexo, registro.idade, registro.cnh, registro.validade, sym_check);
         }
     }
 
