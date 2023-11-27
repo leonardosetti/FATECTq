@@ -1,119 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Projeto</title>
-    <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+<head>
+  <title>Projeto</title>
+  <meta charset="UTF-8" />
 
-    <script
-      type="text/javascript"
-      src="../scripts/jquery-3.7.1.min.js"
-    ></script>
-    <script type="text/javascript" src="../scripts/projeto.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Projeto</a>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <script type="text/javascript" src="../scripts/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="../scripts/projeto.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Projeto</a>
+      </div>
+    </nav>
+    <header>
+      <img class="img-fluid" src="../img/topo.jfif" alt="Topo" />
+    </header>
+    <main>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="#">
+            <div class="input-group mb-3 mt-3">
+              <span class="input-group-text" id="basic-addon1">Código</span>
+              <input type="number" id="codigo" class="form-control" placeholder="" aria-label="Código"
+                aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-3 mt-3">
+              <span class="input-group-text" id="basic-addon1">Descrição</span>
+              <input type="text" id="descricao" class="form-control" placeholder="" aria-label="Descrição"
+                aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-3 mt-3">
+              <span class="input-group-text" id="basic-addon1">Quantidade</span>
+              <input type="number" id="quantidade" class="form-control" placeholder="" aria-label="Quantidade"
+                aria-describedby="basic-addon1" />
+            </div>
+            <div class="input-group mb-3 mt-3">
+              <span class="input-group-text" id="basic-addon1">Valor</span>
+              <input type="number" id="valor" class="form-control" placeholder="" aria-label="Valor"
+                aria-describedby="basic-addon1" />
+            </div>
+            <div class="centralizar">
+              <button id="btSalvar" type="button" class="btn btn-primary">
+                Salvar
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-floppy"
+                  viewBox="0 0 16 16">
+                  <path d="M11 2H9v3h2V2Z" />
+                  <path
+                    d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0ZM1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5Zm3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4v4.5ZM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V15Z" />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <button id="btAjax" class="btn btn-secondary">AJAX</button>
+          <p id="resposta"></p>
         </div>
-      </nav>
-      <header>
-        <img class="img-fluid" src="../img/topo.jfif" alt="Topo" />
-      </header>
-      <main>
-        <div class="row">
-          <div class="col-md-6">
-            <form action="#">
-              <div class="input-group mb-3 mt-3">
-                <span class="input-group-text" id="basic-addon1">Código</span>
-                <input
-                  type="number"
-                  id="codigo"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Código"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3 mt-3">
-                <span class="input-group-text" id="basic-addon1"
-                  >Descrição</span
-                >
-                <input
-                  type="text"
-                  id="descricao"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Descrição"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3 mt-3">
-                <span class="input-group-text" id="basic-addon1"
-                  >Quantidade</span
-                >
-                <input
-                  type="number"
-                  id="quantidade"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Quantidade"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="input-group mb-3 mt-3">
-                <span class="input-group-text" id="basic-addon1">Valor</span>
-                <input
-                  type="number"
-                  id="valor"
-                  class="form-control"
-                  placeholder=""
-                  aria-label="Valor"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-              <div class="centralizar">
-                <button id="btSalvar" type="button" class="btn btn-primary">
-                  Salvar
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-floppy"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M11 2H9v3h2V2Z" />
-                    <path
-                      d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0ZM1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5Zm3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4v4.5ZM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V15Z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </form>
-            <button id="btAjax" class="btn btn-secondary">AJAX</button>
-            <p id="resposta"></p>
-          </div>
-          <div class="col-md-6">
-            <table class="table table-striped mt-3">
-              <thead>
-                <tr>
-                  <th scope="col">Código</th>
-                  <th scope="col">Descrição</th>
-                  <th scope="col">Qtde</th>
-                  <th scope="col">Valor (R$)</th>
-                  <th scope="col">Alterar</th>
-                  <th scope="col">Excluir</th>
-                </tr>
-              </thead>
-              <tbody id="tbProduto"></tbody>
-            </table>
-          </div>
+        <div class="col-md-6">
+          <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Qtde</th>
+                <th scope="col">Valor (R$)</th>
+                <th scope="col">Alterar</th>
+                <th scope="col">Excluir</th>
+              </tr>
+            </thead>
+            <tbody id="tbProduto"></tbody>
+          </table>
         </div>
-      </main>
-    </div>
-  </body>
+      </div>
+    </main>
+  </div>
+</body>
+
 </html>
