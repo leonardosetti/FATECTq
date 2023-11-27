@@ -154,5 +154,5 @@ void consultaSequencial()
     printf("\n -----------------------------------------");
     printf("\n ");
     printf("\n lista de funcionarios, concluida com sucesso!");
-    getch();
+    getchar();
 }

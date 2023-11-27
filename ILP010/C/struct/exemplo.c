@@ -1,133 +1,136 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-typedef struct{
+#define FILENAME "motoristas.dados"
+
+struct motorista
+{
+    int id;
     char nome[50];
-    int idade;
     char sexo;
-}Pessoa;
+    char nhabilitacao[12];
+    char validade[11];
+    int idade;
+    int e;
+};
 
-int tam = 10;
-Pessoa lista[10];
-int quant = 0;
+FILE *datafile;
 
-int cadstrarPessoa(){
-    if(quant < tam){
-        Pessoa p;
-        scanf("%*c");
-        printf("Nome: ");
-        fgets(p.nome, 50, stdin);
-        printf("Digite idade e sexo m ou f: ");
-        scanf("%d %c", &p.idade, &p.sexo);
-        lista[quant] = p;
-        quant++;
-        return 1;
-    }
-    else{
-        printf("ERRO: vetor cheio.\n\n");
-        return 0;
-    }
+void clearBuffer(void)
+{
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF)
+        ;
+    if (c == '\n')
+        ungetc('\n', stdin);
 }
 
-void imprimirVetor(){
-    int i;
-    for(i = 0; i < quant; i++){
-        printf("Nome: %s", lista[i].nome);
-        printf("Idade: %d\tSexo: %c\n\n", lista[i].idade, lista[i].sexo);
+void cadastrarMotorista()
+{
+    struct motorista novoMotorista;
+    printf("Código ID: ");
+    scanf("%d", &novoMotorista.id);
+    clearBuffer();
+
+    printf("Nome Motorista: ");
+    fgets(novoMotorista.nome, sizeof(novoMotorista.nome), stdin);
+    novoMotorista.nome[strcspn(novoMotorista.nome, "\n")] = '\0';
+    clearBuffer();
+
+    printf("Idade Motorista: ");
+    scanf("%d", &novoMotorista.idade);
+    clearBuffer();
+
+    printf("Sexo Motorista (M/F): ");
+    scanf(" %c", &novoMotorista.sexo);
+    clearBuffer();
+
+    printf("CNH Motorista: ");
+    scanf("%s", novoMotorista.nhabilitacao);
+    clearBuffer();
+
+    printf("Validade CNH: ");
+    scanf("%s", novoMotorista.validade);
+    clearBuffer();
+
+    novoMotorista.e = 0;
+
+    if ((datafile = fopen(FILENAME, "ab")) == NULL)
+    {
+        printf("Erro ao abrir o arquivo.\n");
+        exit(EXIT_FAILURE);
     }
+
+    fwrite(&novoMotorista, sizeof(struct motorista), 1, datafile);
+
+    fclose(datafile);
+    printf("Motorista cadastrado com sucesso!\n");
 }
 
-void salvarEmArquivo(){
-    FILE *arq = fopen("lista.txt", "w");
-    int i;
-    if(arq){
-        fprintf(arq, "%d\n", quant);
-        for(i = 0; i < quant; i++){
-            fprintf(arq, "%s", lista[i].nome);
-            fprintf(arq, "%d\n", lista[i].idade);
-            fprintf(arq, "%c\n", lista[i].sexo);
+void consultarTodos()
+{
+    struct motorista motoristaAtual;
+
+    if ((datafile = fopen(FILENAME, "rb")) == NULL)
+    {
+        printf("Erro ao abrir o arquivo.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("\nID | Nome               | Idade | Sexo | CNH | Validade | E\n");
+    printf("----------------------------------------------------------\n");
+
+    while (fread(&motoristaAtual, sizeof(struct motorista), 1, datafile) == 1)
+    {
+        if (motoristaAtual.e == 0)
+        {
+            printf("%2d | %-18s | %5d |   %c  |   %s   |    %s     | %d\n",
+                   motoristaAtual.id, motoristaAtual.nome, motoristaAtual.idade,
+                   motoristaAtual.sexo, motoristaAtual.nhabilitacao,
+                   motoristaAtual.validade, motoristaAtual.e);
         }
-        fclose(arq);
     }
-    else
-        printf("ERRO: nao foi possivel abrir o arquivo.\n\n");
+
+    fclose(datafile);
 }
 
-void salvarEmArquivo2(){
-    FILE *arq = fopen("lista2.txt", "wb");
-    if(arq){
-        fprintf(arq, "%d\n", quant);
-        fwrite(lista, sizeof(Pessoa), quant, arq);
-        fclose(arq);
-    }
-    else
-        printf("ERRO: nao foi possivel abrir o arquivo.\n\n");
-}
+int main()
+{
+    int opcao;
 
-void lerDoArquivo(){
-    FILE *arq = fopen("lista.txt", "r");
-    int i;
-    if(arq){
-        fscanf(arq, "%d\n", &quant);
-        for(i = 0; i < quant; i++){
-            Pessoa p;
-            fgets(p.nome, 50, arq);
-            fscanf(arq, "%d\n", &p.idade);
-            fscanf(arq, "%c\n", &p.sexo);
-            lista[i] = p;
-        }
-        fclose(arq);
-    }
-    else
-        printf("ERRO: nao foi possivel abrir o arquivo.\n\n");
-}
+    do
+    {
+        printf("\nMenu:\n");
+        printf("1. Cadastrar\n");
+        printf("2. Consultar\n");
+        printf("3. Alterar\n");
+        printf("4. Excluir (Logicamente)\n");
+        printf("5. Listar Todos os Registros Excluídos Logicamente\n");
+        printf("6. Listar Todos os Motoristas (Ordenar por Idade)\n");
+        printf("7. Finalizar/Sair\n");
 
-void lerDoArquivo2(){
-    FILE *arq = fopen("lista2.txt", "rb");
-    if(arq){
-        fscanf(arq, "%d\n", &quant);
-        fread(lista, sizeof(Pessoa), quant, arq);
-        fclose(arq);
-    }
-    else
-        printf("ERRO: nao foi possivel abrir o arquivo.\n\n");
-}
+        printf("Escolha uma opção: ");
+        scanf("%d", &opcao);
+        clearBuffer();
 
-int main() {
-    int op;
-
-    do{
-        printf("\n1 - Cadastrar\n2 - Imprimir\n3 - Salvar em arquivo texto\n4 - Ler do arquivo texto");
-        printf("\n5 - Salvar em arquivo binario\n6 - Ler do arquivo binario\n0 - Sair\n");
-        scanf("%d", &op);
-
-        switch(op){
-        case 0:
-            printf("Tchau...\n\n");
-            break;
+        switch (opcao)
+        {
         case 1:
-            cadstrarPessoa();
+            cadastrarMotorista();
             break;
         case 2:
-            imprimirVetor();
+            consultarTodos();
             break;
-        case 3:
-            salvarEmArquivo();
-            break;
-        case 4:
-            lerDoArquivo();
-            break;
-        case 5:
-            salvarEmArquivo2();
-            break;
-        case 6:
-            lerDoArquivo2();
+        // Adicione os demais casos conforme necessário
+        case 7:
+            printf("Finalizando programa. Até mais!\n");
             break;
         default:
-            printf("Opcao invalida.\n\n");
+            printf("Opção inválida. Tente novamente.\n");
         }
 
-    }while(op != 0);
+    } while (opcao != 7);
 
     return 0;
 }

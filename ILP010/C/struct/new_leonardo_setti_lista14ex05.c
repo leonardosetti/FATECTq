@@ -225,34 +225,32 @@ int modCadMotorista()
 
         printf("              %s Nome Motorista: ", sym_Wfile);
         fgets(dadoMotorista.nome, sizeof(dadoMotorista.nome), stdin);
+        dadoMotorista.nome[strspn(dadoMotorista.nome,"\n")] = "\0";
         clearBuffer();
-        // Debug
-        printf("DEBUG: Nome lido: %s\n", dadoMotorista.nome);
-        // 
-
+      
         printf("              %s Idade Motorista: ", sym_Wfile);
         scanf("%d", &dadoMotorista.idade);
         clearBuffer();
 
         printf("              %s Sexo Motorista (M/F): ", sym_Wfile);
         fgets(dadoMotorista.sexo, sizeof(dadoMotorista.sexo), stdin);
-        dadoMotorista.sexo[strcspn(dadoMotorista.sexo, "\n")] = '\0';
+        dadoMotorista.sexo[strcspn(dadoMotorista.sexo, "\n")] = "\0";
         clearBuffer();
 
         printf("              %s CNH Motorista: ", sym_Wfile);
         fgets(dadoMotorista.cnh, sizeof(dadoMotorista.cnh), stdin);
-        dadoMotorista.cnh[strcspn(dadoMotorista.cnh, "\n")] = '\0';
+        dadoMotorista.cnh[strcspn(dadoMotorista.cnh, "\n")] = "\0";
         clearBuffer();
 
         printf("              %s Validade CNH: ", sym_Wfile);
         fgets(dadoMotorista.validade, sizeof(dadoMotorista.validade), stdin);
-        dadoMotorista.validade[strcspn(dadoMotorista.validade, "\n")] = '\0';
+        dadoMotorista.validade[strcspn(dadoMotorista.validade, "\n")] = "\0";
         clearBuffer();
 
         dadoMotorista.state = 0;
 
         moduleTopBar();
-        printf("\n              %d              %s              %s   %s CADASTRADO!\n", dadoMotorista.id, dadoMotorista.nome, sym_arrow, sym_save);
+        printf("\n              %d  %s  %s  %s CADASTRADO!\n", dadoMotorista.id, dadoMotorista.nome, sym_arrow, sym_save);
 
         fseek(datafile, 0, 2);
         fwrite(&dadoMotorista, sizeof(dadoMotorista), 1, datafile);
