@@ -66,13 +66,14 @@ function listingDistro(listDistro) {
 }
 
 $(document).ready(() => {
-  $("#btSalvar").click(() => {
+  let timeStamp = $("#btSalvar").click(() => {
     $.ajax({
       url: "http://date.jsontest.com/",
       method: "GET",
     }).done(function (retorno) {
       $(".timeStamp").html(retorno.time);
     });
+    timeStamp = toString(timeStamp);
     let distro = new DistroLinux(
       $("#distroBased").val(),
       $("#origem").val(),
@@ -83,7 +84,8 @@ $(document).ready(() => {
       $("#paginaDownload").val(),
       $("#imgSize").val(),
       $("#arqProcessador").val(),
-      $("#pontosAvaliacao").val()
+      $("#pontosAvaliacao").val(),
+      $(".timeStamp").val()
     );
 
     if (_position == -1) {
@@ -100,6 +102,7 @@ $(document).ready(() => {
   $("#tbDistro").on("click", ".btEditar", (evento) => {
     _position = evento.target.getAttribute("rel");
     _position = parseInt(_position);
+
     $("#distroBased").val(_vtrDistros[_position].distroBased);
     $("#origem").val(_vtrDistros[_position].origem);
     $("#desktopEnv").val(_vtrDistros[_position].desktopEnv);
@@ -110,6 +113,7 @@ $(document).ready(() => {
     $("#imgSize").val(_vtrDistros[_position].imgSize);
     $("#arqProcessador").val(_vtrDistros[_position].arqProcessador);
     $("#pontosAvaliacao").val(_vtrDistros[_position].pontosAvaliacao);
+    $(".timeStamp").val(_vtrDistros[_position].timeStamp);
   });
 
   $("#tbDistro").on("click", ".btExcluir", (evento) => {

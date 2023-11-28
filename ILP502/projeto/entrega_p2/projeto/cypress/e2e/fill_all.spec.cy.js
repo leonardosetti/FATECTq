@@ -8,8 +8,10 @@ describe("Web Form Filling", () => {
     cy.visit("http://127.0.0.1:5500/entrega_p2/projeto/index.html");
   });
 
-  testData.forEach((data, index) => {
-    it(`Run ${index + 1}: Fill the form with data`, () => {
+  it(`Fill and submit the form for each data set`, async () => {
+    for (const [index, data] of testData.entries()) {
+      //cy.log(`Filling form with data ${index + 1}`);
+
       cy.get("#distroBased").type(data.distroBased);
       cy.get("#origem").type(data.origem);
       cy.get("#desktopEnv").type(data.desktopEnv);
@@ -21,7 +23,12 @@ describe("Web Form Filling", () => {
       cy.get("#arqProcessador").type(data.arqProcessador);
       cy.get("#pontosAvaliacao").type(data.pontosAvaliacao);
 
-      cy.get("#btSalvar").click();
-    });
+      await cy
+        .get("#btSalvar")
+        .click()
+        .then(() => {
+          cy.wait(400); // Wait for a brief period before filling the next form
+        });
+    }
   });
 });
