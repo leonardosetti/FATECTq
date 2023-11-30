@@ -3,11 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
 
 #define TAM 100
 #define FILENAME "ls14e05motoristas.dados"
 
 const char
+    *sym_hbar = "\u2501",
     *sym_check = "\u2714",
     *g_block = "\u2591",
     *w_block1 = "\u2588",
@@ -42,62 +44,132 @@ FILE *arq;
 
 struct motorista
 {
-     int id ;
-     char nome[50];
-     char sexo[50];
-     int nhabilitacao;
-     char validade[50];
-     int idade;
-     int e;
+    int id;
+    char nome[50];
+    char sexo[2];
+    int cnh;
+    char validade[11];
+    int idade;
+    int e;
 };
 
 struct motorista motoristas[TAM];
 
-int menu();
-void cadastrarmotoristas();
-void consultarTodos();
-void consultarmotoristas();
-void alterar();
-void excluirLogicamente();
-void listarApagados();
-void ordenarIdade(int n);
-void subConsultas();
+int menuPrincipal();
+void msgFalhaBusca();
+void msgFalhaArquivo();
+void msgRetornoMenu ();
+int cadMotorista();
+void consultaGeral();
+int consultaNome();
+int alterarPorNome();
+int excluirLogicamente();
+int listarApagados();
+void listarPelaIdade();
+// void ordenarIdade(int n);
+void subMenuConsulta();
+void ordenarIdade(struct motorista motoristas[], int n);
+
+void pt_br()
+{
+    setlocale(LC_ALL, "Portuguese");
+}
+
+void clearScreen(){
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
+
+void menuTopBar()
+{
+    for (int i = 0; i < TAM; i++)
+    {
+        printf("%s", w_block1);
+    }
+    printf("%s\n", w_block1);
+}
+
+void separadorHrzBar()
+{
+    for (int i = 0; i < TAM; i++)
+    {
+        printf("%s", sym_hbar);
+    }
+    printf("%s\n", sym_hbar);
+}
+
+void msgFalhaBusca(){
+    printf("\n            %s ERRO\n", sym_erro);
+    printf("\n            %s Falha na busca por registro.\n", sym_Ldel);
+    printf("\n            %s   Tecle qualquer tecla para retornar %s\n", sym_arrow, sym_bck);
+    setbuf(stdin, NULL);
+    getchar();
+}
+
+void msgFalhaArquivo(){
+    printf("\n            %s ERRO\n", sym_erro);
+    printf("\n            %s Não foi possível abrir o arquivo ou o arquivo não existe\n\n\n", sym_Ldel);
+    exit(EXIT_FAILURE);
+}
+
+void msgRetornoMenu(){
+    printf("\n            %s   Tecle qualquer tecla para retornar %s\n", sym_arrow, sym_bck);
+    moduleTopBar();
+    printf("\n\n");
+    setbuf(stdin, NULL);
+    getchar();
+}
+
+void moduleTopBar()
+{
+    for (int i = 0; i < TAM; i++)
+    {
+        printf("%s", g_block);
+    }
+    printf("%s\n", g_block);
+}
 
 int main()
 {
-    return menu();
+    pt_br();
+    clearScreen();
+    return menuPrincipal();
 }
 
-int menu()
+int menuPrincipal()
 {
-    int opc;
+    int selectMenu = 0;
     do
     {
-        system("cls");
-        printf("\n 1. Cadastrar");
-        printf("\n 2. Consultar");
-        printf("\n 3. Alterar");
-        printf("\n 4. Excluir");
-        printf("\n 5. Listar Todos os registros excluidos logicamente");
-        printf("\n 6. Listar Todos os motoristas");
-        printf("\n 9. Finalizar");
-        printf("\n ");
+        clearScreen();
+        menuTopBar();
+        printf("\n            %s MENU PRINCIPAL \n\n", menu_idc);
+        printf("\n            %s CADASTRAR....................................... %s ", sym_1, sym_save);
+        printf("\n            %s CONSULTAR....................................... %s ", sym_2, sym_list);
+        printf("\n            %s ALTERAR......................................... %s ", sym_3, sym_edit);
+        printf("\n            %s EXCLUIR (LOGICAMENTE)........................... %s ", sym_4, sym_del);
+        printf("\n            %s LISTAR TODOS EXCLUÍDOS LOGICAMENTE.............. %s ", sym_5, sym_Ldel);
+        printf("\n            %s LISTAR TODOS OS MotoristaS (ORDENADOS POR IDADE) %s ", sym_6, sym_sort);
+        printf("\n            %s SAIR:........................................... %s ", sym_0, sym_off);
+        printf("\n            %s  ", sym_question);
 
-        printf("\n Informe a opcao desejada: ");
         setbuf(stdin, NULL);
-        scanf("%d", &opc);
+        scanf("%d", &selectMenu);
 
-        switch (opc)
+        switch (selectMenu)
         {
         case 1:
-            cadastrarmotoristas();
+            cadMotorista();
             break;
         case 2:
             //
-            subConsultas();
+            subMenuConsulta();
             break;
         case 3:
-            alterar();
+            alterarPorNome();
             break;
         case 4:
             excluirLogicamente();
@@ -111,122 +183,202 @@ int menu()
         default:
             break;
         }
-
-    } while (opc != 9);
-    return opc;
+    } while (selectMenu != 0);
+    return selectMenu;
 }
 
-void subConsultas()
+void subMenuConsulta()
 {
-    int opc = 1;
+    int selectSubMenuConsulta = 0;
+
     do
     {
-        system("cls");
-        printf("\n 1. Todos");
-        printf("\n 2. Individual");
-        printf("\n 9. Voltar");
+        clearScreen();
+        menuTopBar();
+        printf("\n            %s MENU CONSULTA \n\n", menu_idc);
+        printf("\n            %s TODOS         %s ", sym_1, sym_list);
+        printf("\n            %s INDIVIDUAL    %s ", sym_2, sym_id);
+        printf("\n            %s VOLTAR        %s \n", sym_0, sym_bck);
+        printf("\n            %s  ", sym_question);
 
-        printf("\n Informe a opcao desejada: ");
         setbuf(stdin, NULL);
-        scanf("%d", &opc);
+        scanf("%d", &selectSubMenuConsulta);
 
-        if (opc == 1)
-            consultarTodos();
-        if (opc == 2)
-            consultarmotoristas();
-
-    } while (opc != 9);
+        if (selectSubMenuConsulta == 1)
+            consultaGeral();
+        if (selectSubMenuConsulta == 2)
+            consultaNome();
+    } while (selectSubMenuConsulta != 0);
 }
 
-void cadastrarmotoristas()
+int cadMotorista()
 {
-    int finalizar = 0;
+    int finalizar = -1;
     struct motorista ficha;
-    system("cls");
+    clearScreen();
     if ((arq = fopen(FILENAME, "rb+")) == NULL)
     {
         if ((arq = fopen(FILENAME, "wb")) == NULL)
         {
-            printf("\n Erro");
-            return 1;
+          msgFalhaArquivo();
         }
     }
-
+ 
     do
     {
-        //
-        printf("\nInforme o id: ");
+        clearScreen();
+        moduleTopBar();
+        printf("\n            %s  %s   Módulo %s CADASTRAR %s\n\n", menu_idc, sym_arrow, sym_1, sym_save);
+
+        printf("\n            %s  Preencha os campos de registro do Motorista \n\n", sym_cad);
+
+        printf("              %s Código ID: ", sym_Wfile);
         setbuf(stdin, NULL);
         scanf("%d", &ficha.id);
-        printf("\nInforme o nome : ");
+        printf("              %s Nome Motorista: ", sym_Wfile);
         setbuf(stdin, NULL);
         scanf("%[^\n]", ficha.nome);
-        printf("\nInforme o sexo: ");
+        printf("              %s Sexo Motorista (M/F): ", sym_Wfile);
         setbuf(stdin, NULL);
         scanf("%[^\n]", ficha.sexo);
-        printf("\nInforme o numero da  habilitação: ");
+        printf("              %s CNH Motorista: ", sym_Wfile);
         setbuf(stdin, NULL);
-        scanf("%d", &ficha.nhabilitacao);
-        printf("\nInforme a validade da habilitação: ");
+        scanf("%d", &ficha.cnh);
+        printf("              %s Validade CNH: ", sym_Wfile);
         setbuf(stdin, NULL);
         scanf("%[^\n]", &ficha.validade);
-        printf("\nInforme a idade do motorista: ");
+        printf("              %s Idade Motorista: ", sym_Wfile);
         setbuf(stdin, NULL);
         scanf("%d", &ficha.idade);
+        setbuf(stdin, NULL);
 
-        //
         ficha.e = 0;
         fseek(arq, 0, 2);
         fwrite(&ficha, sizeof(ficha), 1, arq);
         //
-        printf("\n Deseja incluir outro registro? \n Pressione [9] para voltar, outra tecla para continuar..");
+        printf("\n            %s Deseja encerrar o cadastro", sym_question);
+        printf("\n            %s Digite %s para sair       ", sym_off, sym_0);
+        printf("\n            %s Digite %s para continuar  ", sym_sort, sym_1);
+
         scanf("%d", &finalizar);
-    } while (finalizar != 9);
+
+    } while (finalizar != 0);
     fclose(arq);
 }
 
-void consultarTodos()
+int alterarPorNome()
 {
-    int i;
+    int busca, confirmacao;
     struct motorista ficha;
-    system("cls");
-    printf("\n Lista de todos os motoristas");
+    char nome[50];
+    clearScreen();
+    moduleTopBar();
+    printf("\n            %s  %s   Módulo %s  ALTERAR POR NOME %s\n\n", menu_idc, sym_arrow, sym_2, sym_list);
     printf("\n");
-if ((arq = fopen(FILENAME, "rb")) == NULL)
+    if ((arq = fopen(FILENAME, "rb+")) == NULL)
     {
         printf("\n Erro");
         return 0;
     }
+    printf("              %s Nome do(a) Motorista: ", sym_question);
+    setbuf(stdin, NULL);
+    scanf("%[^\n]", nome);
+    busca = 0;
+    while (fread(&ficha, sizeof(ficha), 1, arq))
+    {
+
+        if ((ficha.e == 0) && (strcmp(nome, ficha.nome) == 0))
+        {
+
+            fseek(arq, ftell(arq) - sizeof(ficha), 0);
+            
+            moduleTopBar();
+            printf("\n            %s  Preencha os campos para alterar registro de Motorista \n\n", sym_cad);
+
+            printf("              %s Código ID: ", sym_Wfile);
+            setbuf(stdin, NULL);
+            scanf("%d", &ficha.id);
+            printf("              %s Nome Motorista: ", sym_Wfile);
+            setbuf(stdin, NULL);
+            scanf("%[^\n]", ficha.nome);
+            printf("              %s Sexo Motorista (M/F): ", sym_Wfile);
+            setbuf(stdin, NULL);
+            scanf("%[^\n]", ficha.sexo);
+            printf("              %s CNH Motorista: ", sym_Wfile);
+            setbuf(stdin, NULL);
+            scanf("%d", &ficha.cnh);
+            printf("              %s Validade CNH: ", sym_Wfile);
+            setbuf(stdin, NULL);
+            scanf("%[^\n]", &ficha.validade);
+            printf("              %s Idade Motorista: ", sym_Wfile);
+            setbuf(stdin, NULL);
+            scanf("%d", &ficha.idade);
+
+            printf("\n            %s  Deseja alterar este registro %s",sym_question, sym_cad);
+            printf("\n            %s  Para continuar %s", sym_1,sym_edit);
+            printf("\n            %s  Para cancelar  %s", sym_0,sym_erro);
+            scanf("%d", &confirmacao);
+            if (confirmacao == 1)
+            {
+                fwrite(&ficha, sizeof(ficha), 1, arq);
+            }
+            fseek(arq, 0, 2);
+            busca = 1;
+        }
+    }
+    fclose(arq);
+    if (busca == 0)
+    {
+        msgFalhaBusca();
+        msgRetornoMenu();
+    }
+}
+
+void consultaGeral()
+{
+    int i;
+    struct motorista ficha;
+    clearScreen();
+    if ((arq = fopen(FILENAME, "rb")) == NULL)
+    {
+        msgFalhaArquivo();
+    }
+
+    clearScreen();
+    moduleTopBar();
+    printf("\n            %s  %s   Módulo %s  CONSULTAR TODOS %s\n\n", menu_idc, sym_arrow, sym_2, sym_list);
+    printf("\n             %s %s  ID |               NOME             | SEXO  |      CNH      |  VÁLIDA ATÉ  | IDADE %s", w_block1, sym_check, w_block1);
+
     while (fread(&ficha, sizeof(ficha), 1, arq))
     {
         if (ficha.e == 0)
         {
-            printf("\n %4d | %s | %s | %d | %s | %d ", ficha.id, ficha.nome, ficha.sexo, ficha.nhabilitacao, ficha.validade, ficha.idade);
+            printf("\n             %s %-5d | %-30s | %-5s | %-13d | %-12s | %-5d %-s", w_block1, ficha.id, ficha.nome, ficha.sexo, ficha.cnh, ficha.validade, ficha.idade, w_block1);
         }
     }
 
     fclose(arq);
-    printf("\n Tecle qualquer tecla para finalizar ...");
+    printf("\n\n            %s   LISTA CARREGADA COM SUCESSO       %s %s", sym_arrow, sym_list, sym_sort);
+    printf("\n            %s   Tecle qualquer tecla para finalizar %s\n", sym_arrow, sym_off);
+    moduleTopBar();
+    printf("\n\n");
     setbuf(stdin, NULL);
     getchar();
-
 }
 
-
-
-void consultarmotoristas()
+int consultaNome()
 {
     struct motorista ficha;
     char nome[50];
-    system("cls");
-    printf("\n Consulta por nome");
-    printf("\n");
+    clearScreen();
+    moduleTopBar();
+    printf("\n            %s  %s   Módulo %s  CONSULTAR POR NOME %s\n\n", menu_idc, sym_arrow, sym_2, sym_list);
+
     if ((arq = fopen(FILENAME, "rb")) == NULL)
     {
-        printf("\n Erro");
-        return 0;
+        msgFalhaArquivo();
     }
-    printf("\n Informe o nome :");
+    printf("              %s Nome do(a) Motorista: ", sym_question);
     setbuf(stdin, NULL);
     scanf("%[^\n]", nome);
 
@@ -237,12 +389,12 @@ void consultarmotoristas()
         {
             if (strcmp(nome, ficha.nome) == 0)
             {
-                printf("\n Codigo.......: %d", ficha.id);
-                printf("\n Nome.........: %s", ficha.nome);
-                printf("\n Sexo: %s", ficha.sexo);
-                printf("\n Numero da habilitação: %d", ficha.nhabilitacao);
-                printf("\n Validade da habilitação........: %s", ficha.validade);
-                printf("\n Idade........: %d", ficha.idade);
+                printf("\n              Código ID:            %s %d\n", sym_id, ficha.id);
+                printf("              Nome Motorista:       %s %s\n", sym_check, ficha.nome);
+                printf("              Sexo Motorista (M/F): %s %s\n", sym_check, ficha.sexo);
+                printf("              CNH Motorista:        %s %d\n", sym_check, ficha.cnh);
+                printf("              Validade CNH:         %s %s\n", sym_check, ficha.validade);
+                printf("              Idade Motorista:      %s %d\n", sym_check, ficha.idade);
                 i = 1;
                 break;
             }
@@ -251,82 +403,17 @@ void consultarmotoristas()
     fclose(arq);
     if (i == 0)
     {
-        printf("\n Falha, busca nao localizou o nome ");
+        msgFalhaBusca();
     }
-    printf("\n");
-    printf("\n Tecle qualquer tecla para finalizar ...");
-    getchar();
+    msgRetornoMenu();
 }
 
-void alterar()
+int excluirLogicamente()
 {
-    int achou, confirmacao;
+    int busca, confirmacao;
     struct motorista ficha;
     char nome[50];
-    system("cls");
-    printf("\n Alterar Registro por nome");
-    printf("\n");
-    if ((arq = fopen(FILENAME, "rb+")) == NULL)
-    {
-        printf("\n Erro");
-        return 0;
-    }
-    printf("\n Informe o nome :");
-    setbuf(stdin, NULL);
-    scanf("%[^\n]", nome);
-    achou = 0;
-    while (fread(&ficha, sizeof(ficha), 1, arq))
-    {
-
-        if ((ficha.e == 0) && (strcmp(nome, ficha.nome) == 0))
-        {
-
-            fseek(arq, ftell(arq) - sizeof(ficha), 0);
-
-            printf("\nInforme o id : [ %d ] ", ficha.id);
-            scanf("%d", &ficha.id);
-            printf("\nInforme o nome [ %s ]: ", ficha.nome);
-            setbuf(stdin, NULL);
-            scanf("%[^\n]", ficha.nome);
-            printf("\nInforme o sexo [ %s ]: ", ficha.sexo);
-            setbuf(stdin, NULL);
-            scanf("%[^\n]", &ficha.sexo);
-            printf("\nInforme o numero da habilitação do motorista[ %d ]: ", ficha.nhabilitacao);
-            setbuf(stdin, NULL);
-            scanf("%d", &ficha.nhabilitacao);
-            printf("\nInforme a validade da habilitação [ %s ]: ", ficha.validade);
-            setbuf(stdin, NULL);
-            scanf("%[^\n]", ficha.validade);
-            printf("\nInforme a idade do motorista [ %d ]: ", ficha.idade);
-            setbuf(stdin, NULL);
-            scanf("%d", &ficha.idade);
-
-            printf("\n\n Deseja alterar a ficha? \n Pressione [1] para SIM e outra tecla para cancelar ...");
-            scanf("%d", &confirmacao);
-            if (confirmacao == 1)
-            {
-                fwrite(&ficha, sizeof(ficha), 1, arq);
-            }
-            fseek(arq, 0, 2);
-            achou = 1;
-        }
-    }
-    fclose(arq);
-    if (achou == 0)
-    {
-        printf("\n Falha, busca nao localizou o nome ");
-        printf("\n");
-        printf("\n Tecle qualquer tecla para finalizar ...");
-        getchar();
-    }
-}
-
-void excluirLogicamente()
-{
-    int achou, confirmacao;
-    struct motorista ficha;
-    char nome[50];
-    system("cls");
+    clearScreen();
     printf("\n Exclusao Registro por nome");
     printf("\n");
     if ((arq = fopen(FILENAME, "rb+")) == NULL)
@@ -338,7 +425,7 @@ void excluirLogicamente()
     setbuf(stdin, NULL);
     scanf("%[^\n]", nome);
 
-    achou = 0;
+    busca = 0;
     while (fread(&ficha, sizeof(ficha), 1, arq))
     {
         if (ficha.e == 0)
@@ -346,13 +433,17 @@ void excluirLogicamente()
             if (strcmp(nome, ficha.nome) == 0)
             {
                 fseek(arq, ftell(arq) - sizeof(ficha), 0);
-                printf("\n Codigo.......: %d", ficha.id);
-                printf("\n Nome.........: %s", ficha.nome);
-                printf("\n Sexo: %s", ficha.sexo);
-                printf("\n Numero da habilitação: %d", ficha.nhabilitacao);
-                printf("\n Validade da habilitação........: %s", ficha.validade);
-                printf("\n Idade........: %d", ficha.idade);
-                printf("\n\n Deseja excluir a ficha? \n Pressione [1] para SIM e outra tecla para cancelar ...");
+                printf("              Código ID:            %s %d\n", sym_id, ficha.id);
+                printf("              Nome Motorista:       %s %s\n", sym_check, ficha.nome);
+                printf("              Sexo Motorista (M/F): %s %s\n", sym_check, ficha.sexo);
+                printf("              CNH Motorista:        %s %d\n", sym_check, ficha.cnh);
+                printf("              Validade CNH:         %s %s\n", sym_check, ficha.validade);
+                printf("              Idade Motorista:      %s %d\n", sym_check, ficha.idade);
+
+                printf("\n            %s Deseja excluir o registro", sym_question);
+                printf("\n            %s Digite %s para cancelar       ", sym_off, sym_0);
+                printf("\n            %s Digite %s para confirmar  ", sym_sort, sym_1);
+                
                 scanf("%d", &confirmacao);
                 if (confirmacao == 1)
                 {
@@ -360,60 +451,58 @@ void excluirLogicamente()
                     fwrite(&ficha, sizeof(ficha), 1, arq);
                 }
                 fseek(arq, 0, 2);
-                achou = 1;
+                busca = 1;
             }
         }
     }
     fclose(arq);
-    if (achou == 0)
+    if (busca == 0)
     {
-        printf("\n Falha, busca nao localizou o nome ");
-        printf("\n");
-        printf("\n Tecle qualquer tecla para finalizar ...");
-        getchar();
+        msgFalhaBusca();
     }
 }
 
-void listarApagados()
+int listarApagados()
 {
     int i, n;
     struct motorista ficha;
-    system("cls");
-    printf("\n Lista de Registros Apagados ");
-    printf("\n");
+    clearScreen();
+    moduleTopBar();
+    printf("\n            %s  %s   Módulo %s  CONSULTAR EXCLUÍDOS %s\n\n", menu_idc, sym_arrow, sym_2, sym_list);
+
     if ((arq = fopen(FILENAME, "rb")) == NULL)
     {
-        printf("\n Erro");
-        return 0;
+        msgFalhaArquivo();
     }
     i = 0;
     while (fread(&ficha, sizeof(ficha), 1, arq))
     {
         if (ficha.e == 1)
         {
-            printf("\n %4d | %s | %s | %d | %s| %d ", ficha.id, ficha.nome, ficha.sexo, ficha.nhabilitacao, ficha.validade, ficha.idade);
+            printf("\n              Código ID:            %s %d\n", sym_id, ficha.id);
+            printf("              Nome Motorista:       %s %s\n", sym_check, ficha.nome);
+            printf("              Sexo Motorista (M/F): %s %s\n", sym_check, ficha.sexo);
+            printf("              CNH Motorista:        %s %d\n", sym_check, ficha.cnh);
+            printf("              Validade CNH:         %s %s\n", sym_check, ficha.validade);
+            printf("              Idade Motorista:      %s %d\n", sym_check, ficha.idade);
+            separadorHrzBar();
             i++;
         }
     }
     fclose(arq);
-    printf("\n Tecle qualquer tecla para finalizar ...");
-    setbuf(stdin, NULL);
-    getchar();
+    msgRetornoMenu();
 }
 
 void listarPelaIdade()
 {
     int i, n;
     struct motorista ficha;
-    system("cls");
-    printf("\n Lista de Todos os Motoristas");
-    printf("\n");
-    printf("\n Por Idade: \n");
+    clearScreen();
+    printf("\n            %s  %s   Módulo %s  CONSULTAR REGISTROS POR IDADE %s\n\n", menu_idc, sym_arrow, sym_id, sym_list);
 
     if ((arq = fopen(FILENAME, "rb")) == NULL)
     {
-        printf("\n Erro");
-        return 0;
+        msgFalhaArquivo();
     }
 
     i = 0;
@@ -425,41 +514,47 @@ void listarPelaIdade()
 
     fclose(arq);
 
-    ordenarIdade(i);
+    ordenarIdade(motoristas, i);
 
     printf("\n");
-    printf("\n Ficha digitada");
+    printf("\n            %s  %s   REGISTRO %s\n\n", sym_list, sym_save, sym_cad);
     for (n = 0; n < i; n++)
     {
-                printf("\n Codigo.......: %d", ficha.id);
-                printf("\n Nome.........: %s", ficha.nome);
-                printf("\n Sexo: %s", ficha.sexo);
-                printf("\n Numero da habilitação: %d", ficha.nhabilitacao);
-                printf("\n Validade da habilitação........: %s", ficha.validade);
-                printf("\n Idade........: %d", ficha.idade);
+        printf("\n              Código ID:            %s %d\n", sym_id, motoristas[n].id);
+        printf("              Nome Motorista:       %s %s\n", sym_check, motoristas[n].nome);
+        printf("              Sexo Motorista (M/F): %s %s\n", sym_check, motoristas[n].sexo);
+        printf("              CNH Motorista:        %s %d\n", sym_check, motoristas[n].cnh);
+        printf("              Validade CNH:         %s %s\n", sym_check, motoristas[n].validade);
+        printf("              Idade Motorista:      %s %d\n", sym_check, motoristas[n].idade);
 
-        printf("\n-----------------------------------------------------\n");
+        separadorHrzBar();
     }
-    printf("\n Tecle qualquer tecla para finalizar ...");
-    setbuf(stdin, NULL);
-    getchar();
+    msgRetornoMenu();
 }
 
-void ordenarIdade(int n)
+void ordenarIdade(struct motorista motoristas[], int n)
 {
-
     int i, j;
     struct motorista aux;
+    int troca;
+
     for (i = 0; i < n - 1; i++)
     {
-        for (j = i + 1; j < n; j++)
+        troca = 0; // Flag para indicar se houve troca nesta passagem
+
+        for (j = 0; j < n - i - 1; j++)
         {
-            if (motoristas[i].idade > motoristas[j].idade)
+            if (motoristas[j].idade > motoristas[j + 1].idade)
             {
-                aux = motoristas[i];
-                motoristas[i] = motoristas[j];
-                motoristas[j] = aux;
+                aux = motoristas[j];
+                motoristas[j] = motoristas[j + 1];
+                motoristas[j + 1] = aux;
+                troca = 1; // Indica que houve uma troca nesta passagem
             }
         }
+
+        // Se não houve trocas nesta passagem, o array está ordenado
+        if (troca == 0)
+            break;
     }
 }
