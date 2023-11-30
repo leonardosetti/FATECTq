@@ -10,7 +10,7 @@ describe("Web Form Filling", () => {
 
   it(`Fill and submit the form for each data set`, async () => {
     for (const [index, data] of testData.entries()) {
-      //cy.log(`Filling form with data ${index + 1}`);
+      // cy.log(`Filling form with data ${index + 1}`);
 
       cy.get("#distroBased").type(data.distroBased);
       cy.get("#origem").type(data.origem);
@@ -27,7 +27,7 @@ describe("Web Form Filling", () => {
         .get("#btSalvar")
         .click()
         .then(() => {
-          cy.wait(400); // Wait for a brief period before filling the next form
+          cy.wait(1200); // Wait for a brief period before filling the next form
         });
     }
   });
