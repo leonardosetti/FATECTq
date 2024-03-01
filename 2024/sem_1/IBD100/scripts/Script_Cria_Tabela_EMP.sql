@@ -8,6 +8,10 @@ create table EMP (
 	hiredate date	   default (sysdate),
 	sal	NUMBER(10,2) constraint ck_sal CHECK (sal > 500),
 	comm	NUMBER(9,0)  default null,
-	deptno	NUMBER(2)    );
+	deptno	NUMBER(2)    )
+	
+	COMMIT;
 
-ALTER TABLE EMP MODIFY JOB VARCHAR(30);
+ALTER TABLE EMP MODIFY JOB VARCHAR(30)
+
+	COMMIT;
