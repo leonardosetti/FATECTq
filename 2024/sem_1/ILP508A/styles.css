@@ -1,0 +1,20 @@
+* {
+  font-family: "Ubuntu";
+  background-color: rgb(243, 243, 243);
+}
+
+div {
+    border: solid 5px #b91236;
+    display: block;
+    text-align: center;
+    border-radius: 10pt;
+  }
+  
+
+.minhaClasse{
+    color: aqua;
+}
+
+#meuEstilo{
+    color: #b91236;
+}
