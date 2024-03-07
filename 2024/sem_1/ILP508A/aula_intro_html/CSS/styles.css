@@ -1,0 +1,54 @@
+* {
+  font-family: 'Ubuntu';
+  background-color: rgb(243, 243, 243);
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  /*padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid #999999;
+  border-collapse: collapse;
+  padding: 10px;
+  margin: 5px;
+}
+
+#_table_main_title {
+  text-align: center;
+  background-color: #999999;
+}
+
+.th_clr th {
+  background-color: #999999;
+}
+.td_clr_1 td {
+  background-color: #706a62;
+}
+.td_clr_2 td {
+  background-color: #706a69;
+}
+table td p {
+  line-height: 0px;
+}
+
+.p_ident_0 {
+  text-indent: 0px;
+}
+.p_ident_1 {
+  text-indent: 10px;
+}
+.p_ident_2 {
+  text-indent: 20px;
+}
+.p_ident_3 {
+  text-indent: 30px;
+}
+.p_ident_4 {
+  text-indent: 40px;
+}

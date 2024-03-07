@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/aula_intro_html/CSS/styles.css">
+  <title>ILP508A - HTML</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="top-nav">
+      <div class="top-menu">
+        <ul>
+          <li>
+            <div class="menu-button" id="_menu-home"></div> <a href="#">THE MENU TEXT</a>
+          </li>
+          <li>
+            <div class="menu-button" id="_menu-page1"></div> <a href="#">THE MENU TEXT</a>
+          </li>
+          <li>
+            <div class="menu-button" id="_menu-page2"></div> <a href="#">THE MENU TEXT</a>
+          </li>
+          <li>
+            <div class="menu-button" id="_menu-page3"></div> <a href="#">THE MENU TEXT</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="top-message">
+      <h1>Uma página HTML (Hyper Text Markup Language)</h1>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <h2> Um breve texto:</h2>
+      <p>
+        HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a
+        estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a
+        aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.
+      </p>
+      <p>
+        "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre
+        sites.
+        Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por
+        outras
+        pessoas, você se torna um participante ativo na world wide web.
+      </p>
+      <p>
+        Fim
+      </p>
+    </div>
+    <div>
+      <h2>Usando listas</h2>
+      <h3>Listas Ordenadas</h3>
+      <p>
+      <ol>
+        <li> Item de lista ordenada (A)</li>
+        <li> Item de lista ordenada (B)</li>
+        <li> Item de lista ordenada (C)</li>
+        <li> Item de lista ordenada (D)</li>
+      </ol>
+      </p>
+
+      <h3> Listas Não Ordenadas</h3>
+      <p>
+      <ul>
+        <li> Item de lista não ordenada (A)</li>
+        <li> Item de lista não ordenada (B)</li>
+        <li> Item de lista não ordenada (C)</li>
+        <li> Item de lista não ordenada (D)</li>
+      </ul>
+      </p>
+    </div>
+    <div>
+      <h2>Usando Tabelas</h2>
+      <table>
+        <tr>
+          <th id="_table_main_title" colspan="3">
+            Estrutura de tabelas em HTML
+          </th>
+        </tr>
+        <tr class="th_clr">
+          <th>Nome da TAG</th>
+          <th>Função da TAG</th>
+          <th>Exemplo</th>
+        </tr>
+        <tr class="td_clr_1">
+          <td>TAG: &lt;TABLE&gt;</td>
+          <td>
+            <p>A tag table define uma tabela para o HTML</p>
+            <p>Podendo ser atribuída a uma classe ou id específicos</p>
+          </td>
+          <td>
+            <p class="p_ident_0">&lt;table&gt;</p>
+            <p class="p_ident_1">[Conteúdo da Tabela]</p>
+            <p class="p_ident_0">&lt;/table&gt;</p>
+          </td>
+        </tr>
+        <tr class="td_clr_2">
+          <td>TAG: &lt;TR&gt;</td>
+          <td>
+            <p>TR significa Table Row (linha de tabela)</p>
+            <p>Permite que seja inserida uma nova linha para a tabela</p>
+            <p>Deve ser usada dentro de uma TAG TABLE</p>
+          </td>
+          <td>
+            <p class="p_ident_0">&lt;table&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">conteúdo da linha #1 da
+              tabela</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_2">conteúdo da linha #2 da
+              tabela</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_2">conteúdo da linha #3 da
+              tabela</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_2">conteúdo da linha #N da
+              tabela</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_0">&lt;/table&gt;</p>
+          </td>
+        </tr>
+        <tr class="td_clr_1">
+          <td>TAG: &lt;TH&gt;</td>
+          <td>
+            <p>TH significa Table Header (Títulos de Colunas)</p>
+            <p>Permite que seja inserido um Título de Coluna para a tabela</p>
+            <p>Deve ser usada dentro de uma TAG TR</p>
+          </td>
+          <td>
+            <p class="p_ident_0">&lt;table&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #1&lt;/th&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #2&lt;/th&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #3&lt;/th&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #N&lt;/th&gt;</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_0">&lt;/table&gt;</p>
+          </td>
+        </tr>
+
+        <tr class="td_clr_2">
+          <td>TAG: &lt;TD&gt;</td>
+          <td>
+            <p>TD significa Table Data (Dados da tabela)</p>
+            <p>Cada "TD" é equivalente a uma célula da tabela</p>
+            <p>Pode ou não conter uma informação, tais como:</p>
+            <p>Textos, Listas, outras Tabelas, Imagens, Links, etc</p>
+            <p>Deve ser usada dentro de uma TAG TR</p>
+          </td>
+          <td>
+
+            <p class="p_ident_0">&lt;table&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #1&lt;/th&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #2&lt;/th&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #3&lt;/th&gt;</p>
+            <p class="p_ident_2">&lt;th&gt;título da coluna #N&lt;/th&gt;</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #1 da linha #1&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #2 da linha #1&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #3 da linha #1&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #J da linha #1&lt;/td&gt;</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #1 da linha #2&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #2 da linha #2&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #3 da linha #2&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #J da linha #2&lt;/td&gt;</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #1 da linha #3&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #2 da linha #3&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #3 da linha #3&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #J da linha #3&lt;/td&gt;</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_1">&lt;tr&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #1 da linha #N&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #2 da linha #N&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #3 da linha #N&lt;/td&gt;</p>
+            <p class="p_ident_2">&lt;td&gt;informação da célula #J da linha #N&lt;/td&gt;</p>
+            <p class="p_ident_1">&lt;/tr&gt;</p>
+            <p class="p_ident_0">&lt;/table&gt;</p>
+          </td>
+        </tr>
+      </table>
+
+
+
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>
