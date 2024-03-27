@@ -1,0 +1,27 @@
+h3{
+    color: red;
+    background-color: gray;
+}
+
+#meuEstilo{
+    color: blue;
+    background-color: black;
+}
+
+.minhaClasse{
+    color: chartreuse;
+    background-color: blueviolet;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#formatacaoFonte{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.Imagens{
+    max-width: 200px;
+    max-height: 112px;
+}

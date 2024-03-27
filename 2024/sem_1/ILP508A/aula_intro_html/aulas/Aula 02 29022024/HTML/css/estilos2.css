@@ -1,0 +1,16 @@
+h3{
+    color: red;
+    background-color: gray;
+}
+
+#meuEstilo{
+    color: red;
+    background-color: gray;
+}
+
+.minhaClasse{
+    color: red;
+    background-color: gray;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
