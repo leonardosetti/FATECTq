@@ -63,24 +63,12 @@ a {
 }
 
 #_footer {
-  width: 100%;
-  display: grid;
   color: #fff;
   background-color: #851944;
-  margin: 0px;
-  padding: 0px;
 }
 
 .social_media {
   text-align: center;
-}
-
-#_img_footer img {
-  display: inline;
-  padding: 8px 60px;
-  max-width: 64px;
-  width: auto;
-  height: auto;
 }
 
 .citation {
@@ -90,4 +78,30 @@ a {
 }
 .qc_text {
   padding: 8px 60px;
+}
+
+.sm_icons {
+  display: inline;
+  padding: 8px 60px;
+  max-width: 64px;
+  width: auto;
+  height: auto;
+}
+svg {
+  fill: #000000;
+}
+svg:hover {
+  fill: #ffffff;
+  transition: ease-out 700ms;
+}
+
+.fotos {
+  display: grid;
+  align-items: center;
+  height: 400px;
+  margin-left: 40%;
+}
+img {
+  max-width: 400px;
+  max-height: 400px;
 }
