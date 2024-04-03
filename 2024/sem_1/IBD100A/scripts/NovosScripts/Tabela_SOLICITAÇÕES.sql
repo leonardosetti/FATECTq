@@ -1,5 +1,5 @@
 
---- Tabela SOLICITAÃ‡Ã•ES ----
+--- Tabela SOLICITAÇÕES ----
 
 CREATE TABLE SOLICITACOES
    (NUMERO_SOLICITACAO integer, 
