@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../CSS/styles.css" />
 
     <title>Atividade - Fernando Pessoa</title>
@@ -10,286 +16,333 @@
 
   <body>
     <header>
-      <div class="main_header">
-        <div class="top_title" id="_top_title">
-          <h1>Fernando Pessoa</h1>
+      <div class="main_header container-fluid text-center">
+        <div class="row">
+          <div class="col">
+            <h1>Fernando Pessoa</h1>
+          </div>
         </div>
-        <nav class="menu_bar" id="_menu_bar">
-          <ul>
-            <li class="menu_link" id="_link_home"><a href="#">HOME</a></li>
-            <li class="menu_link" id="_link_fotos">
-              <a href="./fotos.html">Fotos</a>
-            </li>
-            <li class="menu_link" id="_link_bio">
-              <a href="./bibliografia.html">Bibliografia</a>
-            </li>
-            <li class="menu_link" id="_link_obrasp">
-              <a href="./obras_postumas.html">Obras Póstumas</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="row menu_bar">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="container collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="../HTML/fotos.html"
+                      >Fotos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../HTML/bibliografia.html"
+                      >Bibliografia</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../HTML/obras_postumas.html"
+                      >Obras Póstumas</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <div>
-        <div>
-          <section id="_intro">
-            <p>
-              Fernando António Nogueira Pessoa (Lisboa, 13 de junho de 1888 —
-              Lisboa, 30 de novembro de 1935), mais conhecido como Fernando
-              Pessoa, foi um poeta, filósofo e escritor português.
-            </p>
-            <p>
-              Fernando Pessoa é o mais universal poeta português. Por ter sido
-              educado na África do Sul, numa escola católica irlandesa, chegou a
-              ter maior familiaridade com o idioma inglês do que com o português
-              ao escrever os seus primeiros poemas nesse idioma. O crítico
-              literário Harold Bloom considerou Pessoa como "Whitman renascido",
-              e o incluiu no seu cânone entre os 26 melhores escritores da
-              civilização ocidental, não apenas da literatura portuguesa mas
-              também da inglesa.
-            </p>
-            <p>
-              Das quatro obras que publicou em vida, três são na língua inglesa.
-              Fernando Pessoa traduziu várias obras em inglês (e.g., de
-              Shakespeare e Edgar Poe) para o português, e obras portuguesas
-              (nomeadamente de António Botto e Almada Negreiros) para o inglês.
-            </p>
-            <p>
-              Enquanto poeta, escreveu sob múltiplas personalidades -
-              heterónimos, como Ricardo Reis, Álvaro de Campos e Alberto Caeiro
-              -, sendo estes últimos objeto da maior parte dos estudos sobre a
-              sua vida e obra. Robert Hass, poeta americano, diz: "outros
-              modernistas como Yeats, Pound, Elliot inventaram máscaras pelas
-              quais falavam ocasionalmente... Pessoa inventava poetas inteiros."
-            </p>
-          </section>
-        </div>
-        <div>
-          <section id="_bio">
-            <h2>Primeiros anos em Lisboa</h2>
-            <p>
-              Às três horas e vinte e quatro minutos da tarde de 13 de Junho de
-              1888 nasce Fernando Pessoa. O parto ocorreu no quarto andar
-              direito do n.º 4 do Largo de São Carlos, em frente à ópera de
-              Lisboa (Teatro de São Carlos), freguesia dos Mártires. De famílias
-              da pequena aristocracia, pelos lados paterno e materno, o pai,
-              Joaquim de Seabra Pessoa (38), natural de Lisboa, era funcionário
-              público do Ministério da Justiça e crítico musical do «Diário de
-              Notícias». A mãe, D. Maria Magdalena Pinheiro Nogueira Pessoa
-              (26), era natural dos Açores (mais propriamente, da Ilha
-              Terceira). Viviam com eles a avó Dionísia, doente mental, e duas
-              criadas velhas, Joana e Emília.
-            </p>
+        <section id="_intro">
+          <p>
+            Fernando António Nogueira Pessoa (Lisboa, 13 de junho de 1888 —
+            Lisboa, 30 de novembro de 1935), mais conhecido como Fernando
+            Pessoa, foi um poeta, filósofo e escritor português.
+          </p>
+          <p>
+            Fernando Pessoa é o mais universal poeta português. Por ter sido
+            educado na África do Sul, numa escola católica irlandesa, chegou a
+            ter maior familiaridade com o idioma inglês do que com o português
+            ao escrever os seus primeiros poemas nesse idioma. O crítico
+            literário Harold Bloom considerou Pessoa como "Whitman renascido", e
+            o incluiu no seu cânone entre os 26 melhores escritores da
+            civilização ocidental, não apenas da literatura portuguesa mas
+            também da inglesa.
+          </p>
+          <p>
+            Das quatro obras que publicou em vida, três são na língua inglesa.
+            Fernando Pessoa traduziu várias obras em inglês (e.g., de
+            Shakespeare e Edgar Poe) para o português, e obras portuguesas
+            (nomeadamente de António Botto e Almada Negreiros) para o inglês.
+          </p>
+          <p>
+            Enquanto poeta, escreveu sob múltiplas personalidades - heterónimos,
+            como Ricardo Reis, Álvaro de Campos e Alberto Caeiro -, sendo estes
+            últimos objeto da maior parte dos estudos sobre a sua vida e obra.
+            Robert Hass, poeta americano, diz: "outros modernistas como Yeats,
+            Pound, Elliot inventaram máscaras pelas quais falavam
+            ocasionalmente... Pessoa inventava poetas inteiros."
+          </p>
+        </section>
+      </div>
+      <div>
+        <section id="_bio">
+          <h2>Primeiros anos em Lisboa</h2>
+          <p>
+            Às três horas e vinte e quatro minutos da tarde de 13 de Junho de
+            1888 nasce Fernando Pessoa. O parto ocorreu no quarto andar direito
+            do n.º 4 do Largo de São Carlos, em frente à ópera de Lisboa (Teatro
+            de São Carlos), freguesia dos Mártires. De famílias da pequena
+            aristocracia, pelos lados paterno e materno, o pai, Joaquim de
+            Seabra Pessoa (38), natural de Lisboa, era funcionário público do
+            Ministério da Justiça e crítico musical do «Diário de Notícias». A
+            mãe, D. Maria Magdalena Pinheiro Nogueira Pessoa (26), era natural
+            dos Açores (mais propriamente, da Ilha Terceira). Viviam com eles a
+            avó Dionísia, doente mental, e duas criadas velhas, Joana e Emília.
+          </p>
 
-            <p>
-              O poeta, pelo lado paterno, tem as suas raízes familiares no
-              concelho de Arouca, nas freguesias do denominado «Fundo do
-              Concelho» de Arouca.
-            </p>
+          <p>
+            O poeta, pelo lado paterno, tem as suas raízes familiares no
+            concelho de Arouca, nas freguesias do denominado «Fundo do Concelho»
+            de Arouca.
+          </p>
 
-            <p>
-              Fernando António foi baptizado em 21 de Julho na Basílica dos
-              Mártires, ao Chiado, tendo por padrinhos a Tia Anica (D. Ana Luísa
-              Pinheiro Nogueira, tia materna) e o General Chaby. A escolha do
-              nome homenageia Santo António: a família reclamava uma ligação
-              genealógica com Fernando de Bulhões, nome de baptismo de Santo
-              António, tradicionalmente festejado em Lisboa a 13 de Junho, dia
-              em que Fernando Pessoa nasceu.
-            </p>
+          <p>
+            Fernando António foi baptizado em 21 de Julho na Basílica dos
+            Mártires, ao Chiado, tendo por padrinhos a Tia Anica (D. Ana Luísa
+            Pinheiro Nogueira, tia materna) e o General Chaby. A escolha do nome
+            homenageia Santo António: a família reclamava uma ligação
+            genealógica com Fernando de Bulhões, nome de baptismo de Santo
+            António, tradicionalmente festejado em Lisboa a 13 de Junho, dia em
+            que Fernando Pessoa nasceu.
+          </p>
 
+          <p>
+            A sua infância e adolescência foram marcadas por factos que o
+            influenciariam posteriormente. Às cinco horas da manhã de 13 de
+            Julho de 1893, o pai morreu, com 43 anos, vítima de tuberculose. A
+            morte foi anunciada no Diário de Notícias do dia. Fernando tinha
+            apenas cinco anos. O irmão Jorge viria a falecer no ano seguinte,
+            sem completar um ano, a 2 de Janeiro de 1894. A mãe vê-se obrigada a
+            leiloar parte da mobília e muda-se para uma casa mais modesta, o
+            terceiro andar do n.º 104 da Rua de São Marçal. Foi também neste
+            período que surgiu o primeiro heterónimo de Fernando Pessoa,
+            Chevalier de Pas, facto relatado pelo próprio a Adolfo Casais
+            Monteiro, numa carta de 1935, em que fala extensamente sobre a
+            origem dos heterónimos. Ainda no mesmo ano, escreve o primeiro
+            poema, um verso curto com a infantil epígrafe de À Minha Querida
+            Mamã. A mãe casa-se pela segunda vez em 1895 por procuração, na
+            Igreja de São Mamede, em Lisboa, com o comandante João Miguel Rosa
+            (1857-1919), cônsul de Portugal em Durban (África do Sul), que havia
+            conhecido um ano antes. Em África, onde passa a maior parte da
+            juventude e recebe educação inglesa, Pessoa viria a demonstrar desde
+            cedo talento para a literatura.
+          </p>
+          <div class="qc_text">
             <p>
-              A sua infância e adolescência foram marcadas por factos que o
-              influenciariam posteriormente. Às cinco horas da manhã de 13 de
-              Julho de 1893, o pai morreu, com 43 anos, vítima de tuberculose. A
-              morte foi anunciada no Diário de Notícias do dia. Fernando tinha
-              apenas cinco anos. O irmão Jorge viria a falecer no ano seguinte,
-              sem completar um ano, a 2 de Janeiro de 1894. A mãe vê-se obrigada
-              a leiloar parte da mobília e muda-se para uma casa mais modesta, o
-              terceiro andar do n.º 104 da Rua de São Marçal. Foi também neste
-              período que surgiu o primeiro heterónimo de Fernando Pessoa,
-              Chevalier de Pas, facto relatado pelo próprio a Adolfo Casais
-              Monteiro, numa carta de 1935, em que fala extensamente sobre a
-              origem dos heterónimos. Ainda no mesmo ano, escreve o primeiro
-              poema, um verso curto com a infantil epígrafe de À Minha Querida
-              Mamã. A mãe casa-se pela segunda vez em 1895 por procuração, na
-              Igreja de São Mamede, em Lisboa, com o comandante João Miguel Rosa
-              (1857-1919), cônsul de Portugal em Durban (África do Sul), que
-              havia conhecido um ano antes. Em África, onde passa a maior parte
-              da juventude e recebe educação inglesa, Pessoa viria a demonstrar
-              desde cedo talento para a literatura.
-            </p>
-            <div class="qc_text">
-              <p>
-                <q class="quote">
-                  Se depois de eu morrer, quiserem escrever a minha
-                  biografia,<br />
-                  Não há nada mais simples <br />
-                  Tem só duas datas - a da minha nascença e a da minha morte.
-                  <br />
-                  Entre uma e outra todos os dias são meus.
-                </q>
+              <q class="quote">
+                Se depois de eu morrer, quiserem escrever a minha biografia,<br />
+                Não há nada mais simples <br />
+                Tem só duas datas - a da minha nascença e a da minha morte.
                 <br />
-                <cite class="citation">
-                  (Fernando Pessoa/Alberto Caeiro; Se depois de eu morrer)</cite
-                >
-              </p>
-              <p>
-                <q class="quote">
-                  O poeta é um fingidor. <br />
-                  Finge tão completamente <br />
-                  Que chega a fingir que é dor <br />
-                  A dor que deveras sente.
-                </q>
-                <br />
-                <cite class="citation">
-                  (Fernando Pessoa, "Autopsicografia")
-                </cite>
-              </p>
-            </div>
-          </section>
-        </div>
-        <div>
-          <section id="_ortonimo">
-            <h2>Ortónimo</h2>
-            <div>
-              <p>
-                A obra ortónima de Pessoa passou por diferentes fases, mas
-                envolve basicamente a procura de um certo patriotismo perdido,
-                através de uma atitude sebastianista reinventada. O ortónimo foi
-                profundamente influenciado, em vários momentos, por doutrinas
-                religiosas (como a teosofia) e sociedades secretas (como a
-                Maçonaria). A poesia resultante tem um certo ar mítico, heróico
-                (quase épico, mas não na acepção original do termo) e por vezes
-                trágico. Pessoa é um poeta universal, na medida em que nos foi
-                dando, mesmo com contradições, uma visão simultaneamente
-                múltipla e unitária da vida. Uma explicação para a criação dos
-                três principais heterónimos e o semi-heterónimo Bernardo Soares,
-                reside nas várias formas que tinha de olhar o mundo, apoiando-se
-                no racionalismo e pensamento oriental.
-              </p>
-              <p>
-                O ortónimo é considerado, só por si, como simbolista e
-                modernista pela evanescência, indefinição e insatisfação, bem
-                como pela inovação praticada através de diversas sendas de
-                formulação do discurso poético (sensaccionismo, paulismo,
-                interseccionismo, etc.).
-              </p>
-              <p>
-                Fernando Pessoa foi marcado também pela poesia musical e
-                subjectiva, voltada essencialmente para a metalinguagem e os
-                temas relativos a Portugal, como o sebastianismo presente na
-                principal obra de "Pessoa ele-mesmo", Mensagem, uma coletânea de
-                poemas sobre as grandes personagens históricos portugueses.
-                Publicado em 1934, apenas um ano antes da morte do autor, este
-                foi o único livro de Fernando Pessoa em Língua Portuguesa
-                editado em vida. Foi contemplado com o Prémio Antero de Quental,
-                na categoria de «poema ou poesia solta», do Secretariado da
-                Propaganda Nacional (SPN).
-              </p>
-            </div>
-          </section>
-        </div>
-        <div>
-          <section id="_obra">
-            <h2>Obra Poética</h2>
-            <div>
-              <p>
-                Considera-se que a grande criação estética de Pessoa foi a
-                invenção heteronímica que atravessa toda a sua obra. Os
-                heterónimos, diferentemente dos pseudónimos, são personalidades
-                poéticas completas: identidades que, em princípio falsas, se
-                tornam verdadeiras através da sua manifestação artística própria
-                e diversa do autor original. Entre os heterónimos, o próprio
-                Fernando Pessoa passou a ser chamado ortónimo, porquanto era a
-                personalidade original. Entretanto, com o amadurecimento de cada
-                uma das outras personalidades, o próprio ortónimo tornou-se
-                apenas mais um heterónimo entre os outros. Os três heterónimos
-                mais conhecidos (e também aqueles com maior obra poética) foram
-                Álvaro de Campos, Ricardo Reis e Alberto Caeiro. Um quarto
-                heterónimo de grande importância na obra de Pessoa é Bernardo
-                Soares, autor do Livro do Desassossego, importante obra
-                literária do século XX. Bernardo é considerado um
-                semi-heterónimo por ter muitas semelhanças com Fernando Pessoa e
-                não possuir uma personalidade muito característica, ao contrário
-                dos três primeiros, que possuem até mesmo data de nascimento e
-                morte (excepção para Ricardo Reis, que não possui data de
-                falecimento). Por essa razão, José Saramago, laureado com o
-                Prémio Nobel, escreveu o livro O ano da morte de Ricardo Reis.
-              </p>
+                Entre uma e outra todos os dias são meus.
+              </q>
+              <br />
+              <cite class="citation">
+                (Fernando Pessoa/Alberto Caeiro; Se depois de eu morrer)</cite
+              >
+            </p>
+            <p>
+              <q class="quote">
+                O poeta é um fingidor. <br />
+                Finge tão completamente <br />
+                Que chega a fingir que é dor <br />
+                A dor que deveras sente.
+              </q>
+              <br />
+              <cite class="citation">
+                (Fernando Pessoa, "Autopsicografia")
+              </cite>
+            </p>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section id="_ortonimo">
+          <h2>Ortónimo</h2>
+          <div>
+            <p>
+              A obra ortónima de Pessoa passou por diferentes fases, mas envolve
+              basicamente a procura de um certo patriotismo perdido, através de
+              uma atitude sebastianista reinventada. O ortónimo foi
+              profundamente influenciado, em vários momentos, por doutrinas
+              religiosas (como a teosofia) e sociedades secretas (como a
+              Maçonaria). A poesia resultante tem um certo ar mítico, heróico
+              (quase épico, mas não na acepção original do termo) e por vezes
+              trágico. Pessoa é um poeta universal, na medida em que nos foi
+              dando, mesmo com contradições, uma visão simultaneamente múltipla
+              e unitária da vida. Uma explicação para a criação dos três
+              principais heterónimos e o semi-heterónimo Bernardo Soares, reside
+              nas várias formas que tinha de olhar o mundo, apoiando-se no
+              racionalismo e pensamento oriental.
+            </p>
+            <p>
+              O ortónimo é considerado, só por si, como simbolista e modernista
+              pela evanescência, indefinição e insatisfação, bem como pela
+              inovação praticada através de diversas sendas de formulação do
+              discurso poético (sensaccionismo, paulismo, interseccionismo,
+              etc.).
+            </p>
+            <p>
+              Fernando Pessoa foi marcado também pela poesia musical e
+              subjectiva, voltada essencialmente para a metalinguagem e os temas
+              relativos a Portugal, como o sebastianismo presente na principal
+              obra de "Pessoa ele-mesmo", Mensagem, uma coletânea de poemas
+              sobre as grandes personagens históricos portugueses. Publicado em
+              1934, apenas um ano antes da morte do autor, este foi o único
+              livro de Fernando Pessoa em Língua Portuguesa editado em vida. Foi
+              contemplado com o Prémio Antero de Quental, na categoria de «poema
+              ou poesia solta», do Secretariado da Propaganda Nacional (SPN).
+            </p>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section id="_obra">
+          <h2>Obra Poética</h2>
+          <div>
+            <p>
+              Considera-se que a grande criação estética de Pessoa foi a
+              invenção heteronímica que atravessa toda a sua obra. Os
+              heterónimos, diferentemente dos pseudónimos, são personalidades
+              poéticas completas: identidades que, em princípio falsas, se
+              tornam verdadeiras através da sua manifestação artística própria e
+              diversa do autor original. Entre os heterónimos, o próprio
+              Fernando Pessoa passou a ser chamado ortónimo, porquanto era a
+              personalidade original. Entretanto, com o amadurecimento de cada
+              uma das outras personalidades, o próprio ortónimo tornou-se apenas
+              mais um heterónimo entre os outros. Os três heterónimos mais
+              conhecidos (e também aqueles com maior obra poética) foram Álvaro
+              de Campos, Ricardo Reis e Alberto Caeiro. Um quarto heterónimo de
+              grande importância na obra de Pessoa é Bernardo Soares, autor do
+              Livro do Desassossego, importante obra literária do século XX.
+              Bernardo é considerado um semi-heterónimo por ter muitas
+              semelhanças com Fernando Pessoa e não possuir uma personalidade
+              muito característica, ao contrário dos três primeiros, que possuem
+              até mesmo data de nascimento e morte (excepção para Ricardo Reis,
+              que não possui data de falecimento). Por essa razão, José
+              Saramago, laureado com o Prémio Nobel, escreveu o livro O ano da
+              morte de Ricardo Reis.
+            </p>
 
-              <p>
-                Através dos heterónimos, Pessoa conduziu uma profunda reflexão
-                sobre a relação entre verdade, existência e identidade. Este
-                último fator possui grande notabilidade na famosa misteriosidade
-                do poeta.
-              </p>
-            </div>
-          </section>
-        </div>
+            <p>
+              Através dos heterónimos, Pessoa conduziu uma profunda reflexão
+              sobre a relação entre verdade, existência e identidade. Este
+              último fator possui grande notabilidade na famosa misteriosidade
+              do poeta.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
 
-    <footer id="_footer">
-      <div class="social_media" id="_img_footer">
-        <a
-          href="https://www.instagram.com/"
-          id="_scm_instagram"
-          target="_blank"
-        >
-          <svg
-            class="sm_icons"
-            id="ico_instagram"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Instagram</title>
-            <path
-              d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
-            /></svg
-        ></a>
-        <a href="https://www.facebook.com/" id="_scm_facebook" target="_blank"
-          ><svg
-            class="sm_icons"
-            id="ico_facebook"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Facebook</title>
-            <path
-              d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
-            /></svg
-        ></a>
-        <a href="https://www.youtube.com" id="_scm_youtube" target="_blank"
-          ><svg
-            class="sm_icons"
-            id="ico_youtube"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>YouTube</title>
-            <path
-              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-            /></svg
-        ></a>
-        <a href="https://twitter.com" id="_scm_twitter" target="_blank"
-          ><svg
-            class="sm_icons"
-            id="ico_twitter"
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>X</title>
-            <path
-              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-            /></svg
-        ></a>
+    <footer class="footer" id="_footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <a
+              href="https://www.instagram.com/"
+              id="_scm_instagram"
+              target="_blank"
+            >
+              <svg
+                class="sm_icons"
+                id="ico_instagram"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                /></svg
+            ></a>
+          </div>
+          <div class="col">
+            <a
+              href="https://www.facebook.com/"
+              id="_scm_facebook"
+              target="_blank"
+              ><svg
+                class="sm_icons"
+                id="ico_facebook"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                /></svg
+            ></a>
+          </div>
+          <div class="col">
+            <a href="https://www.youtube.com" id="_scm_youtube" target="_blank"
+              ><svg
+                class="sm_icons"
+                id="ico_youtube"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                /></svg
+            ></a>
+          </div>
+          <div class="col">
+            <a href="https://twitter.com" id="_scm_twitter" target="_blank"
+              ><svg
+                class="sm_icons"
+                id="ico_twitter"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>X</title>
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                /></svg
+            ></a>
+          </div>
+        </div>
       </div>
+
+      <div class="social_media container text-center" id="_img_footer"></div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
