@@ -26,3 +26,15 @@ for (var i = 0; i < tagsH3.length; i++) {
   tagsH3[i].innerHTML = "Trocando o texto da classe";
   tagsH3[i].style.color = "blue";
 }
+
+function validarEntradaDados(){
+    var numero = document.getElementById("numeroDigitado").value;
+    var resposta;
+
+    if(numero >= 1 && numero <=10)
+resposta = "Número válido";
+else
+resposta = "Número Inválido";
+
+document.getElementById("mensagemValidacao").innerHTML = resposta;
+}
