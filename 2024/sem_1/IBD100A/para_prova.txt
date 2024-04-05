@@ -1,0 +1,5 @@
+- DIcionário de Dados
+- Conceitos de uma instância de Banco de Dados
+- Conceitos de SCHEMA
+- Conceitos de Operações com Álgebra Relacional <=> (Comandos SQL)
+- Conceitos de Operações com JOIN, LEFT JOIN e RIGHT JOIN
