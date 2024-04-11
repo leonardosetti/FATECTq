@@ -2,75 +2,38 @@
   font-family: 'Times New Roman', Arial, sans-serif;
 }
 
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 8px;
-  place-items: center center;
-}
-
 .main_header {
-  width: 100%;
-  display: grid;
+  font-family: Arial, sans-serif;
   color: #fff;
   background-color: #851944;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
 }
-
-#_top_title {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
 h1,
 h2 {
   font-family: Arial, sans-serif;
-}
-
-.top_title h1 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-#_menu_bar {
-  display: inline-block;
-  background-color: #6d6868;
-  text-align: justify;
-}
-
-#_menu_bar,
-ul,
-li,
-a {
-  display: inline;
   font-weight: bold;
-  font-family: 'Times New Roman', sans-serif;
+}
+
+.menu_bar {
+  background-color: #6d6868;
+  padding: 5px;
+}
+.menu_bar a {
   color: #fff;
   list-style-type: none;
   text-decoration: none;
-  padding: 15px;
 }
 
-#_menu_bar a:visited {
-  text-decoration: none;
-}
-#_menu_bar a:hover {
+.menu_bar a:hover {
   text-decoration: none;
   color: #851944;
   transition: ease-out 500ms;
 }
-
-#_footer {
-  color: #fff;
-  background-color: #851944;
+#_intro {
+  padding-top: 3%;
 }
-
-.social_media {
-  text-align: center;
+#_obra {
+  padding-bottom: 3%;
 }
-
 .citation {
   margin-left: 60px;
   margin-top: 20px;
@@ -80,28 +43,46 @@ a {
   padding: 8px 60px;
 }
 
-.sm_icons {
-  display: inline;
-  padding: 8px 60px;
-  max-width: 64px;
-  width: auto;
-  height: auto;
+#_footer {
+  color: #fff;
+  background-color: #851944;
+  padding: 15px;
 }
 svg {
   fill: #000000;
+  max-width: 64px;
+  max-height: 64px;
 }
 svg:hover {
   fill: #ffffff;
   transition: ease-out 700ms;
 }
 
-.fotos {
-  display: grid;
-  align-items: center;
-  height: 400px;
-  margin-left: 40%;
+img:hover {
+  transform: scale(1.1, 1.1);
+  -o-transition: 750ms;
+  -ms-transition: 750ms;
+  -moz-transition: 750ms;
+  -webkit-transition: 750ms;
+  transition: 750ms;
+  box-shadow: 10px 10px 5px #00000050;
 }
-img {
-  max-width: 400px;
-  max-height: 400px;
+
+.table th {
+  text-align: center;
+  background-color: #851944;
+  align-content: center;
+  color: #fff;
+}
+.table td {
+  min-width: 100px;
+}
+
+.table-active:hover,
+.table:hover {
+  color: #141414;
+  transition: ease-out 500ms;
+}
+.gallery {
+  padding: 3.5%;
 }
