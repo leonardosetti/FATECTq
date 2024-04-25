@@ -1,0 +1,46 @@
+
+(0,5) 1) - Um programa elaborado na linguagem HTML apresenta a seguinte linha: < !DOCTYPE 
+HTML>. Sobre essa linha, é correto afirmar que ela:
+d) - Especifica ao navegador o tipo de documento HTML que ele vai renderizar.
+
+(0,5) 2 – Dado o programa abaixo feito em HTML:
+<html>
+<body> 
+ <h1 id=”titprincipal”> Título principal </h1>
+ <p>Texto texto texto texto texto texto texto texto texto texto</p>
+ <h1 id=”titsecundario”> Título secundário </h1> 
+ <p>Texto texto texto texto texto texto texto texto texto texto</p>
+</body>
+</html>
+Como seria o CSS para formatar apenas o h1 do título secundário com cor do texto em azul?
+c) - #titsecundario{color:blue;}
+
+1,0) 3 – Na interface Web, ele é um arquivo independente do arquivo HTML no qual são declarados 
+propriedades e valores de estilização para os elementos do HTML, tendo este arquivo a tarefa de 
+estilização e ao HTML, exclusivamente, a marcação e estruturação do conteúdo do documento. Trata-se
+a) - CSS (Cascading Style Sheets)
+
+(1,0) 4 – Em uma página HTML5 deseja-se vincular um arquivo chamado arq1.css e um arquivo chamado 
+arq2.js. Para isso devem-se utilizar as instruções:
+e) - <link rel="stylesheet" type="text/css" href="arq1.css"> e <script src="arq2.js"> 
+</script> no cabeçalho da página
+
+(1,0) 5 – Na presença da seguinte declaração CSS:
+Serão centralizados e coloridos de vermelho os textos incluídos:
+c)- Nos elementos que possuem atributo class="center";
+
+(1,0) 6- O seguinte programa foi escrito na linguagem HTML com JavaScript, sendo que 
+“comando_javascript” é um comando da linguagem JavaScript.
+ <html>
+ <body>
+ <script>
+ x = 13
+ y = 2
+z = x - y
+ comando_javascript
+ </script>
+ </body>
+ </html>
+Ao ser aberto pelo navegador, a seguinte janela foi exibida na tela:
+O comando comando_javascript, que permite a exibição dessa janela, é:
+a)- alert(z)

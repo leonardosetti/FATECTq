@@ -1,0 +1,82 @@
+---- Uso de Funções internas do Oracle -------
+
+
+SELECT ENAME, LOWER(ENAME), INITCAP(LOWER(ENAME)), INITCAP('paulo silva') FROM emp;
+
+SELECT JOB, DECODE (JOB, 'ANALISTA', 'TI', 'VENDEDOR', 'COMERCIAL', 'OUTROS') as tipo_area FROM EMP;
+
+SELECT JOB, DECODE (UPPER(JOB), 'ANALISTA', 'TI', 'VENDEDOR', 'COMERCIAL', 'OUTROS') as tipo_area FROM EMP;
+
+SELECT EMPNO, ENAME, JOB, HIREDATE, SAL, COMM, DECODE(DEPTNO, 10, 'VENDAS', 20, 'COMERCIAL', 30, 'FATURAMENTO', 'OUTROS') FROM EMP;
+
+SELECT HIREDATE, TO_CHAR(HIREDATE, 'Day:dd/Month/yyyy') as data_extensa, TO_CHAR(HIREDATE, 'Month, dd "de" yyyy') as data_mesano from EMP;
+
+SELECT HIREDATE, TO_CHAR(HIREDATE, 'Day:dd/Month/yyyy') as data_extensa, TO_CHAR(HIREDATE, 'dd-mm-yyyy') as data_mesano from EMP
+  where TO_CHAR(HIREDATE, 'yyyy') = '2021'
+  
+select * from emp where HIREDATE < TO_DATE('01-01-2022', 'dd-mm-yyyy');
+
+select * from emp where HIREDATE < TO_DATE('01-01-2022', 'dd-mm-yyyy') and HIREDATE > TO_DATE('31-12-2020', 'dd-mm-yyyy');
+
+SELECT * from EMP   where TO_CHAR(HIREDATE, 'mm') = 10;
+--------------------------------
+SELECT HIREDATE, TO_CHAR(HIREDATE, 'Day:dd/Month/yyyy') as data_extensa from EMP;
+
+select * from VENDAS;
+
+SELECT DATA_DA_VENDA, TO_CHAR(DATA_DA_VENDA, 'Day:dd/Month/yyyy') as data_extensa FROM VENDAS;
+
+SELECT DATA_DA_VENDA, TO_DATE(DATA_DA_VENDA, 'dd/mm/yyyy') as NOVA_DATA FROM VENDAS;
+
+SELECT DATA_DA_VENDA, TO_DATE(DATA_DA_VENDA, 'mm/dd/yyyy') as NOVA_DATA FROM VENDAS;
+
+SELECT DATA_DA_VENDA, TO_CHAR(TO_DATE(DATA_DA_VENDA, 'mm/dd/yyyy'), 'Day:dd/Month/yyyy')  as NOVA_DATA FROM VENDAS;
+-------
+
+SELECT HIREDATE, HIREDATE + 10 FROM EMP;
+
+SELECT DATA_DA_VENDA, DATA_DA_VENDA + 10 FROM VENDAS;
+
+
+SELECT DATA_DA_VENDA, TO_DATE(DATA_DA_VENDA, 'mm/dd/yyyy') + 10 FROM VENDAS;
+
+
+ALTER TABLE VENDAS_WILLIAM ADD NEW_DATA_VENDA DATE NULL;
+
+UPDATE VENDAS_WILLIAM
+   SET NEW_DATA_VENDA = TO_DATE(DATA_DA_VENDA, 'mm/dd/yyyy');
+   
+   COMMIT;
+ 
+ SELECT DESCRICAO, SUBSTR(DESCRICAO, 3, 8) AS PEGA_PEDAÇO FROM PRODUTO;
+ 
+ SELECT  LENGTH(DESCRICAO) AS TAMANHO  FROM PRODUTO;
+ 
+ 
+ ---- Outros Exemplo de funções ---------------
+
+SELECT * FROM PEDIDO   WHERE      to_char(data,'yyyy') = '2019';
+
+SELECT  to_char(data, 'mon/dd hh24:mi:ss')  FROM PEDIDO;
+
+SELECT LENGTH('/PRD/DMCO/GGC/GRCSPDM/RDX') FROM DUAL;
+SELECT instr('/PRD/DMCO/GGC/GRCSPDM/RDX', '/', 1, 2) FROM DUAL;
+select substr('/PRD/DMCO/GGC/GRCSPDM/RDX', 6, 4) FROM DUAL;
+
+select substr('pailo silba', 1 , instr('pailo silba', ' ', 1, 1) -1)   from dual;
+
+---------------------
+
+
+SELECT HIREDATE, ADD_MONTHS(HIREDATE, 1) AS DATA_NOVA FROM EMP;
+
+SELECT HIREDATE, ADD_MONTHS(HIREDATE, -1) AS DATA_NOVA FROM EMP;
+
+SELECT HIREDATE, LAST_DAY(ADD_MONTHS(HIREDATE, 1)) AS DATA_NOVA FROM EMP;
+-----------------
+
+SELECT sysdate, LAST_DAY(ADD_MONTHS(sysdate, 1)) AS DATA_NOVA FROM EMP;
+
+SELECT SYSDATE, LAST_DAY(ADD_MONTHS(SYSDATE, 2)) + 1 AS DATA_NOVA FROM DUAL;
+
+SELECT HIREDATE, LAST_DAY(ADD_MONTHS(SYSDATE, -1)) AS DATA_NOVA FROM EMP;

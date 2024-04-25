@@ -1,0 +1,112 @@
+* {
+    font-family: 'Times New Roman', Arial, sans-serif;
+ }
+  body{
+    background-color: #fef2cd;
+    color: #eb5509;
+    font-size: x-large;
+  }
+  
+  
+  .main_header {
+    font-family: Arial, sans-serif;
+    color: #eb5509;
+    background-color: #fef2cd;
+  }
+  h1,
+  h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    color: #a73106;
+    padding: 1%;
+        text-align: center;
+   }
+
+  
+  .menu_bar {
+    background-color: #6d6868;
+    padding: 5px;
+  }
+  .menu_bar a {
+    color: #fef2cd;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  .menu_bar a:hover {
+    text-decoration: none;
+    color: #fad263;
+    transition: ease-out 500ms;
+  }
+   
+  .table th {
+    text-align: center;
+    background-color: #eb5509 ;
+    align-content: center;
+    color: #fef2cd;
+  }
+   
+table, td, th{
+    border: 1px solid #eb5509 !important;
+    border-collapse: collapse;
+}
+  .gallery {
+    padding: 3.5%;
+  }
+
+.img_table{
+    max-width: 128px;
+    min-width: 100px;
+    max-height: 128px;
+    min-height: 128px;
+}
+.table td {
+    min-width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: x-large;
+    align-items: center;
+  }
+
+.title_obras{
+    padding: 0.5%;
+    text-align: center;
+    font-size: x-large;
+}
+img:hover {
+    transform: scale(1.1, 1.1);
+    -o-transition: 750ms;
+    -ms-transition: 750ms;
+    -moz-transition: 750ms;
+    -webkit-transition: 750ms;
+    transition: 750ms;
+    box-shadow: 10px 10px 5px #00000050;
+  }
+
+  .anosFim{
+    font-family: Arial;
+    color: #055415;
+    font-weight: bold;
+  }
+
+  #bioTit{
+    color: #055415;
+  }
+  .mudaEstilo{
+    /* etra com fonte Verdana, itálico, cor laranja com fundo preto, ao clicar em um botão. */
+    color: #eb5509 !important;
+    font-family: Verdana;
+    font-style: italic;
+    background-color: black;
+  }
+
+  .front_pic{
+    padding: 2%;
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+  }
+  
+
