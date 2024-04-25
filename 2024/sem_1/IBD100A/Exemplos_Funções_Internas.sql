@@ -12,7 +12,7 @@ SELECT EMPNO, ENAME, JOB, HIREDATE, SAL, COMM, DECODE(DEPTNO, 10, 'VENDAS', 20, 
 SELECT HIREDATE, TO_CHAR(HIREDATE, 'Day:dd/Month/yyyy') as data_extensa, TO_CHAR(HIREDATE, 'Month, dd "de" yyyy') as data_mesano from EMP;
 
 SELECT HIREDATE, TO_CHAR(HIREDATE, 'Day:dd/Month/yyyy') as data_extensa, TO_CHAR(HIREDATE, 'dd-mm-yyyy') as data_mesano from EMP
-  where TO_CHAR(HIREDATE, 'yyyy') = '2021'
+  where TO_CHAR(HIREDATE, 'yyyy') = '2021';
   
 select * from emp where HIREDATE < TO_DATE('01-01-2022', 'dd-mm-yyyy');
 
