@@ -1,0 +1,20 @@
+body {
+  font-family: Ubuntu, sans-serif !important;
+}
+/* Styles for card images */
+.card-img-top {
+  width: 256px;
+  height: 256px;
+  object-fit: contain; /* This ensures the image fits within the space without being cut off */
+}
+
+/* Styles for carousel images */
+.carousel-item img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.btn{
+  object-fit: contain;
+}
