@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Atividade JQuery</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container_fluid">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="flex_container">
+          <div class="flx_chld">
+            <img id="swapImage1" src="../img/acqua.png" alt="" />
+          </div>
+          <div class="flx_chld">
+            <img id="swapImage2" src="../img/gr_bl.png" alt="" />
+          </div>
+          <div class="flx_chld">
+            <img id="swapImage3" src="../img/green.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <div class="flex_container">
+        <div class="flx_chld text" id="text_1">
+          <p class="swapText">Tênis Nike Azul bem bonito</p>
+        </div>
+        <div class="flx_chld text" id="text_2">
+          <p class="swapText">Tênis Nike Azul Escuro</p>
+        </div>
+        <div class="flx_chld text" id="text_3">
+          <p class="swapText">Tênis Nike Azul Verde</p>
+        </div>
+      </div>
+    </div>
+    <div class="container_fluid">
+      <div class="btn"></div>
+      <button class="swapImage" id="swapImageBack"><img class="sym" src="../img/left.png" alt=""></button>
+      <button class="swapImage" id="swapImageReset">Reset</button>
+      <button class="swapImage" id="swapImageNext"><img  class="sym"src="../img/right.png" alt=""></button>
+      
+    </div>
+
+    <footer></footer>
+  </body>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../js/main.js"></script>
+</html>
