@@ -1,0 +1,1 @@
+select * from PRODUTO_EX px where px.CODIGO_PRODUTO  ='1'  ;
