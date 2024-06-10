@@ -53,6 +53,8 @@ SELECT DEPTNO, UPPER(JOB), SUM(SAL)  AS TOT_SAL FROM EMP
 GROUP BY ROLLUP  (DEPTNO, JOB)
 ORDER BY DEPTNO, JOB;
 
+
+-- Group By / Rollup
 select * from vendas;
 select * from cidade;
 select * from vendedores_ex;
