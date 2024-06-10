@@ -1,11 +1,28 @@
 body {
   font-family: Ubuntu, sans-serif !important;
 }
-/* Styles for card images */
+
+
 .card-img-top {
   width: 256px;
   height: 256px;
-  object-fit: contain; /* This ensures the image fits within the space without being cut off */
+  object-fit: contain;
+}
+
+.navbar {
+  padding: 15%;
+  margin-left: 0.05%;
+  margin-right: 0.05%;
+}
+.navbar h2{
+  margin-top: 1.5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1.8%;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: rgba(120, 233, 8, 0.678);
+  object-fit: contain;
 }
 
 /* Styles for carousel images */
